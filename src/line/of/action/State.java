@@ -18,7 +18,7 @@ public class State
 			for(int j=0;j<boardSize;j++)
 				this.board[i][j]=state.board[i][j];
 	}
-	public State(int [][]board)
+	public State(char [][]board)
 	{
 		for(int i=0;i<boardSize;i++)
 			for(int j=0;j<boardSize;j++)

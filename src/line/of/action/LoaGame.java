@@ -29,7 +29,7 @@ public class LoaGame {
 		depth=defaultDepth;
 		initializeBoard();
 		gameState.printBoard();
-		player= new Player(W);
+		player= new Player(B);
 		player.setOtherPlayerName(B);
 	}
 	/*
@@ -603,6 +603,56 @@ public class LoaGame {
 			return null;
 		}
 	}
+	private int[] loaCheckLeftHorizontal(State state, Player player, int row,int column) 
+	{
+
+		//boolean leftMovePossible = false;
+		int countCoins=0;
+		for(int i=0;i<7;i++)
+		{
+			if(state.board[row][i]!=EMPTY)
+				countCoins++;
+		}
+		for(int i=column;i>column-countCoins;i--)
+		{
+			if(i<0 ||(state.board[row][i]==player.getOtherPlayerName()))
+				return null;
+		}
+		return new int[]{row,column-countCoins};
+			
+		/*
+		if (state.board[row][column - 1] == EMPTY || state.board[row][column - 1] == player.name) 
+		{
+			// the location is either empty or the same player is present
+			return null;
+		} 
+		else 
+		{
+			column--;
+			while (column > 0) 
+			{
+				column--;
+				if (state.board[row][column] == player.name) 
+				{
+					return null;
+				} 
+				else if (state.board[row][column] == EMPTY) 
+				{
+					leftMovePossible = true;
+					break;
+				}
+			}
+		}
+		if (leftMovePossible) 
+		{
+			return new int[]{row,column};
+		} 
+		else 
+		{
+			return null;
+		}
+		*/
+	}
 	private int[] checkRightHorizontal(State state, Player player, int row,int column) 
 	{
 
@@ -862,6 +912,26 @@ public class LoaGame {
 		}
 		legalMoves.add(nextMove);
 	}
+	private void loaAddMove(ArrayList<int[]> legalMoves, int[] startMove, int[] endMove) 
+	{
+		if(startMove==null || endMove==null)
+		{
+			return;
+		}
+		String toCheck=String.valueOf(startMove[0])+String.valueOf(startMove[1])+String.valueOf(endMove[0])+String.valueOf(endMove[1]);
+		for(int i=0;i<legalMoves.size();i++)
+		{
+			String check=String.valueOf(legalMoves.get(i)[0])+String.valueOf(legalMoves.get(i)[1])+String.valueOf(legalMoves.get(i)[2])+String.valueOf(legalMoves.get(i)[3]);
+			if(check.equals(toCheck))
+				return;
+		}
+		int startR=startMove[0];
+		int startC=startMove[1];
+		int endR=endMove[0];
+		int endC=endMove[1];
+		int []nextMove={startR,startC,endR,endC};
+		legalMoves.add(nextMove);
+	}
 	private boolean isTerminalState(State state) 
 	{
 		// check for terminal state
@@ -961,15 +1031,16 @@ public class LoaGame {
 		int depth=0;
 		
 		ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
-		int[][] possibleActions = movesPossible(nextState, player);
+		//int[][] possibleActions = movesPossible(nextState, player);
+		int[][] loaPossibleActions = loaMovesPossible(nextState, player);
 		if(isTerminalState(currentState))
 		{
 			System.out.println("Terminal state reached ");
 			return null;	
 		}
-		if(possibleActions.length>0)
+		if(loaPossibleActions.length>0)
 		{
-			for(int[]move : possibleActions)
+			for(int[]move : loaPossibleActions)
 			{
 				State newState= getNextState(nextState,move,player);
 				nodesExpanded++;
@@ -986,6 +1057,92 @@ public class LoaGame {
 			System.out.println("Moves to take : " + nodesBucket.get(0).toString());
 			return nodesBucket.get(0).getMove();
 		}
+		return null;
+	}
+	/**
+	 * @param nextState
+	 * @param player2
+	 * @return
+	 */
+	private int[][] loaMovesPossible(State currentState, Player player2) 
+	{
+
+		ArrayList<int[]> movesPossible = new ArrayList<int[]>();
+		
+		
+		for (int i = 0; i < currentState.board.length; i++) 
+		{
+			for (int j = 0; j < currentState.board[i].length; j++) 
+			{
+				if (currentState.board[i][j] == player.name) 
+				{
+					if (j > 0) 
+					{
+						// get legal moves on left side horizontally
+						int[] leftMove = loaCheckLeftHorizontal(currentState, player,i,j);
+						loaAddMove(movesPossible, new int[]{i,j},leftMove);
+					}
+
+					if (j < 7) 
+					{
+						// get legal moves on right side horizontally
+						int[] rightMove = checkRightHorizontal(currentState, player,i,j );
+						addMove(movesPossible, rightMove);
+					}
+
+					if (i > 0) 
+					{
+						// get legal moves in up direction
+						int[] upMove = checkUpMove(currentState, player, i, j);
+						addMove(movesPossible, upMove);
+					}
+
+					if (i < 7) 
+					{
+						// get legal moves in down direction
+						int[] downMove = checkDownMove(currentState, player, i, j);
+						addMove(movesPossible, downMove);
+					}
+					
+					if(i > 0 && j < 7)
+					{
+						// get legal moves in north-east direction
+						int[] neMove=checkNorthEastMove(currentState, player, i, j);
+						addMove(movesPossible, neMove);
+					}
+					
+					if(i>0 && j > 0)
+					{
+						// get legal moves in north-west direction
+						int nwMove[]= checkNorthWestMove(currentState, player, i, j);
+						addMove(movesPossible, nwMove);
+					}
+					
+					if(i<7 && j<7)
+					{
+						// get legal moves in south-east direction
+						int seMove[]= checkSouthEastMove(currentState, player , i ,j);
+						addMove(movesPossible, seMove);
+					}
+					
+					if(i< 7 && j > 0)
+					{
+						//get legal moves in south-west direction
+						int swMove[] = checkSouthWestMove(currentState, player , i , j);
+						addMove(movesPossible, swMove);
+						
+					}
+
+				}
+			}
+		}
+		int [][] result= new int[movesPossible.size()][2];
+		for(int i=0;i<movesPossible.size();i++)
+		{
+			result[i]=movesPossible.get(i);
+		}
+		return result;
+	
 		return null;
 	}
 	private void sortBucketNodesForMax(ArrayList<SearchNode> nodesBucket) 
@@ -1143,14 +1300,14 @@ public class LoaGame {
 		Scanner sc=new Scanner(System.in);
 		depth=Integer.parseInt(sc.nextLine());
 		System.out.println("X corresponds to WHITE, O corresponds to BLACK");
-		System.out.println("X has first turn");
+		System.out.println("Black has first turn");
 		try{
 			do{
 				System.out.println("Please enter a move like r:c-fr:fc ");
 				String input = sc.nextLine();
 				String coor[] = input.split("-");
 				String startPos[]=coor[0].split(":");
-				String finalPos[]=coor[0].split(":");
+				String finalPos[]=coor[1].split(":");
 				int r = Integer.parseInt(startPos[0]);
 				int c = Integer.parseInt(startPos[1]);
 				
@@ -1161,7 +1318,14 @@ public class LoaGame {
 				
 				State state=game.getLoaNextState(game.gameState,new int[]{r,c},new int[]{fr,fc},game.player);
 				//State state=game.getNextState(game.gameState,new int[]{r,c},game.player);
-				state.printBoard();
+				if(state!=null)
+					state.printBoard();
+				else
+				{
+					state=game.gameState;
+					System.out.println("That's an illegal move");
+					state.printBoard();
+				}
 				//game.gameState.printBoard();
 				System.out.println("Now Agent will generate the move");
 				Thread.sleep(delay);
@@ -1211,7 +1375,7 @@ public class LoaGame {
 		int fr=moveEnd[0];
 		int fc=moveEnd[1];
 		nextState.board[fr][fc]=player.name;
-		nextState.board[r][c]='-';
+		nextState.board[r][c]=EMPTY;
 		
 		return nextState;
 	}
@@ -1336,7 +1500,7 @@ public class LoaGame {
 			}
 			else
 			{
-				int startC=r-c,startR=0;
+				int startC=c-r,startR=0;
 				for(int k=startC;k<8;k++,startR++)
 				{
 					if(gameState.board[startR][k]!=EMPTY)
