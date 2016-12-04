@@ -1086,28 +1086,31 @@ public class LoaGame {
 					if (j < 7) 
 					{
 						// get legal moves on right side horizontally
-						int[] rightMove = checkRightHorizontal(currentState, player,i,j );
-						addMove(movesPossible, rightMove);
+						int[] rightMove = loaCheckRightHorizontal(currentState, player,i,j );
+						//addMove(movesPossible, rightMove);
+						loaAddMove(movesPossible, new int[]{i,j},rightMove);
 					}
 
 					if (i > 0) 
 					{
 						// get legal moves in up direction
-						int[] upMove = checkUpMove(currentState, player, i, j);
-						addMove(movesPossible, upMove);
+						//int[] upMove = checkUpMove(currentState, player, i, j);
+						int[] upMove = loaCheckUpMove(currentState, player, i, j);
+						loaAddMove(movesPossible , new int[]{i,j} , upMove);
 					}
 
 					if (i < 7) 
 					{
 						// get legal moves in down direction
-						int[] downMove = checkDownMove(currentState, player, i, j);
-						addMove(movesPossible, downMove);
+						//int[] downMove = checkDownMove(currentState, player, i, j);
+						int[] downMove = loaCheckDownMove(currentState, player, i, j);
+						loaAddMove(movesPossible,new int[]{i,j}, downMove);
 					}
 					
 					if(i > 0 && j < 7)
 					{
 						// get legal moves in north-east direction
-						int[] neMove=checkNorthEastMove(currentState, player, i, j);
+						int[] neMove=loaCheckNorthEastMove(currentState, player, i, j);
 						addMove(movesPossible, neMove);
 					}
 					
@@ -1143,7 +1146,99 @@ public class LoaGame {
 		}
 		return result;
 	
-		return null;
+		//return null;
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckNorthEastMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		for(int i=0;i<7;i++)
+		{
+			if(state.board[i][row]!=EMPTY)
+				countCoins++;
+		}
+		for(int i=row;i<column+countCoins;i++)
+		{
+			if(i>7 ||(state.board[i][row]==player.getOtherPlayerName()))
+				return null;
+		}
+		return new int[]{row,column+countCoins};
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckDownMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		for(int i=0;i<7;i++)
+		{
+			if(state.board[i][row]!=EMPTY)
+				countCoins++;
+		}
+		for(int i=row;i<column+countCoins;i++)
+		{
+			if(i>7 ||(state.board[i][row]==player.getOtherPlayerName()))
+				return null;
+		}
+		return new int[]{row,column+countCoins};
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckUpMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		for(int i=0;i<7;i++)
+		{
+			if(state.board[i][row]!=EMPTY)
+				countCoins++;
+		}
+		for(int i=row;i>column-countCoins;i--)
+		{
+			if(i<0 ||(state.board[i][row]==player.getOtherPlayerName()))
+				return null;
+		}
+		return new int[]{row,column-countCoins};
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckRightHorizontal(State state, Player player, int row,int column) 
+	{
+		// TODO Auto-generated method stub
+		int countCoins=0;
+		for(int i=0;i<7;i++)
+		{
+			if(state.board[row][i]!=EMPTY)
+				countCoins++;
+		}
+		for(int i=column;i<column+countCoins;i++)
+		{
+			if(i>7 ||(state.board[row][i]==player.getOtherPlayerName()))
+				return null;
+		}
+		return new int[]{row,column+countCoins};
 	}
 	private void sortBucketNodesForMax(ArrayList<SearchNode> nodesBucket) 
 	{
@@ -1405,7 +1500,7 @@ public class LoaGame {
 				}
 					
 			}
-			if(noCoin!=(c-fc))
+			if(noCoin!=Math.abs(c-fc))
 				return false;
 			for(int i=fc;i<c;i++)
 			{
@@ -1427,7 +1522,7 @@ public class LoaGame {
 				}
 					
 			}
-			if(noCoin!=(fc-c))
+			if(noCoin!=Math.abs(fc-c))
 				return false;
 			for(int i=c;i<fc;i++)
 			{
@@ -1449,7 +1544,7 @@ public class LoaGame {
 				}
 					
 			}
-			if(noCoin!=(r-fr))
+			if(noCoin!=Math.abs(r-fr))
 				return false;
 			for(int i=fr;i<r;i++)
 			{
@@ -1471,7 +1566,7 @@ public class LoaGame {
 				}
 					
 			}
-			if(noCoin!=(fc-c))
+			if(noCoin!=Math.abs(fc-c))
 				return false;
 			for(int i=r;i<fr;i++)
 			{
@@ -1510,7 +1605,7 @@ public class LoaGame {
 						
 				}
 			}
-			if(noCoin!=(r-fr))
+			if(noCoin!=Math.abs(r-fr))
 				return false;
 			
 			for(int i=r,j=c;i<fr;i++,j++)
@@ -1525,9 +1620,9 @@ public class LoaGame {
 		if(r>fr && c<fc && (r-fr == fc-c))
 		{
 			int noCoin=0;
-			if(r>=c)
+			if(r+c <= 7)
 			{
-				int startR=r-c,startC=0;
+				int startR=r+c,startC=0;
 				for(int k=startR;k<8;k++,startC++)
 				{
 					if(gameState.board[k][startC]!=EMPTY)
@@ -1540,8 +1635,8 @@ public class LoaGame {
 			}
 			else
 			{
-				int startC=r-c,startR=0;
-				for(int k=startC;k<8;k++,startR++)
+				int startC=(r+c)-7,startR=7;
+				for(int k=startC;k<8;k++,startR--)
 				{
 					if(gameState.board[startR][k]!=EMPTY)
 					{
@@ -1550,7 +1645,7 @@ public class LoaGame {
 						
 				}
 			}
-			if(noCoin!=(r-fr))
+			if(noCoin!=Math.abs(r-fr))
 				return false;
 			for(int i=r,j=c;i>fr;i--,j++)
 			{
@@ -1579,7 +1674,7 @@ public class LoaGame {
 			}
 			else
 			{
-				int startC=r-c,startR=0;
+				int startC=c-r,startR=0;
 				for(int k=startC;k<8;k++,startR++)
 				{
 					if(gameState.board[startR][k]!=EMPTY)
@@ -1589,7 +1684,7 @@ public class LoaGame {
 						
 				}
 			}
-			if(noCoin!=(r-fr))
+			if(noCoin!=Math.abs((r-fr)))
 				return false;
 			for(int i=r,j=c;i>fr;i--,j--)
 			{
@@ -1603,10 +1698,10 @@ public class LoaGame {
 		if(r<fr && c>fc && (fr-r == c-fc))
 		{
 			int noCoin=0;
-			if(r>=c)
+			if(r+c<=7)
 			{
-				int startR=r-c,startC=0;
-				for(int k=startR;k<8;k++,startC++)
+				int startR=r+c,startC=0;
+				for(int k=startR;k>=0;k--,startC++)
 				{
 					if(gameState.board[k][startC]!=EMPTY)
 					{
@@ -1618,8 +1713,8 @@ public class LoaGame {
 			}
 			else
 			{
-				int startC=r-c,startR=0;
-				for(int k=startC;k<8;k++,startR++)
+				int startC=(r+c)-7,startR=7;
+				for(int k=startC;k<8;k--,startR--)
 				{
 					if(gameState.board[startR][k]!=EMPTY)
 					{
@@ -1628,7 +1723,7 @@ public class LoaGame {
 						
 				}
 			}
-			if(noCoin!=(r-fr))
+			if(noCoin!=Math.abs(r-fr))
 				return false;
 			for(int i=r,j=c;i<fr;i++,j--)
 			{
