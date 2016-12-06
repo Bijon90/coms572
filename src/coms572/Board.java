@@ -399,6 +399,21 @@ public class Board {
         }
     }
     
+    public void makeMove(Move move){
+    	if(isLegal(move)){
+    		if(board[move.getR0()][move.getC0()] == getCurrPlayer().get_marker() &&
+    		   board[move.getR1()][move.getC1()] != getCurrPlayer().get_marker()){
+    			if(board[move.getR1()][move.getC1()] == getCurrPlayer().getOpponent())
+    				move.set_capture(true);
+    			board[move.getR1()][move.getC1()] = getCurrPlayer().get_marker();
+    			board[move.getR0()][move.getC0()] = Constants.EMPTY;
+    		}
+    	}
+    	else{
+    		return;
+    	}
+    }
+    
 /*    public static void main(String args[]){
     	Board b = new Board();
     	

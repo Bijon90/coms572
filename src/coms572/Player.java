@@ -7,21 +7,21 @@ public class Player {
 	
 	Player(){}
 	
+    Player(char marker, String name) {
+        _marker = marker;
+        //_game = game;
+        _name = name;
+    }
+    
     Player(char marker, GamePlay game) {
         _marker = marker;
         _game = game;
     }
     
-    Player(char marker, GamePlay game, String name) {
-        _marker = marker;
-        _game = game;
-        _name = name;
-    }
-    
-    Player(char marker, String name){
+    Player(char marker, GamePlay game, String name){
     	_marker = marker;
     	_name = name;
-    	_game = new GamePlay();
+    	_game = game;
     }
 	
 	@Override

@@ -141,14 +141,9 @@ public class GamePlay {
         inp = new Scanner(System.in);
         _wp = new MachinePlayer(WHITE, this);
         _bp = new HumanPlayer(BLACK, this);
-        //Stopwatch stopwatch = new Stopwatch();
         while (hasTime(_wp) || hasTime(_bp)) {
             _board = new MutableBoard(_board.getBoard(), _wp);
-            //stopwatch.start();
             _board.makeMove(_wp.makeMove());
-            //addTime(Side.WHITE, (int) stopwatch.getElapsed() / THOUSAND);
-            //stopwatch.stop();
-            //stopwatch.reset();
             if (_board.piecesContiguous(_wp)) {
                 inp.close();
                 System.out.println("White wins.");
@@ -156,11 +151,7 @@ public class GamePlay {
                 gameComplete = true;
             }
             _board = new MutableBoard(_board.getConfigCopy(), _bp);
-            //stopwatch.start();
             _board.makeMove(_bp.makeMove());
-            //addTime(Side.BLACK, (int) stopwatch.getElapsed() / THOUSAND);
-            //stopwatch.stop();
-            //stopwatch.reset();
             if (_board.piecesContiguous(_bp)) {
                 inp.close();
                 System.out.println("Black wins.");

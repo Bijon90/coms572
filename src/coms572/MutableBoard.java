@@ -25,7 +25,7 @@ class MutableBoard extends Board {
     }
 
     /** Assuming isLegal(MOVE), make MOVE. */
-    void makeMove(Move move) {
+    public void makeMove(Move move) {
         addMove(move);
         char[][] config = getBoard();
         Player player = getCurrPlayer();

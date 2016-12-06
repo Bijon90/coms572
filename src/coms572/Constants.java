@@ -5,10 +5,10 @@ public class Constants {
 	public static final char BLACK = 'X', WHITE = 'O', EMPTY = '*', BUFFER = '.';
 	
 	/**User*/
-	public static Player user = new Player(BLACK, new GamePlay(), "user");
+	public static Player user = new Player(BLACK, "user");
 	
 	/**Machine*/
-	public static Player machine = new Player(WHITE, new GamePlay(), "machine");
+	public static Player machine = new Player(WHITE, "machine");
 	
 	/** The standard initial configuration for Lines of Action. */
     static final char[][] INITIAL_PIECES = {
