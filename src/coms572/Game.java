@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Game {
 	Board board;
 	Player player1, player2;
-	private final int moveLimit = 500;
+	private final int moveLimit = 200;
 
 	public Game() {
 		board=new Board();
@@ -22,14 +22,17 @@ public class Game {
 		//Scanner in = new Scanner(System.in);
 		board.printBoard();
 		while (true) {
-			/*if(board.movesMade() >= moveLimit){
+			if(board.movesMade() >= moveLimit){
 				if(board.gameOver()){
 					System.out.println(board.getCurrPlayer().get_name()+" wins!");
+					break;
 				}
-				else
+				else{
+					System.out.println("Total moves made: "+board.movesMade());
 					System.out.println("Game drawn!");
+				}
 				break;
-			}*/
+			}
 			setNextPlayer();
 			ArrayList<Move> moves = board.legalMoves();
 			if (moves.size() > 0) {
@@ -46,6 +49,7 @@ public class Game {
 					board.printBoard();
 					board.addMove(myMove);
 					if(board.gameOver()){
+						System.out.println("Total moves made: "+board.movesMade());
 						System.out.println("Game Over! "+board.getCurrPlayer().get_name()+" wins!");
 						break;
 					}
