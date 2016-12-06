@@ -38,10 +38,24 @@ public class Game {
 			if (moves.size() > 0) {
 				System.out.println("It is player " + board.getCurrPlayer().get_name()+ "'s move.");
 				System.out.println("Where would you like to move?:");
-				/*System.out.println("X: ");
-				int x = in.nextInt();
-				System.out.println("Y: ");
-				int y = in.nextInt();*/
+				/*System.out.println("From Column: ");
+				int c0 = in.nextInt();
+				System.out.println("From row: ");
+				int r0 = in.nextInt();
+				System.out.println("To Column: ");
+				int c1 = in.nextInt();
+				System.out.println("To row: ");
+				int r1 = in.nextInt();
+				
+				System.out.println("Enter move (c0r0-c1r1): ")
+				String moveString = sc.nextLine();
+				int c0 = moveString.charAt(0) - '0';
+				int r0 = moveString.charAt(1) - '0';
+				int c1 = moveString.charAt(3) - '0';
+				int r1 = moveString.charAt(4) - '0';
+				
+				Move move = new Movee(c0,r0,c1,r1);
+				*/
 				Move myMove = getRandomMove(moves);
 				if (board.isLegal(myMove)) {
 					System.out.println("Good Move");
