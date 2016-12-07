@@ -9,6 +9,10 @@ public class Player {
 	public Player(char name) 
 	{
 		this.name=name;
+		if(this.name==W)
+			otherPlayerName=B;
+		else
+			otherPlayerName=W;
 	}
 	public char getName() {
 		return name;

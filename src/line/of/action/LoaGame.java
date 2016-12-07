@@ -1,5 +1,6 @@
 package line.of.action;
 
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -20,7 +21,7 @@ public class LoaGame {
 	Player player;
 	static boolean debugging=true;
 	static int defaultDepth=3;
-	static int delay=3000;
+	static int delay=1;
 	static int nodesExpanded=0;
 	
 	public LoaGame()
@@ -30,7 +31,7 @@ public class LoaGame {
 		initializeBoard();
 		gameState.printBoard();
 		player= new Player(B);
-		player.setOtherPlayerName(B);
+		player.setOtherPlayerName(W);
 	}
 	/*
 	 * Initialize the board
@@ -46,569 +47,17 @@ public class LoaGame {
 		}
 	}
 	
-	/*
-	 * Get the next state as per the move of the player
-	 */
-	private State getNextState(State currentState, int[] nextMove,Player player) 
-	{
-		State nextState = new State(currentState);
-		int row = nextMove[0];
-		int col = nextMove[1]; 
-		
-		nextState.board[row][col] = player.name;
-
-		if (col>0)
-		{
-			// perform left flip
-			doLeftFlip(nextState, nextMove, player);
-		}
-
-		if (col<7) 
-		{
-			// perform right flip
-			doRightFlip(nextState, nextMove, player);
-		}
-
-		if (row>0) 
-		{
-			// perform up flip
-			doUpFlip(nextState, nextMove, player);
-		}
-
-		if (row<7) 
-		{
-			// perform down flip
-			doDownFlip(nextState, nextMove, player);
-		}
-		
-		if(row>0 && col<7)		{
-			// perform north-east flip
-			doNorthEastFlip(nextState,nextMove,player);
-		}
-		
-		if(row>0 && col>0)
-		{
-			// perform north-west flip
-			doNorthWestFlip(nextState,nextMove,player);
-		}
-		
-		if(row<7 && col>0)
-		{
-			//perform south-west flip
-			doSouthWestFlip(nextState,nextMove,player);
-		}
-		
-		if(row<7 && col<7)
-		{
-			// perform south-east flip
-			doSouthEastFlip(nextState,nextMove,player);
-		}
-
-		if(debugging)
-		{
-			System.out.println("Intermediate state >>");
-			nextState.printBoard();
-		}
-		return nextState;
-	}
-	private void doLeftFlip(State nextState, int []nextMove, Player player) 
-	{
-		int row = nextMove[0];
-		int col =nextMove[1],origCol=nextMove[1]; 
-		boolean flipPossible = false;
-		int position[] = new int[2];
-		
-		/*
-		int row = nextMove[0];
-		int col =nextMove[1],origCol=nextMove[1]; 
-		boolean flipPossible = false;
-		int position[] = new int[2];
-		col--;
-		if (nextState.board[row][col] == EMPTY || nextState.board[row][col] == player.name) 
-		{
-			return;
-		} 
-		else 
-		{
-			col--;
-			while (col >= 0) 
-			{
-				if (nextState.board[row][col] == player.name) 
-				{
-					position[0] = row;
-					position[1] = col;
-					flipPossible = true;
-					break;
-				} 
-				else if (nextState.board[row][col] == EMPTY) 
-				{
-					flipPossible = false;
-					break;
-				} 
-				else 
-				{
-					col--;
-				}
-			}
-		}
-		if (flipPossible) 
-		{
-			while (origCol > position[1]) 
-			{
-				origCol--;
-				nextState.board[row][origCol] = player.name;
-			}
-		} 
-	*/
-		}
-	private void doRightFlip(State nextState, int []nextMove, Player player) 
-	{
-		int row = nextMove[0];
-		int col =nextMove[1],origCol=nextMove[1];
-		int position[] = new int[2];
-		boolean flipPossible = false;
-		col++;
-		if (nextState.board[row][col] == EMPTY || nextState.board[row][col] == player.name) 
-		{
-			return;
-		} 
-		else 
-		{
-			col++;
-			while (col <= 7) {
-				if (nextState.board[row][col] == player.name) 
-				{
-					position[0] = row;
-					position[1] = col;
-					flipPossible = true;
-					break;
-				} 
-				else if (nextState.board[row][col] == EMPTY) 
-				{
-					flipPossible = false;
-					break;
-				} 
-				else 
-				{
-					col++;
-				}
-			}
-		}
-		if (flipPossible) 
-		{
-			while (origCol < position[1]) 
-			{
-				origCol++;
-				nextState.board[row][origCol] = player.name;
-			}
-		}
-	}
 	
-	private void doUpFlip(State nextState, int []nextMove,Player player) 
-	{
-		int row = nextMove[0],origRow=nextMove[0];
-		int col =nextMove[1];
-		boolean flipPossible = false;
-		int position[] = new int[2];
-		row--;
-		if (nextState.board[row][col] == EMPTY || nextState.board[row][col] == player.name) 
-		{
-			return;
-		} else {
-			row--;
-			while (row >= 0) {
-				if (nextState.board[row][col] == player.name) 
-				{
-					position[0] = row;
-					position[1] = col;
-					flipPossible = true;
-					break;
-				} 
-				else if (nextState.board[row][col] == EMPTY) 
-				{
-					flipPossible = false;
-					break;
-				} 
-				else 
-				{
-					row--;
-				}
-			}
-		}
-		if (flipPossible) 
-		{
-			while (origRow > position[0]) 
-			{
-				origRow--;
-				nextState.board[origRow][col] = player.name;
-			}
-		} 
-	}
-	private void doDownFlip(State nextState, int []nextMove,Player player) 
-	{
-		int row = nextMove[0],origRow=nextMove[0];
-		int col =nextMove[1];
-		boolean flipPossible = false;
-		int position[] = new int[2];
-		row++;
-		if (nextState.board[row][col] == EMPTY || nextState.board[row][col] == player.name) 
-		{
-			return;
-		} 
-		else 
-		{
-			row++;
-			while (row <= 7) 
-			{
-				if (nextState.board[row][col] == player.name) 
-				{
-					flipPossible = true;
-					position[0] = row;
-					position[1] = col;
-					break;
-				} 
-				else if (nextState.board[row][col] == EMPTY) 
-				{
-					flipPossible = false;
-					break;
-				} 
-				else 
-				{
-					row++;
-				}
-			}
-		}
-		if (flipPossible) 
-		{
-			while (origRow < position[0]) 
-			{
-				origRow++;
-				nextState.board[origRow][col] = player.name;
-			}
-		} 
-	}
-	private void doNorthEastFlip(State nextState, int []nextMove,Player player) 
-	{
-		int row = nextMove[0],origRow=nextMove[0];
-		int col =nextMove[1],origCol=nextMove[1];
-		row--;
-		col++;
-		boolean flipPossible = false;
-		int position[] = new int[2];
-
-		if (row >= 0 && col <= 7) {
-			if (nextState.board[row][col] == EMPTY || nextState.board[row][col] == player.name) 
-			{
-				return;
-			} 
-			else 
-			{
-				row--;
-				col++;
-				while (row >= 0 && col <= 7) 
-				{
-					if (nextState.board[row][col] == player.name) 
-					{
-						flipPossible = true;
-						position[0] = row;
-						position[1] = col;
-						break;
-					} 
-					else if (nextState.board[row][col] == EMPTY) 
-					{
-						flipPossible = false;
-						break;
-					} 
-					else 
-					{
-						col++;
-						row--;
-					}
-				}
-			}
-		}
-		if (flipPossible) 
-		{
-			while (origRow > position[0] && origCol < position[1]) 
-			{
-				origRow--;
-				origCol++;
-				nextState.board[origRow][origCol] = player.name;
-			}
-		} 
-	}
-	private void doNorthWestFlip(State nextState, int []nextMove,Player player) 
-	{
-		int row = nextMove[0],origRow=nextMove[0];
-		int col =nextMove[1],origCol=nextMove[1];
-		row--;
-		col--;
-		boolean flipPossible = false;
-		int position[] = new int[2];
-
-		if (row >= 0 && col >= 0) 
-		{
-			if (nextState.board[row][col] == EMPTY || nextState.board[row][col] == player.name) 
-			{
-				return;
-			} 
-			else 
-			{
-				col--;
-				row--;
-				while (row >= 0 && col >= 0 ) 
-				{
-					if (nextState.board[row][col] == player.name) 
-					{
-						position[0] = row;
-						position[1] = col;
-						flipPossible = true;
-						break;
-					} 
-					else if (nextState.board[row][col] == EMPTY) 
-					{
-						flipPossible = false;
-						break;
-					} 
-					else 
-					{
-						col--;
-						row--;
-					}
-				}
-			}
-		}
-		if (flipPossible) 
-		{
-			while (origRow > position[0] && origCol > position[1]) 
-			{
-				origRow--;
-				origCol--;
-				nextState.board[origRow][origCol] = player.name;
-			}
-		} 
-	}
-	private void doSouthWestFlip(State nextState, int []nextMove,Player player) 
-	{
-		int row = nextMove[0],origRow=nextMove[0];
-		int col =nextMove[1],origCol=nextMove[1];
-		row++;
-		col--;
-		boolean flipPossible = false;
-		int position[] = new int[2];
-
-		if (row <= 7 && col >= 0) 
-		{
-			if (nextState.board[row][col] == EMPTY || nextState.board[row][col] == player.name) 
-			{
-				return;
-			} 
-			else 
-			{
-				row++;
-				col--;
-				while (row <= 7 && col >= 0) 
-				{
-					if (nextState.board[row][col] == player.name) 
-					{
-						flipPossible = true;
-						position[0] = row;
-						position[1] = col;
-						break;
-					} 
-					else if (nextState.board[row][col] == EMPTY) 
-					{
-						flipPossible = false;
-						break;
-					} 
-					else 
-					{
-						col--;
-						row++;
-					}
-				}
-			}
-		}
-		if (flipPossible) 
-		{
-			while (origRow < position[0] && origCol > position[1]) 
-			{
-				origRow++;
-				origCol--;
-				nextState.board[origRow][origCol] = player.name;
-			}
-		} 
-	}
-	private void doSouthEastFlip(State nextState, int []nextMove,Player player) 
-	{
-		int row = nextMove[0],origRow=nextMove[0];
-		int col =nextMove[1],origCol=nextMove[1];
-		row++;
-		col++;
-		boolean flipPossible = false;
-		int position[] = new int[2];
-
-		if (row <= 7 && col <= 7) 
-		{
-			if (nextState.board[row][col] == EMPTY || nextState.board[row][col] == player.name) 
-			{
-				return;
-			} 
-			else 
-			{
-				row++;
-				col++;
-				while (row <= 7 && col <=7) 
-				{
-					if (nextState.board[row][col] == player.name) 
-					{
-						flipPossible = true;
-						position[0] = row;
-						position[1] = col;
-						break;
-					} 
-					else if (nextState.board[row][col] == EMPTY) 
-					{
-						flipPossible = false;
-						break;
-					} 
-					else 
-					{
-						col++;
-						row++;
-					}
-				}
-			}
-		}
-		if (flipPossible) 
-		{
-			while (origRow < position[0] && origCol < position[1]) 
-			{
-				origRow++;
-				origCol++;
-				nextState.board[origRow][origCol] = player.name;
-			}
-		} 
-	}
 	
-	private int[][] movesPossible(State currentState, Player player) 
-	{
-		ArrayList<int[]> movesPossible = new ArrayList<int[]>();
-		
-		for (int i = 0; i < currentState.board.length; i++) 
-		{
-			for (int j = 0; j < currentState.board[i].length; j++) 
-			{
-				if (currentState.board[i][j] == player.name) 
-				{
-					if (j > 0) 
-					{
-						// get legal moves on left side horizontally
-						int[] leftMove = checkLeftHorizontal(currentState, player,i,j);
-						addMove(movesPossible, leftMove);
-					}
-
-					if (j < 7) 
-					{
-						// get legal moves on right side horizontally
-						int[] rightMove = checkRightHorizontal(currentState, player,i,j );
-						addMove(movesPossible, rightMove);
-					}
-
-					if (i > 0) 
-					{
-						// get legal moves in up direction
-						int[] upMove = checkUpMove(currentState, player, i, j);
-						addMove(movesPossible, upMove);
-					}
-
-					if (i < 7) 
-					{
-						// get legal moves in down direction
-						int[] downMove = checkDownMove(currentState, player, i, j);
-						addMove(movesPossible, downMove);
-					}
-					
-					if(i > 0 && j < 7)
-					{
-						// get legal moves in north-east direction
-						int[] neMove=checkNorthEastMove(currentState, player, i, j);
-						addMove(movesPossible, neMove);
-					}
-					
-					if(i>0 && j > 0)
-					{
-						// get legal moves in north-west direction
-						int nwMove[]= checkNorthWestMove(currentState, player, i, j);
-						addMove(movesPossible, nwMove);
-					}
-					
-					if(i<7 && j<7)
-					{
-						// get legal moves in south-east direction
-						int seMove[]= checkSouthEastMove(currentState, player , i ,j);
-						addMove(movesPossible, seMove);
-					}
-					
-					if(i< 7 && j > 0)
-					{
-						//get legal moves in south-west direction
-						int swMove[] = checkSouthWestMove(currentState, player , i , j);
-						addMove(movesPossible, swMove);
-						
-					}
-
-				}
-			}
-		}
-		int [][] result= new int[movesPossible.size()][2];
-		for(int i=0;i<movesPossible.size();i++)
-		{
-			result[i]=movesPossible.get(i);
-		}
-		return result;
-	}
-	private int[] checkLeftHorizontal(State state, Player player, int row,int column) 
-	{
-
-		boolean leftMovePossible = false;
-		if (state.board[row][column - 1] == EMPTY || state.board[row][column - 1] == player.name) 
-		{
-			// the location is either empty or the same player is present
-			return null;
-		} 
-		else 
-		{
-			column--;
-			while (column > 0) 
-			{
-				column--;
-				if (state.board[row][column] == player.name) 
-				{
-					return null;
-				} 
-				else if (state.board[row][column] == EMPTY) 
-				{
-					leftMovePossible = true;
-					break;
-				}
-			}
-		}
-		if (leftMovePossible) 
-		{
-			return new int[]{row,column};
-		} 
-		else 
-		{
-			return null;
-		}
-	}
+	
+	
+	
 	private int[] loaCheckLeftHorizontal(State state, Player player, int row,int column) 
 	{
 
 		//boolean leftMovePossible = false;
 		int countCoins=0;
-		for(int i=0;i<7;i++)
+		for(int i=0;i<8;i++)
 		{
 			if(state.board[row][i]!=EMPTY)
 				countCoins++;
@@ -618,300 +67,12 @@ public class LoaGame {
 			if(i<0 ||(state.board[row][i]==player.getOtherPlayerName()))
 				return null;
 		}
+		if((column-countCoins<0) || state.board[row][column-countCoins]==player.name)
+			return null;
 		return new int[]{row,column-countCoins};
-			
-		/*
-		if (state.board[row][column - 1] == EMPTY || state.board[row][column - 1] == player.name) 
-		{
-			// the location is either empty or the same player is present
-			return null;
-		} 
-		else 
-		{
-			column--;
-			while (column > 0) 
-			{
-				column--;
-				if (state.board[row][column] == player.name) 
-				{
-					return null;
-				} 
-				else if (state.board[row][column] == EMPTY) 
-				{
-					leftMovePossible = true;
-					break;
-				}
-			}
-		}
-		if (leftMovePossible) 
-		{
-			return new int[]{row,column};
-		} 
-		else 
-		{
-			return null;
-		}
-		*/
-	}
-	private int[] checkRightHorizontal(State state, Player player, int row,int column) 
-	{
-
-		boolean rightMovePossible = false;
-		if (state.board[row][column + 1] == EMPTY || state.board[row][column + 1] == player.name) 
-		{
-			// the location is either empty or the same player is present
-			return null;
-		} 
-		else 
-		{
-			column++;
-			while (column < 7) 
-			{
-				column++;
-				if (state.board[row][column] == player.name) 
-				{
-					return null;
-				} 
-				else if (state.board[row][column] == EMPTY) 
-				{
-					rightMovePossible = true;
-					break;
-				}
-			}
-		}
-		if (rightMovePossible) 
-		{
-			return new int[]{row,column};
-		} 
-		else 
-		{
-			return null;
-		}
-	}
-	private int[] checkUpMove(State state, Player player, int row,int column ) 
-	{
-		boolean upFlipPossible = false;
-		if (state.board[row - 1][column] == EMPTY || state.board[row - 1][column] == player.name) 
-		{
-			// the location is either empty or the same player is present
-			return null;
-		} 
-		else 
-		{
-			row--;
-			while (row > 0) 
-			{
-				row--;
-				if (state.board[row][column] == player.name) 
-				{
-					return null;
-				} 
-				else if (state.board[row][column] == EMPTY) 
-				{
-					upFlipPossible = true;
-					break;
-				}
-			}
-		}
-		if (upFlipPossible) 
-		{
-			return new int[]{row,column};
-		} 
-		else 
-		{
-			return null;
-		}
-	}
-	private int[] checkDownMove(State state, Player player, int row,int column ) 
-	{
-		boolean downFlipPossible = false;
-		if (state.board[row + 1][column] == EMPTY || state.board[row + 1][column] == player.name) 
-		{
-			// the location is either empty or the same player is present
-			return null;
-		} 
-		else 
-		{
-			row++;
-			while (row < 7) 
-			{
-				row++;
-				if (state.board[row][column] == player.name) 
-				{
-					return null;
-				} else if (state.board[row][column] == EMPTY) 
-				{
-					downFlipPossible = true;
-					break;
-				}
-			}
-		}
-		if (downFlipPossible) 
-		{
-			return new int[]{row,column};
-		} 
-		else {
-			return null;
-		}
+		
 	}
 	
-	private int[] checkNorthEastMove(State state, Player player, int row,int col) 
-	{
-		boolean northEastMovePossible = false;
-		if (state.board[row - 1][col + 1] == EMPTY || state.board[row - 1][col + 1] == player.name) 
-		{
-			return null;
-		} 
-		else 
-		{
-			row--;
-			col++;
-			while (row > 0 && col < 7) 
-			{
-				row--;
-				col++;
-				if (state.board[row][col] == player.name) 
-				{
-					return null;
-				} 
-				else if (state.board[row][col] == EMPTY) 
-				{
-					northEastMovePossible = true;
-					break;
-				}
-			}
-		}
-		if (northEastMovePossible) 
-		{
-
-			return new int[]{row,col};
-		} 
-		else 
-		{
-			return null;
-		}
-	}
-	private int[] checkNorthWestMove(State state, Player player, int row,int col) 
-	{
-		boolean northWestMovePossible = false;
-		if (state.board[row - 1][col - 1] == EMPTY || state.board[row - 1][col - 1] == player.name) 
-		{
-			return null;
-		} 
-		else 
-		{
-			row--;
-			col--;
-			while (row > 0 && col > 0) 
-			{
-				row--;
-				col--;
-				if (state.board[row][col] == player.name) 
-				{
-					return null;
-				} 
-				else if (state.board[row][col] == EMPTY) 
-				{
-					northWestMovePossible = true;
-					break;
-				}
-			}
-		}
-		if (northWestMovePossible) 
-		{
-
-			return new int[]{row,col};
-		} 
-		else 
-		{
-			return null;
-		}
-	}
-	private int[] checkSouthEastMove(State state, Player player, int row,int col) 
-	{
-		boolean southEastMovePossible = false;
-		if (state.board[row + 1][col + 1] == EMPTY || state.board[row + 1][col + 1] == player.name) 
-		{
-			return null;
-		} 
-		else 
-		{
-			row++;
-			col++;
-			while (row < 7 && col < 7) 
-			{
-				row++;
-				col++;
-				if (state.board[row][col] == player.name) 
-				{
-					return null;
-				} else if (state.board[row][col] == EMPTY) 
-				{
-					southEastMovePossible = true;
-					break;
-				}
-			}
-		}
-		if (southEastMovePossible) 
-		{
-
-			return new int[]{row,col};
-		} 
-		else 
-		{
-			return null;
-		}
-	}
-	private int[] checkSouthWestMove(State state, Player player, int row,int col) 
-	{
-		boolean southEastMovePossible = false;
-		if (state.board[row + 1][col - 1] == EMPTY || state.board[row + 1][col - 1] == player.name) 
-		{
-			return null;
-		} 
-		else 
-		{
-			row++;
-			col--;
-			while (row < 7 && col > 0) 
-			{
-				row++;
-				col--;
-				if (state.board[row][col] == player.name) 
-				{
-					return null;
-				} else if (state.board[row][col] == EMPTY) 
-				{
-					southEastMovePossible = true;
-					break;
-				}
-			}
-		}
-		if (southEastMovePossible) 
-		{
-
-			return new int[]{row,col};
-		} 
-		else 
-		{
-			return null;
-		}
-	}
-	private void addMove(ArrayList<int[]> legalMoves, int[] nextMove) 
-	{
-		if(nextMove==null)
-		{
-			return;
-		}
-		String toCheck=nextMove[0]+""+nextMove[1];
-		for(int i=0;i<legalMoves.size();i++)
-		{
-			String check=legalMoves.get(i)[0]+""+legalMoves.get(i)[1];
-			if(check.equals(toCheck))
-				return;
-		}
-		legalMoves.add(nextMove);
-	}
 	private void loaAddMove(ArrayList<int[]> legalMoves, int[] startMove, int[] endMove) 
 	{
 		if(startMove==null || endMove==null)
@@ -931,140 +92,180 @@ public class LoaGame {
 		int endC=endMove[1];
 		int []nextMove={startR,startC,endR,endC};
 		legalMoves.add(nextMove);
-	}
-	private boolean isTerminalState(State state) 
-	{
-		// check for terminal state
-		boolean hasEmptySquare = false,whitePiece = false,blackPiece = false;
-
-		for (int i = 0; i < state.board.length; i++) 
-		{
-			for (int j = 0; j < state.board[i].length; j++) 
-			{
-				if (state.board[i][j] == EMPTY) 
-				{
-					hasEmptySquare = true;
-				}
-
-				if (state.board[i][j] == W) 
-				{
-					whitePiece = true;
-				}
-
-				if (state.board[i][j] == B) 
-				{
-					blackPiece = true;
-				}
-			}
-		}
-
-		if (!hasEmptySquare) 
-		{
-			return true;
-		} 
-		else if (!whitePiece || !blackPiece) 
-		{
-			return true;
-		} 
-		return false;
+		System.out.println("Added move {" + nextMove[0]+","+ nextMove[1]+"} to {"+ nextMove[2] +","+ nextMove[3]+"}");
 	}
 	
-	private int getUtilityValue(State state,Player player) 
-	{
-		int playerPieces = 0;
-		int opponentPieces = 0;
-
-		for (int i = 0; i < state.board.length; i++) 
-		{
-			for (int j = 0; j < state.board[i].length; j++) 
-			{
-				if (state.board[i][j] != EMPTY) 
-				{
-					if (state.board[i][j] == player.name) 
-					{
-						playerPieces++;
-					} 
-					else 
-					{
-						opponentPieces++;
-					}
-				}
-			}
-		}
-		int result=playerPieces - opponentPieces;
-		return result;
-	}
-	
-	private int getUtilityValueImproved(State state,Player player) 
-	{
-		// improved version. add 
-		int playerPieces = 0;
-		int opponentPieces = 0;
-
-		for (int i = 0; i < state.board.length; i++) 
-		{
-			for (int j = 0; j < state.board[i].length; j++) 
-			{
-				if (state.board[i][j] != EMPTY) 
-				{
-					if (state.board[i][j] == player.name) 
-					{
-						playerPieces++;
-						playerPieces += Math.abs(3-i);
-					} 
-					else 
-					{
-						opponentPieces++;
-						opponentPieces += Math.abs(3-j);
-					}
-				}
-			}
-		}
-		int result=playerPieces - opponentPieces;
-		return result;
-	}
 	public int[] alphaBetaSearch(State currentState, Player player, int maxDepth)
 	{
-		State nextState=new State(currentState);
-		Integer alpha=Integer.MIN_VALUE;
-		Integer beta=Integer.MAX_VALUE;
-		int depth=0;
-		
-		ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
-		//int[][] possibleActions = movesPossible(nextState, player);
-		int[][] loaPossibleActions = loaMovesPossible(nextState, player);
-		if(isTerminalState(currentState))
-		{
-			System.out.println("Terminal state reached ");
-			return null;	
-		}
-		if(loaPossibleActions.length>0)
-		{
-			for(int[]move : loaPossibleActions)
+		try{
+			State nextState=new State(currentState);
+			Integer alpha=Integer.MIN_VALUE;
+			Integer beta=Integer.MAX_VALUE;
+			int depth=0;
+
+			ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
+			//int[][] possibleActions = movesPossible(nextState, player);
+			int[][] loaPossibleActions = loaMovesPossible(nextState, player);
+			//if(isTerminalState(currentState))
+			if(isGameOver(currentState))
 			{
-				State newState= getNextState(nextState,move,player);
-				nodesExpanded++;
-				int val = minValue(newState,move,player.getOpponent(),depth+1,maxDepth,alpha,beta);
-				SearchNode node= new SearchNode(move,val);
-				nodesBucket.add(node);
-				sortBucketNodesForMax(nodesBucket);
-				alpha = nodesBucket.get(0).getValue();
+				System.out.println("Terminal state reached ");
+				return null;	
 			}
-		}
-		if(nodesBucket.size()>0)
+			if(loaPossibleActions.length>0)
+			{
+				for(int[]move : loaPossibleActions)
+				{
+					State newState= getLoaNextState(nextState, new int[]{move[0], move[1]}, new int[]{move[2],move[3]},player);
+					nodesExpanded++;
+					int val = minValue(newState,move,player.getOpponent(),depth+1,maxDepth,alpha,beta);
+					SearchNode node= new SearchNode(move,val);
+					nodesBucket.add(node);
+					sortBucketNodesForMax(nodesBucket);
+					alpha = nodesBucket.get(0).getValue();
+				}
+			}
+			if(nodesBucket.size()>0)
+			{
+				sortBucketNodesForMax(nodesBucket);
+				System.out.println("Moves to take : " + nodesBucket.get(0).toString());
+				return nodesBucket.get(0).getMove();
+			}
+		}catch(Exception e)
 		{
-			sortBucketNodesForMax(nodesBucket);
-			System.out.println("Moves to take : " + nodesBucket.get(0).toString());
-			return nodesBucket.get(0).getMove();
+			e.printStackTrace();
 		}
 		return null;
+	}
+	/**
+	 * @param currentState
+	 * @return
+	 */
+	private boolean isGameOver(State currentState) 
+	{
+		return piecesContiguous(currentState,W) || piecesContiguous(currentState,B);
+	}
+	
+	private int noOfPiecesDisContiguous(State currentState, Player pl) 
+	{
+		//Player pl= new Player(w);
+		ArrayList<int[]> remaining = getCoordinates(currentState,pl);
+        if (remaining.size() <= 1) 
+        {
+            return 0;
+        }
+        /*ArrayList<int[]> grouped = new ArrayList<int[]>();
+        grouped.add(remaining.get(0)); remaining.remove(0);
+        boolean connected, allAway;
+        while (remaining.size() != 0) {
+            allAway = true;
+            for (int[] piece : remaining) {
+                connected = isConnected(grouped, piece);
+                if (connected) {
+                    grouped.add(piece); remaining.remove(piece);
+                    break;
+                }
+            }
+        }*/
+        int disconnected=0;
+        for (int[] piece : remaining)
+        {
+        	int row=piece[0], col=piece[1];
+        	boolean connected=false;
+        	//check left
+        	if(col-1>= 0 && currentState.board[row][col-1]==pl.name)
+        	{
+        		connected=true;
+        		break;
+        	}
+        	//check right
+        	if(col+1<8 && currentState.board[row][col+1]==pl.name)
+        	{
+        		connected=true;
+        		break;
+        	}
+        	//check down
+        	if(row+1<8 && currentState.)
+        	
+        	
+        }
+        System.out.println("No of disconnected pieces: " + disconnected);
+        return remaining.size();
+	}
+	/**
+	 * @param currentState 
+	 * @param w2
+	 * @return
+	 */
+	private boolean piecesContiguous(State currentState, char w) 
+	{
+		Player pl= new Player(w);
+		ArrayList<int[]> remaining = getCoordinates(currentState,pl);
+        if (remaining.size() <= 1) 
+        {
+            return true;
+        }
+        ArrayList<int[]> grouped = new ArrayList<int[]>();
+        grouped.add(remaining.get(0)); remaining.remove(0);
+        boolean connected, allAway;
+        
+        while (remaining.size() != 0) 
+        {
+            allAway = true;
+            for (int[] piece : remaining) 
+            {
+                connected = isConnected(grouped, piece);
+                if (connected) 
+                {
+                    grouped.add(piece); remaining.remove(piece);
+                    allAway = false;
+                    break;
+                }
+            }
+            if (allAway) {
+                return false;
+            }
+        }
+		
+        return true;
+	}
+	
+	private static boolean isConnected(ArrayList<int[]> grouped, int[] piece) 
+    {
+        for (int[] groupedCoin : grouped) 
+        {
+            int xd = Math.abs(piece[0] - groupedCoin[0]), yd = Math.abs(piece[1] - groupedCoin[1]);
+            if (xd <= 1 && yd <= 1) {
+                return true;
+            }
+        }
+        return false;
+    }
+	/**
+	 * @param currentState 
+	 * @param pl
+	 * @return
+	 */
+	private ArrayList<int[]> getCoordinates(State currentState, Player pl) 
+	{
+		ArrayList<int[]> coor= new ArrayList<int[]>();
+		for(int i=0;i<8;i++)
+		{
+			for(int j=0;j<8;j++)
+			{
+				if(currentState.board[i][j]==pl.name)
+					coor.add(new int[]{i,j});
+					
+			}
+		}
+		return coor;
 	}
 	/**
 	 * @param nextState
 	 * @param player2
 	 * @return
 	 */
-	private int[][] loaMovesPossible(State currentState, Player player2) 
+	private int[][] loaMovesPossible(State currentState, Player player) 
 	{
 
 		ArrayList<int[]> movesPossible = new ArrayList<int[]>();
@@ -1111,28 +312,28 @@ public class LoaGame {
 					{
 						// get legal moves in north-east direction
 						int[] neMove=loaCheckNorthEastMove(currentState, player, i, j);
-						addMove(movesPossible, neMove);
+						loaAddMove(movesPossible,new int[]{i,j},neMove);
 					}
 					
 					if(i>0 && j > 0)
 					{
 						// get legal moves in north-west direction
-						int nwMove[]= checkNorthWestMove(currentState, player, i, j);
-						addMove(movesPossible, nwMove);
+						int nwMove[]= loaCheckNorthWestMove(currentState, player, i, j);
+						loaAddMove(movesPossible,new int[]{i,j}, nwMove);
 					}
 					
 					if(i<7 && j<7)
 					{
 						// get legal moves in south-east direction
-						int seMove[]= checkSouthEastMove(currentState, player , i ,j);
-						addMove(movesPossible, seMove);
+						int seMove[]= loaCheckSouthEastMove(currentState, player , i ,j);
+						loaAddMove(movesPossible, new int[]{i,j}, seMove);
 					}
 					
 					if(i< 7 && j > 0)
 					{
 						//get legal moves in south-west direction
-						int swMove[] = checkSouthWestMove(currentState, player , i , j);
-						addMove(movesPossible, swMove);
+						int swMove[] = loaCheckSouthWestMove(currentState, player , i , j);
+						loaAddMove(movesPossible,new int[]{i,j}, swMove);
 						
 					}
 
@@ -1155,20 +356,188 @@ public class LoaGame {
 	 * @param j
 	 * @return
 	 */
+	private int[] loaCheckSouthWestMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		if(row+column<=7)
+		{
+			int startR=row+column,startC=0;
+			for(int k=startR;k>=0 && startC<8;k--,startC++)
+			{
+				if(state.board[k][startC]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+			
+		}
+		else
+		{
+			int startC=(row+column)-7,startR=7;
+			for(int k=startC;k<8 && startR>=0;k++,startR--)
+			{
+				if(state.board[startR][k]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+		}
+		// TO-DO
+		int startR=row,startC=column;
+		for(int k=startR;k<startR+countCoins;k++,startC--)
+		{
+			if(k>7 || startC<0 ||(state.board[k][startC]==player.getOtherPlayerName()))
+				return null;
+				
+		}
+		if((row+countCoins>7) || (column-countCoins<0) || state.board[row+countCoins][column-countCoins]==player.name)
+			return null;
+		return new int[]{row+countCoins,column-countCoins}; 
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckSouthEastMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		if(row>=column)
+		{
+			int startR=row-column,startC=0;
+			for(int k=startR;k<8 && startC<8;k++,startC++)
+			{
+				if(state.board[k][startC]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+			
+		}
+		else
+		{
+			int startC=column-row,startR=0;
+			for(int k=startC;k<8 && startR<8;k++,startR++)
+			{
+				if(state.board[startR][k]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+		}
+		// TO-DO
+		int startR=row,startC=column;
+		for(int k=startR;k<startR+countCoins;k++,startC++)
+		{
+			if(k>7 || startC>7 ||(state.board[k][startC]==player.getOtherPlayerName()))
+				return null;
+				
+		}
+		if((row+countCoins>7) || (column+countCoins>7) || state.board[row+countCoins][column+countCoins]==player.name)
+			return null;
+		return new int[]{row+countCoins,column+countCoins}; 
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckNorthWestMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		if(row>=column)
+		{
+			int startR=row-column,startC=0;
+			for(int k=startR;k<8 && startC<8;k++,startC++)
+			{
+				if(state.board[k][startC]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+			
+		}
+		else
+		{
+			int startC=column-row,startR=0;
+			for(int k=startC;k<8 && startR<8 ;k++,startR++)
+			{
+				if(state.board[startR][k]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+		}
+		// TO-DO
+		int startR=row,startC=column;
+		for(int k=startR;k>startR-countCoins;k--,startC--)
+		{
+			if(k<0 || startC<0 ||(state.board[k][startC]==player.getOtherPlayerName()))
+				return null;
+				
+		}
+		if((row-countCoins<0) || (column-countCoins<0) || state.board[row-countCoins][column-countCoins]==player.name)
+			return null;
+		return new int[]{row-countCoins,column-countCoins}; 
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
 	private int[] loaCheckNorthEastMove(State state, Player player, int row,int column) 
 	{
 		int countCoins=0;
-		for(int i=0;i<7;i++)
+		if(row+column <= 7)
 		{
-			if(state.board[i][row]!=EMPTY)
-				countCoins++;
+			int startR=row+column,startC=0;
+			for(int k=startR;k>=0 && startC<8;k--,startC++)
+			{
+				if(state.board[k][startC]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+			
 		}
-		for(int i=row;i<column+countCoins;i++)
+		else
 		{
-			if(i>7 ||(state.board[i][row]==player.getOtherPlayerName()))
+			int startC=(row+column)-7,startR=7;
+			for(int k=startC;k<8 && startR>=0;k++,startR--)
+			{
+				if(state.board[startR][k]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+		}
+		int startR=row,startC=column;
+		for(int k=startR;k>startR-countCoins;k--,startC++)
+		{
+			if(k<0 || startC>7 ||(state.board[k][startC]==player.getOtherPlayerName()))
 				return null;
+				
 		}
-		return new int[]{row,column+countCoins};
+		if((row-countCoins<0) || (column+countCoins>7) || state.board[row-countCoins][column+countCoins]==player.name)
+			return null;
+		return new int[]{row-countCoins,column+countCoins}; 
 	
 	}
 	/**
@@ -1181,17 +550,19 @@ public class LoaGame {
 	private int[] loaCheckDownMove(State state, Player player, int row,int column) 
 	{
 		int countCoins=0;
-		for(int i=0;i<7;i++)
+		for(int i=0;i<8;i++)
 		{
-			if(state.board[i][row]!=EMPTY)
+			if(state.board[i][column]!=EMPTY)
 				countCoins++;
 		}
-		for(int i=row;i<column+countCoins;i++)
+		for(int i=row;i<row+countCoins;i++)
 		{
-			if(i>7 ||(state.board[i][row]==player.getOtherPlayerName()))
+			if(i>7 ||(state.board[i][column]==player.getOtherPlayerName()))
 				return null;
 		}
-		return new int[]{row,column+countCoins};
+		if((row+countCoins>7) || state.board[row+countCoins][column]==player.name)
+			return null;
+		return new int[]{row+countCoins,column};
 	
 	}
 	/**
@@ -1204,16 +575,18 @@ public class LoaGame {
 	private int[] loaCheckUpMove(State state, Player player, int row,int column) 
 	{
 		int countCoins=0;
-		for(int i=0;i<7;i++)
+		for(int i=0;i<8;i++)
 		{
-			if(state.board[i][row]!=EMPTY)
+			if(state.board[row][i]!=EMPTY)
 				countCoins++;
 		}
-		for(int i=row;i>column-countCoins;i--)
+		for(int i=column;i>column-countCoins;i--)
 		{
-			if(i<0 ||(state.board[i][row]==player.getOtherPlayerName()))
+			if(i<0 ||(state.board[row][i]==player.getOtherPlayerName()))
 				return null;
 		}
+		if((column-countCoins<0) || state.board[row][column-countCoins]==player.name)
+			return null;
 		return new int[]{row,column-countCoins};
 	
 	}
@@ -1228,7 +601,7 @@ public class LoaGame {
 	{
 		// TODO Auto-generated method stub
 		int countCoins=0;
-		for(int i=0;i<7;i++)
+		for(int i=0;i<8;i++)
 		{
 			if(state.board[row][i]!=EMPTY)
 				countCoins++;
@@ -1238,6 +611,8 @@ public class LoaGame {
 			if(i>7 ||(state.board[row][i]==player.getOtherPlayerName()))
 				return null;
 		}
+		if((column+countCoins>7) || state.board[row][column+countCoins]==player.name)
+			return null;
 		return new int[]{row,column+countCoins};
 	}
 	private void sortBucketNodesForMax(ArrayList<SearchNode> nodesBucket) 
@@ -1255,10 +630,10 @@ public class LoaGame {
 				else 
 				{
 					// if value is same, pick the smallest row number
-					int row1 = n1.getMove()[0];
-					int col1 = n1.getMove()[1];
-					int row2 = n2.getMove()[0];
-					int col2 = n2.getMove()[1];
+					int row1 = n1.getMove()[2];
+					int col1 = n1.getMove()[3];
+					int row2 = n2.getMove()[2];
+					int col2 = n2.getMove()[3];
 					if (row1 != row2) 
 					{
 						return row1 - row2;
@@ -1274,47 +649,62 @@ public class LoaGame {
 	}
 	private int minValue(State state, int[] prevMove, Player currPlayer, int depth,int maxDepth, Integer alpha, Integer beta) 
 	{
-		if(debugging) System.out.println("After minValue is called");
-		State nextState=new State(state);
 		ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
-		if(depth==maxDepth || isTerminalState(nextState))
-		{
-			int value=getUtilityValue(nextState, currPlayer.getOpponent());
-			/*
-			 * Use an improved version of utility function in which you can more weightage is given to corner and sides
-			 */
-			//int value=getUtilityValueImproved(nextState,currPlayer.getOpponent());
-			if(debugging) System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ min Depth reached ");
-			return value;
-		}
-		int[][] possibleActions = movesPossible(nextState, currPlayer);
-		if(possibleActions.length>0)
-		{
-			for(int[]move : possibleActions)
+		try{
+			if(debugging) System.out.println("After minValue is called");
+			State nextState=new State(state);
+			if(depth==maxDepth || isGameOver(nextState))
 			{
-				State newState= getNextState(nextState,move,currPlayer);
-				nodesExpanded++;
-				int val = maxValue(newState,move,currPlayer.getOpponent(),depth+1,maxDepth,alpha,beta);
-				SearchNode node= new SearchNode(move,val);
-				nodesBucket.add(node);
-				sortBucketNodesForMin(nodesBucket);
-				int minVal=nodesBucket.get(0).getValue();
-				if(minVal<alpha)
-				{
-					return minVal;
-				}
-				if(minVal<beta)
-				{
-					beta=minVal;
-				}
-				nextState= new State(state);
+				int value=loaGetUtilityValue(nextState, currPlayer.getOpponent());
+				/*
+				 * Use an improved version of utility function in which you can more weightage is given to corner and sides
+				 */
+				//int value=getUtilityValueImproved(nextState,currPlayer.getOpponent());
+				if(debugging) System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ min Depth reached ");
+				return value;
 			}
+			int[][] possibleActions = loaMovesPossible(nextState, currPlayer);
+			if(possibleActions.length>0)
+			{
+				for(int[]move : possibleActions)
+				{
+					State newState= getLoaNextState(nextState, new int[]{move[0],move[1]}, new int[]{move[2], move[3]},currPlayer);
+					nodesExpanded++;
+					int val = maxValue(newState,move,currPlayer.getOpponent(),depth+1,maxDepth,alpha,beta);
+					SearchNode node= new SearchNode(move,val);
+					nodesBucket.add(node);
+					sortBucketNodesForMin(nodesBucket);
+					int minVal=nodesBucket.get(0).getValue();
+					if(minVal<alpha)
+					{
+						return minVal;
+					}
+					if(minVal<beta)
+					{
+						beta=minVal;
+					}
+					nextState= new State(state);
+				}
+			}
+			sortBucketNodesForMin(nodesBucket);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
 		}
-		sortBucketNodesForMin(nodesBucket);
 		return nodesBucket.get(0).getValue();
 	}
 	
 	
+	/**
+	 * @param nextState
+	 * @param opponent
+	 * @return
+	 */
+	private int loaGetUtilityValue(State state, Player pl) 
+	{
+		int noOfDisconnected=noOfPiecesDisContiguous(state, pl);
+		return (12-noOfDisconnected);
+	}
 	private void sortBucketNodesForMin(ArrayList<SearchNode> nodesBucket) 
 	{
 		Collections.sort(nodesBucket, new Comparator<SearchNode>() 
@@ -1329,10 +719,10 @@ public class LoaGame {
 				else 
 				{
 					// if value is same, pick the smallest row number
-					int row1 = n1.getMove()[0];
-					int col1 = n1.getMove()[1];
-					int row2 = n2.getMove()[0];
-					int col2 = n2.getMove()[1];
+					int row1 = n1.getMove()[2];
+					int col1 = n1.getMove()[3];
+					int row2 = n2.getMove()[2];
+					int col2 = n2.getMove()[3];
 					if (row1 != row2) 
 					{
 						return row1 - row2;
@@ -1348,43 +738,48 @@ public class LoaGame {
 	private int maxValue(State state, int[] prevMove, Player currPlayer, int depth,int maxDepth, Integer alpha, Integer beta) 
 	{
 
-		if(debugging) System.out.println("After maxvalue is called ");
-		State nextState=new State(state);
 		ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
-		if(depth==maxDepth || isTerminalState(nextState))
-		{
-			int value=getUtilityValue(nextState, currPlayer);
-			/*
-			 * Use an improved version of utility function in which you can more weightage is given to corner and sides
-			 */
-			//int value=getUtilityValueImproved(nextState,currPlayer);
-			if(debugging) System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ max Depth reached");
-			return value;
-		}
-		int[][] possibleActions = movesPossible(nextState, currPlayer);
-		if(possibleActions.length>0)
-		{
-			for(int[]move : possibleActions)
+		try{
+			if(debugging) System.out.println("After maxvalue is called ");
+			State nextState=new State(state);
+			if(depth==maxDepth || isGameOver(nextState))
 			{
-				State newState= getNextState(nextState,move,currPlayer);
-				nodesExpanded++;
-				int val = minValue(newState,move,currPlayer.getOpponent(),depth+1,maxDepth,alpha,beta);
-				SearchNode node= new SearchNode(move,val);
-				nodesBucket.add(node);
-				sortBucketNodesForMax(nodesBucket);
-				int maxVal=nodesBucket.get(0).getValue();
-				if(maxVal>=beta)
-				{
-					return maxVal;
-				}
-				if(maxVal> alpha)
-				{
-					alpha=maxVal;
-				}
-				nextState= new State(state);
+				int value=loaGetUtilityValue(nextState, currPlayer);
+				/*
+				 * Use an improved version of utility function in which you can more weightage is given to corner and sides
+				 */
+				//int value=getUtilityValueImproved(nextState,currPlayer);
+				if(debugging) System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ max Depth reached");
+				return value;
 			}
+			int[][] possibleActions = loaMovesPossible(nextState, currPlayer);
+			if(possibleActions.length>0)
+			{
+				for(int[]move : possibleActions)
+				{
+					State newState= getLoaNextState(nextState, new int[]{move[0],move[1]}, new int[]{move[2], move[3]},currPlayer);
+					nodesExpanded++;
+					int val = minValue(newState,move,currPlayer.getOpponent(),depth+1,maxDepth,alpha,beta);
+					SearchNode node= new SearchNode(move,val);
+					nodesBucket.add(node);
+					sortBucketNodesForMax(nodesBucket);
+					int maxVal=nodesBucket.get(0).getValue();
+					if(maxVal>=beta)
+					{
+						return maxVal;
+					}
+					if(maxVal> alpha)
+					{
+						alpha=maxVal;
+					}
+					nextState= new State(state);
+				}
+			}
+			sortBucketNodesForMax(nodesBucket);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
 		}
-		sortBucketNodesForMax(nodesBucket);
 		return nodesBucket.get(0).getValue();
 	}
 	public static void main(String[] args) {
@@ -1436,13 +831,13 @@ public class LoaGame {
 				if(move!=null)
 				{
 					System.out.println("New State ");
-					state2=game.getNextState(origState,move,game.player.getOpponent());
+					state2=game.getLoaNextState(origState,new int[]{move[0],move[1]}, new int[]{move[2],move[3]},game.player.getOpponent());
 					state2.printBoard();
 					game.gameState=state2;
 				}
 				if(state2!=null)
 				{
-					possibleActions = game.movesPossible(state2, game.player);
+					possibleActions = game.loaMovesPossible(state2, game.player);
 				}
 			}while(possibleActions!=null && possibleActions.length>0);
 
@@ -1471,7 +866,7 @@ public class LoaGame {
 		int fc=moveEnd[1];
 		nextState.board[fr][fc]=player.name;
 		nextState.board[r][c]=EMPTY;
-		
+		nextState.printBoard();
 		return nextState;
 	}
 	/**
@@ -1487,6 +882,11 @@ public class LoaGame {
 		int c=moveStart[1];
 		int fr=moveEnd[0];
 		int fc=moveEnd[1];
+		
+		if(gameState.board[fr][fc]==player.name)
+		{
+			return false;
+		}
 		
 		// check left move
 		if(r==fr && fc<c)
@@ -1555,7 +955,7 @@ public class LoaGame {
 		}
 		
 		// check south move
-		if(c==fc && r<fc)
+		if(c==fc && r<fr)
 		{
 			int noCoin=0;
 			for(int j=0;j<8;j++)
@@ -1566,7 +966,7 @@ public class LoaGame {
 				}
 					
 			}
-			if(noCoin!=Math.abs(fc-c))
+			if(noCoin!=Math.abs(fr-r))
 				return false;
 			for(int i=r;i<fr;i++)
 			{
@@ -1583,7 +983,7 @@ public class LoaGame {
 			if(r>=c)
 			{
 				int startR=r-c,startC=0;
-				for(int k=startR;k<8;k++,startC++)
+				for(int k=startR;k<8 && startC<8;k++,startC++)
 				{
 					if(gameState.board[k][startC]!=EMPTY)
 					{
@@ -1596,7 +996,7 @@ public class LoaGame {
 			else
 			{
 				int startC=c-r,startR=0;
-				for(int k=startC;k<8;k++,startR++)
+				for(int k=startC;k<8 && startR<8;k++,startR++)
 				{
 					if(gameState.board[startR][k]!=EMPTY)
 					{
@@ -1623,7 +1023,7 @@ public class LoaGame {
 			if(r+c <= 7)
 			{
 				int startR=r+c,startC=0;
-				for(int k=startR;k<8;k++,startC++)
+				for(int k=startR;k>=0 && startC<8;k--,startC++)
 				{
 					if(gameState.board[k][startC]!=EMPTY)
 					{
@@ -1636,7 +1036,7 @@ public class LoaGame {
 			else
 			{
 				int startC=(r+c)-7,startR=7;
-				for(int k=startC;k<8;k++,startR--)
+				for(int k=startC;k<8 && startR>=0;k++,startR--)
 				{
 					if(gameState.board[startR][k]!=EMPTY)
 					{
@@ -1662,7 +1062,7 @@ public class LoaGame {
 			if(r>=c)
 			{
 				int startR=r-c,startC=0;
-				for(int k=startR;k<8;k++,startC++)
+				for(int k=startR;k<8 && startC<8;k++,startC++)
 				{
 					if(gameState.board[k][startC]!=EMPTY)
 					{
@@ -1675,7 +1075,7 @@ public class LoaGame {
 			else
 			{
 				int startC=c-r,startR=0;
-				for(int k=startC;k<8;k++,startR++)
+				for(int k=startC;k<8 && startR<8;k++,startR++)
 				{
 					if(gameState.board[startR][k]!=EMPTY)
 					{
@@ -1701,7 +1101,7 @@ public class LoaGame {
 			if(r+c<=7)
 			{
 				int startR=r+c,startC=0;
-				for(int k=startR;k>=0;k--,startC++)
+				for(int k=startR;k>=0 && startC<8;k--,startC++)
 				{
 					if(gameState.board[k][startC]!=EMPTY)
 					{
@@ -1714,7 +1114,7 @@ public class LoaGame {
 			else
 			{
 				int startC=(r+c)-7,startR=7;
-				for(int k=startC;k<8;k--,startR--)
+				for(int k=startC;k<8 && startR>=0;k++,startR--)
 				{
 					if(gameState.board[startR][k]!=EMPTY)
 					{
