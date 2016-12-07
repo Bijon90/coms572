@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.Stack;
 
 
 /*
@@ -19,10 +20,13 @@ public class LoaGame {
 	public static final char W='X',B='O',EMPTY='_';
 	State gameState;
 	Player player;
-	static boolean debugging=true;
+	static boolean debugging=false;
 	static int defaultDepth=3;
 	static int delay=1;
 	static int nodesExpanded=0;
+	static int size=8;
+	int directions [][] = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
+	int [][] visitedNodes;
 	
 	public LoaGame()
 	{
@@ -32,6 +36,7 @@ public class LoaGame {
 		gameState.printBoard();
 		player= new Player(B);
 		player.setOtherPlayerName(W);
+		visitedNodes= new int[size][size]; // state of each position. 0=not visited, 1=in stack, 2=visited   
 	}
 	/*
 	 * Initialize the board
@@ -92,7 +97,7 @@ public class LoaGame {
 		int endC=endMove[1];
 		int []nextMove={startR,startC,endR,endC};
 		legalMoves.add(nextMove);
-		System.out.println("Added move {" + nextMove[0]+","+ nextMove[1]+"} to {"+ nextMove[2] +","+ nextMove[3]+"}");
+		//System.out.println("Added move {" + nextMove[0]+","+ nextMove[1]+"} to {"+ nextMove[2] +","+ nextMove[3]+"}");
 	}
 	
 	public int[] alphaBetaSearch(State currentState, Player player, int maxDepth)
@@ -185,7 +190,7 @@ public class LoaGame {
         		break;
         	}
         	//check down
-        	if(row+1<8 && currentState.)
+        	//if(row+1<8 && currentState.)
         	
         	
         }
@@ -661,9 +666,12 @@ public class LoaGame {
 				 */
 				//int value=getUtilityValueImproved(nextState,currPlayer.getOpponent());
 				if(debugging) System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ min Depth reached ");
+				if(debugging) System.out.println("Minvalue : " + value);
 				return value;
 			}
 			int[][] possibleActions = loaMovesPossible(nextState, currPlayer);
+			if(possibleActions.length<1)
+				System.out.println("Possible action size is zero");
 			if(possibleActions.length>0)
 			{
 				for(int[]move : possibleActions)
@@ -702,13 +710,14 @@ public class LoaGame {
 	 */
 	private int loaGetUtilityValue(State state, Player pl) 
 	{
-		int noOfDisconnected=noOfPiecesDisContiguous(state, pl);
-		return (12-noOfDisconnected);
+		return evaluate(state,pl);
+		/*int noOfDisconnected=noOfPiecesDisContiguous(state, pl);
+		return (12-noOfDisconnected);*/
 	}
 	private void sortBucketNodesForMin(ArrayList<SearchNode> nodesBucket) 
 	{
 		Collections.sort(nodesBucket, new Comparator<SearchNode>() 
-				{
+		{
 			@Override
 			public int compare(SearchNode n1, SearchNode n2) 
 			{
@@ -733,7 +742,7 @@ public class LoaGame {
 					}
 				}
 			}
-				});
+		});
 	}
 	private int maxValue(State state, int[] prevMove, Player currPlayer, int depth,int maxDepth, Integer alpha, Integer beta) 
 	{
@@ -750,6 +759,7 @@ public class LoaGame {
 				 */
 				//int value=getUtilityValueImproved(nextState,currPlayer);
 				if(debugging) System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ max Depth reached");
+				if(debugging) System.out.println("MaxValue : " + value);
 				return value;
 			}
 			int[][] possibleActions = loaMovesPossible(nextState, currPlayer);
@@ -823,7 +833,8 @@ public class LoaGame {
 
 				long start= new Date().getTime();
 				int move[]=game.alphaBetaSearch(state,game.player.getOpponent(),depth);
-				System.out.println("Agent generated the move. Nodes expanded >> "+ nodesExpanded);
+				//System.out.println("Agent generated the move. Nodes expanded >> "+ nodesExpanded);
+				System.out.println("Agent generated the move. Move = {"+move[0]+","+move[1]+"} - {"+move[2]+","+move[3]+"}");
 				long stop=new Date().getTime();
 				System.out.println("Moves generated in " + (stop-start) +" ms" );
 				nodesExpanded=0;
@@ -848,6 +859,18 @@ public class LoaGame {
 		}
 		sc.close();
 	}
+	
+	/*public static void main(String args[])
+	{
+		LoaGame game= new LoaGame();
+		game.gameState.board[0][2]=EMPTY;
+		game.gameState.board[2][4]=B;
+		game.gameState.printBoard();
+		State newState= game.getLoaNextState(game.gameState, new int[]{2,7}, new int[]{2,4},new Player(W));
+		newState.printBoard();
+		
+		
+	}*/
 	/**
 	 * @param gameState
 	 * @param moveStart
@@ -866,7 +889,7 @@ public class LoaGame {
 		int fc=moveEnd[1];
 		nextState.board[fr][fc]=player.name;
 		nextState.board[r][c]=EMPTY;
-		nextState.printBoard();
+		//nextState.printBoard();
 		return nextState;
 	}
 	/**
@@ -902,7 +925,7 @@ public class LoaGame {
 			}
 			if(noCoin!=Math.abs(c-fc))
 				return false;
-			for(int i=fc;i<c;i++)
+			for(int i=c;i>fc;i--)
 			{
 				if(gameState.board[r][i]==player.getOpponent().name)
 					return false;
@@ -1134,4 +1157,108 @@ public class LoaGame {
 		}
 		return false;
 	}
+	// the heuristic will compute the size of the biggest group of checkers
+	// returns a value beteween 1 and -1:
+	// 1 means I win
+	// -1 means I loose
+	public int evaluate(State gameState,Player player)  // evaluates the current board
+   {
+		int plyrCount=0,oppPlCount=0;
+       for(int i=0; i<size; i++)
+       {
+           for(int j=0;j<size; j++)
+           {
+        	   visitedNodes[i][j] = 0 ;
+        	   if(gameState.board[i][j]==player.name)
+        	   {
+        		   plyrCount++;
+        	   }
+        	   else if(gameState.board[i][j]==player.getOtherPlayerName())
+        	   {
+        		   oppPlCount++;
+        	   }
+           }
+       }
+       
+       int bstMe = 0;                 // size of the largest group of my color
+       int bstOther = 0;              // size of the largest group of the enemy's color
+       
+       // now we will run several DFS's to get the size of each group of checkers
+       for(int i=0; i<size; i++)
+       {
+           for(int j=0;j<size; j++)
+           {
+               if(visitedNodes[i][j]==0)
+               {
+                   if(gameState.board[i][j]==player.name)
+                   {
+                       int h = dfs(i,j,gameState,player);
+                       if(h > bstMe)
+                           bstMe = h;
+                   }
+                   else if(gameState.board[i][j]==player.getOpponent().name)
+                   {
+                       int h = dfs(i,j,gameState,player.getOpponent());
+                       if(h > bstOther)
+                           bstOther = h;
+                   }
+               }
+           }
+       }
+       //return 0f;
+       
+       // first check if I win or I loose
+      
+       if(bstMe == plyrCount)
+    	   return 1;
+       if(bstOther == oppPlCount) 
+    	   return -1;
+       
+       // compute the relative size of the largest groups
+       float bestMePct = (float)bstMe / (float)plyrCount;
+       float bestOtherPct = (float)bstOther / (float)oppPlCount;
+       
+       // now compute the relative percentage compared with the other player
+       float totPct = bestMePct + bestOtherPct;        
+       //float myPct = (bestMePct / totPct)*2.f-1.f; // range [-1,1]
+       Float myPct = (bestMePct / totPct)*100;
+       return myPct.intValue();
+       //return player == whoami ? myPct : -myPct;
+       
+   }
+	int dfs(int i, int j, State gameState, Player pl)
+    {
+		
+        //int player = board[i][j];
+        Stack<int[]> s = new Stack<>();
+        int r = 0;  // result value
+        
+        s.push(new int[]{i,j});
+        visitedNodes[i][j] = 1;
+        
+        while(!s.empty())
+        {
+            int[] p = s.pop();
+            i = p[0];
+            j = p[1];
+            visitedNodes[i][j] = 2;
+            r++;
+            
+            for(int d=0;d<8;d++)
+            {
+                int ii = i + directions[d][0];
+                int jj = j + directions[d][1];
+                // check if we are on a valid position
+                if(ii<0 || ii>=size || jj<0 || jj>=size) continue;
+                
+                // check if we moved to another checker of the same player
+                if(visitedNodes[ii][jj] == 0 && gameState.board[ii][jj] == pl.name)
+                {
+                	visitedNodes[ii][jj] = 1;
+                    s.push(new int[]{ii,jj});
+                }
+            }            
+        }        
+        return r;
+    }
 }
