@@ -1,5 +1,8 @@
 package coms572;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -8,9 +11,17 @@ import java.util.Scanner;
 public class Game {
 	Board board;
 	Player player1, player2;
-	private final int moveLimit = 200;
+	private final int moveLimit = 300;
+	PrintWriter writer;
 
 	public Game() {
+		try {
+			writer = new PrintWriter("C:\\Users\\Bijon\\workspace\\LineOfAction\\LOA_Output.txt","UTF-8");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		board=new Board();
 		player1 = Constants.user;
 		player2 = Constants.machine;
@@ -19,17 +30,28 @@ public class Game {
 	}
 
 	public void startGame() {
+		System.out.println("Play Line of Action! Start Game! "+player1.get_name()+" vs. "+player2.get_name());
+		writer.println("Play Line of Action! Start Game! "+player1.get_name()+" vs. "+player2.get_name());
 		//Scanner in = new Scanner(System.in);
-		board.printBoard();
+		board.printBoard(writer);
 		while (true) {
 			if(board.movesMade() >= moveLimit){
 				if(board.gameOver()){
-					System.out.println(board.getCurrPlayer().get_name()+" wins!");
+					if(board.piecesContiguous(player1)){
+						System.out.println(player1.get_name()+" wins!");
+						writer.println(player1.get_name()+" wins!");
+					}
+					else{
+						System.out.println(player2.get_name()+" wins!");
+						writer.println(player2.get_name()+" wins!");
+					}
 					break;
 				}
 				else{
 					System.out.println("Total moves made: "+board.movesMade());
+					writer.println("Total moves made: "+board.movesMade());
 					System.out.println("Game drawn!");
+					writer.println("Game drawn!");
 				}
 				break;
 			}
@@ -37,7 +59,9 @@ public class Game {
 			ArrayList<Move> moves = board.legalMoves();
 			if (moves.size() > 0) {
 				System.out.println("It is player " + board.getCurrPlayer().get_name()+ "'s move.");
-				System.out.println("Where would you like to move?:");
+				writer.println("It is player " + board.getCurrPlayer().get_name()+ "'s move.");
+				System.out.println("Where would you like to move?");
+				writer.println("Where would you like to move?");
 				/*System.out.println("From Column: ");
 				int c0 = in.nextInt();
 				System.out.println("From row: ");
@@ -46,47 +70,55 @@ public class Game {
 				int c1 = in.nextInt();
 				System.out.println("To row: ");
 				int r1 = in.nextInt();
-				
+
 				System.out.println("Enter move (c0r0-c1r1): ")
 				String moveString = sc.nextLine();
 				int c0 = moveString.charAt(0) - '0';
 				int r0 = moveString.charAt(1) - '0';
 				int c1 = moveString.charAt(3) - '0';
 				int r1 = moveString.charAt(4) - '0';
-				
+
 				Move move = new Movee(c0,r0,c1,r1);
-				*/
+				 */
 				Move myMove = getRandomMove(moves);
 				if (board.isLegal(myMove)) {
-					System.out.println("Good Move");
+					writer.println("Good Move");
 					board.makeMove(myMove);
+					board.printBoard(writer);
 					board.printBoard();
 					board.addMove(myMove);
 					if(board.gameOver()){
-						System.out.println("Total moves made: "+board.movesMade());
-						System.out.println("Game Over! "+board.getCurrPlayer().get_name()+" wins!");
+						if(board.piecesContiguous(player1) && !board.piecesContiguous(player2)){
+							System.out.println("Total moves made: "+board.movesMade());
+							writer.println("Total moves made: "+board.movesMade());
+							System.out.println("Game Over! "+player1.get_name()+" wins!");
+							writer.println("Game Over! "+player1.get_name()+" wins!");
+						}
+						else if(board.piecesContiguous(player2) && !board.piecesContiguous(player1)){
+							System.out.println("Total moves made: "+board.movesMade());
+							writer.println("Total moves made: "+board.movesMade());
+							System.out.println("Game Over! "+player2.get_name()+" wins!");
+							writer.println("Game Over! "+player2.get_name()+" wins!");
+						}
+						else{
+							System.out.println("Total moves made: "+board.movesMade());
+							writer.println("Total moves made: "+board.movesMade());
+							System.out.println("Game Drawn!");
+							writer.println("Game Drawn!");
+						}
 						break;
 					}
-					//doMinimaxMove(player.getOpposite());
 				} else {
 					System.out.println("Move Invalid");
+					writer.println("Move Invalid");
 				}
 			} else {
 				System.out.println("You have no where to go.");
+				writer.println("You have no where to go.");
 				setNextPlayer();
 			}
-			/*MutableBoard board2 = new MutableBoard(board);
-			Game game1 = new Game();
-			game1.setNextPlayer();
-			if (board.legalMoves().size() == 0
-					&& board2.legalMoves().size() == 0){
-				System.out.println("Game Draw!");
-				break;
-			}*/
 		}
-		//int[] results = board.getBoardScore();
-		/*System.out.println("Player 1 had: " + results[1]
-				+ " points and Player 2 had: " + results[2]);*/
+		writer.close();
 	}
 	public void setNextPlayer(){
 		if(board.getCurrPlayer() == player1)
@@ -101,11 +133,6 @@ public class Game {
 		return moves.get(index);
 	}
 
-	/*	public void doMinimaxMove(Player myPlayer){
-		Minimax max = new Minimax(myPlayer, board);
-		board.doMove(max.doMiniMax(), myPlayer);
-	}*/
-	
 	public static void main(String args[]) {
 		Game g = new Game();
 	}

@@ -1,12 +1,12 @@
 package coms572;
 
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class Board {
 	
 	private static ArrayList<Move> moves = new ArrayList<Move>();
 	private char[][] board;
-	//private Player currPlayer, nextPlayer;
 	private Player currPlayer;
 	
 	public Board(char[][] initialContents, Player player) {
@@ -288,7 +288,7 @@ public class Board {
         for (char[] row : board) {
             int x = 0;
             for (char piece: row) {
-                if (piece != currPlayer.getOpponent()
+                if (piece != player.getOpponent()
                         && piece != Constants.EMPTY
                         && piece != Constants.BUFFER) {
                     int[] temp = new int[2];
@@ -315,14 +315,16 @@ public class Board {
             return true;
         }
         ArrayList<int[]> grouped = new ArrayList<int[]>();
-        grouped.add(remaining.get(0)); remaining.remove(0);
+        grouped.add(remaining.get(0)); 
+        remaining.remove(0);
         boolean connected, allAway;
         while (remaining.size() != 0) {
             allAway = true;
             for (int[] piece : remaining) {
                 connected = isConnected(grouped, piece);
                 if (connected) {
-                    grouped.add(piece); remaining.remove(piece);
+                    grouped.add(piece); 
+                    remaining.remove(piece);
                     allAway = false;
                     break;
                 }
@@ -396,6 +398,22 @@ public class Board {
                 System.out.print(piece+" ");
             }
             System.out.println();
+        }
+    }
+    
+    public void printBoard(PrintWriter writer) {
+    	writer.print("  ");
+    	for(int i = 0;i<10;i++){ 
+    		writer.print(i+" ");
+    	}
+    	writer.println();
+    	int j = 0;
+        for (char[] row : board) {
+        	writer.print(j++ + " ");
+            for (Character piece : row) {
+                writer.print(piece+" ");
+            }
+            writer.println();
         }
     }
     

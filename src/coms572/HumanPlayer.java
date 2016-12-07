@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/** A Player that prompts for moves and reads them from its Game.
- *  @author Nick Holt*/
 class HumanPlayer extends Player {
 
     /** A HumanPlayer that plays the SIDE pieces in GAME.  It uses
