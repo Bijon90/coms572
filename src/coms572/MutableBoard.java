@@ -44,7 +44,7 @@ class MutableBoard extends Board {
 
     /** Retract (unmake) one move, returning to the state immediately before
      *  that move.  Requires that movesMade () > 0. */
-    void retract() {
+    public void retract() {
         assert movesMade() > 0;
         char[][] config = getBoard();
         Move move = getMove(movesMade() - 1);

@@ -80,7 +80,19 @@ public class Game {
 
 				Move move = new Movee(c0,r0,c1,r1);
 				 */
-				Move myMove = getRandomMove(moves);
+				Move myMove;
+				if(board.getCurrPlayer() == player1)
+					myMove = getRandomMove(moves);
+				else{
+					double t1 = System.currentTimeMillis();
+					MonteCarloTreeSearch mcTS = new MonteCarloTreeSearch(this.board.cloneBoard());
+					Move mcMove = mcTS.getMonteCarloMove(); 
+					double t2 = System.currentTimeMillis();
+					myMove = mcMove == null ? getRandomMove(moves) : mcMove;
+					System.out.println("Monte Carlo move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
+					writer.println("Monte Carlo move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
+					
+				}
 				if (board.isLegal(myMove)) {
 					writer.println("Good Move");
 					board.makeMove(myMove);

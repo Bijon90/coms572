@@ -20,1170 +20,744 @@ Good Move
 3 . O * * * * * * O . 
 4 . O * * * * * * O . 
 5 . O * * * * * * O . 
-6 . O * X * * * * O . 
+6 . O * * * X * * O . 
 7 . O * * * * * * O . 
-8 . * X * X X X X * . 
+8 . * X X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 85-76 
+Time taken to decide move: 0.704 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * X X X X X X O . 
+1 . * X X X X X X * . 
 2 . O * * * * * * O . 
 3 . O * * * * * * O . 
-4 . O * * * * * * O . 
-5 . O * * * * * * O . 
-6 . O * X * * * * O . 
-7 . O * * * * * * * . 
-8 . * X * X X X X * . 
+4 . * * * * * * * O . 
+5 . O O * * * * * O . 
+6 . O * * * X * * O . 
+7 . O * * * * * * O . 
+8 . * X X X * X X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * X X X X X X O . 
+1 . * X X X X X X * . 
 2 . O * * * * * * O . 
 3 . O * * * * * * O . 
-4 . O * * * * * * O . 
-5 . O X * * * * * O . 
-6 . O * X * * * * O . 
-7 . O * * * * * * * . 
-8 . * X * X * X X * . 
+4 . * * * * * * * O . 
+5 . O O * * * * * O . 
+6 . O * * X X * * O . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 13-46 
+Time taken to decide move: 0.61 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * X X X X X X O . 
+1 . * X X X X X X * . 
 2 . O * * * * * * O . 
-3 . O * * * * O * O . 
-4 . O * * * * * * O . 
-5 . O X * * * * * * . 
-6 . O * X * * * * O . 
-7 . O * * * * * * * . 
-8 . * X * X * X X * . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . * O * O * * * O . 
+6 . O * * X X * * O . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * X X X X X * O . 
+1 . * * X X X X X * . 
 2 . O * * * * * * O . 
-3 . O * * * * O X O . 
-4 . O * * * * * * O . 
-5 . O X * * * * * * . 
-6 . O * X * * * * O . 
-7 . O * * * * * * * . 
-8 . * X * X * X X * . 
+3 . O * * X * * * O . 
+4 . * * * * * * * O . 
+5 . * O * O * * * O . 
+6 . O * * X X * * O . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 85-76 
+Time taken to decide move: 0.558 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * X X X X X * O . 
+1 . * * X X X X X * . 
 2 . O * * * * * * O . 
-3 . O * * * * O X * . 
-4 . O * * * * * O O . 
-5 . O X * * * * * * . 
-6 . O * X * * * * O . 
-7 . O * * * * * * * . 
-8 . * X * X * X X * . 
+3 . O * * X * * * O . 
+4 . * * * * * * * O . 
+5 . * * * O O * * O . 
+6 . O * * X X * * O . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * X X X X X * O . 
+1 . * * X X X X * * . 
 2 . O * * * * * * O . 
-3 . O * * * * O X * . 
-4 . O * * * * * O O . 
-5 . O X * * * * * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * * * . 
-8 . * X * X * * X * . 
+3 . O * * X X * * O . 
+4 . * * * * * * * O . 
+5 . * * * O O * * O . 
+6 . O * * X X * * O . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 82-88 
+Time taken to decide move: 0.55 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * X X X X X * O . 
-2 . * * * * * * * O . 
-3 . O * * * * O X * . 
-4 . O * O * * * O O . 
-5 . O X * * * * * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * * * . 
-8 . * X * X * * X * . 
+1 . * * X X X X * * . 
+2 . O * * * * * * O . 
+3 . O * * X X * * * . 
+4 . * * * * * * * O . 
+5 . * * * O O * * O . 
+6 . O * * X O * * O . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X X X X * X . 
-2 . * * * * * * * O . 
-3 . O * * * * O X * . 
-4 . O * O * * * O O . 
-5 . O X * * * * * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * * * . 
-8 . * X * X * * X * . 
+1 . * * * X X X * * . 
+2 . O * * * * * * O . 
+3 . X * * X X * * * . 
+4 . * * * * * * * O . 
+5 . * * * O O * * O . 
+6 . O * * X O * * O . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 45-36 
+Time taken to decide move: 0.614 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X X X X * X . 
-2 . * * * * * * * O . 
-3 . O * * * * * X * . 
-4 . O * O * * * O O . 
-5 . O X * * * O * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * * * . 
-8 . * X * X * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X X X X * X . 
-2 . * * * * * * * O . 
-3 . O X * * * * X * . 
-4 . O * O * * * O O . 
-5 . O * * * * O * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * * * . 
-8 . * X * X * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X X X X * X . 
-2 . * * * * * * * O . 
-3 . O X O * * * X * . 
-4 . O * O * * * O O . 
-5 . * * * * * O * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * * * . 
-8 . * X * X * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X X * X . 
-2 . * * * * * * * O . 
-3 . O X O * * * X * . 
-4 . X * O * * * O O . 
-5 . * * * * * O * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * * * . 
-8 . * X * X * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X X * X . 
-2 . * * * * * * * O . 
-3 . O X O * * * X * . 
-4 . X * O * * * * O . 
-5 . * * * * * O * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * O * . 
-8 . * X * X * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X X * X . 
-2 . * * * * * * * O . 
-3 . O * O * * * X * . 
-4 . X * O * * * * O . 
-5 . * X * * * O * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * O * . 
-8 . * X * X * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X X * X . 
-2 . * * * * * * * O . 
-3 . O * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * X * * * O * * . 
-6 . O * X * * * * X . 
-7 . O * * * * * O * . 
-8 . * X * X * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X X * X . 
-2 . * * * * * * * O . 
-3 . O * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * X * * * O * * . 
-6 . O X X * * * * X . 
-7 . O * * * * * O * . 
-8 . * * * X * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X X * X . 
-2 . * * * * * * * O . 
-3 . * * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * X * * * O * * . 
-6 . O X X * * * * X . 
-7 . O * * * * * O * . 
-8 . * * * X * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X X * X . 
-2 . * * * * * * * O . 
-3 . * * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * X * * * O * * . 
-6 . O X X * * * * X . 
-7 . O * * X * * O * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * X X * X . 
-2 . * O * * * * * O . 
-3 . * * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * X * * * O * * . 
-6 . O X X * * * * X . 
-7 . O * * X * * O * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * X X * X . 
-2 . * O * * * * * O . 
-3 . * * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * X * * * O * * . 
-6 . O X X X * * * * . 
-7 . O * * X * * O * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * X X * X . 
-2 . * O * * * * * * . 
-3 . * * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * X * * * O * O . 
-6 . O X X X * * * * . 
-7 . O * * X * * O * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * X X * X . 
-2 . * O * * X * * * . 
-3 . * * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * * * * * O * O . 
-6 . O X X X * * * * . 
-7 . O * * X * * O * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * X X * X . 
-2 . * O * * X * * * . 
-3 . * * O * * * X * . 
-4 . X * * * * O * O . 
-5 . * * * * * O * O . 
-6 . O X X X * * * O . 
-7 . O * * X * * * * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * X * X . 
-2 . * O * * X * * * . 
-3 . * * O * X * X * . 
-4 . X * * * * O * O . 
-5 . * * * * * O * O . 
-6 . O X X X * * * O . 
-7 . O * * X * * * * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * X * X . 
-2 . * O * * X * * * . 
-3 . * * * * X * X * . 
-4 . X * * * * O * O . 
-5 . * * * * * O * O . 
-6 . O X X X * * * O . 
-7 . O * * X * * * * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * X * X . 
-2 . * O * * X * * * . 
-3 . * * * * X * X * . 
-4 . X * * * * O * O . 
-5 . * * * * * O * O . 
-6 . O X * X * * * O . 
-7 . O * * X * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * X * X . 
-2 . * O * * X * * * . 
-3 . * * * O X * X * . 
-4 . X * * * * O * O . 
-5 . * * * * * O * O . 
-6 . * X * X * * * O . 
-7 . O * * X * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X X * X . 
-2 . * O * * X * * * . 
-3 . * * * O X * * * . 
-4 . X * * * * O * O . 
-5 . * * * * * O * O . 
-6 . * X * X * * * O . 
-7 . O * * X * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * O X * * * . 
-4 . X * * * * * * O . 
-5 . * * * * * O * O . 
-6 . * X * X * * * O . 
-7 . O * * X * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * O X * * * . 
-4 . X * * * * * * O . 
-5 . * * * * * O * O . 
-6 . * X * X * * * O . 
-7 . O X * * * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * O X * * * . 
-4 . X * * * * * * * . 
-5 . * * * * * O O O . 
-6 . * X * X * * * O . 
-7 . O X * * * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * O X * * * . 
-4 . X * * * X * * * . 
-5 . * * * * * O O O . 
-6 . * X * X * * * O . 
-7 . O * * * * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * * X * * * . 
-4 . X * * * X * * * . 
-5 . * * * * * O O O . 
-6 . O X * X * * * O . 
-7 . O * * * * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * * X * * * . 
-4 . X * * * X * * * . 
-5 . * * * * * O O O . 
+1 . * * * X X X * * . 
+2 . O * * * * * * O . 
+3 . X * * X X * * * . 
+4 . * * * * * * O O . 
+5 . * * * O O * * O . 
 6 . O * * X * * * O . 
-7 . O * X * * * * * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * * X * * * . 
-4 . X * * * X * * * . 
-5 . * * * * * O O O . 
-6 . * * * X * * * O . 
-7 . O O X * * * * * . 
-8 . X * * * * * X * . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * * X * * * . 
-4 . X * * * * * * * . 
-5 . * * * * * O O O . 
-6 . * * * X * * * O . 
-7 . O O X * * * * * . 
-8 . X * * * X * X * . 
+1 . * * * X X X * * . 
+2 . O * * * * * * O . 
+3 . X * * X X * * * . 
+4 . * * * * * * O O . 
+5 . * * * O O * * O . 
+6 . X * * * * * * O . 
+7 . O * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 86-81 
+Time taken to decide move: 0.538 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * X * * * . 
-3 . * * * * X * * * . 
-4 . X * * * * * * * . 
-5 . * * * * * O * O . 
-6 . * * * X * * * O . 
-7 . O O X * * * O * . 
-8 . X * * * X * X * . 
+1 . * * * X X X * * . 
+2 . O * * * * * * O . 
+3 . X * * X X * * * . 
+4 . * * * * * * O O . 
+5 . * * O O O * * O . 
+6 . X * * * * * * O . 
+7 . * * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * * * * * . 
-3 . * * * * X * * * . 
-4 . X * * * * * X * . 
-5 . * * * * * O * O . 
-6 . * * * X * * * O . 
-7 . O O X * * * O * . 
-8 . X * * * X * X * . 
+1 . * * * * X X X * . 
+2 . O * * * * * * O . 
+3 . X * * X X * * * . 
+4 . * * * * * * O O . 
+5 . * * O O O * * O . 
+6 . X * * * * * * O . 
+7 . * * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 45-54 
+Time taken to decide move: 0.631 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * * * * * . 
-3 . * * * * X * * * . 
-4 . X * * * * * X * . 
-5 . * * * * * O * O . 
-6 . O * * X * * * O . 
-7 . O * X * * * O * . 
-8 . X * * * X * X * . 
+1 . * * * * X X X * . 
+2 . O * * * * * * O . 
+3 . X * * X X * * * . 
+4 . * * * * * * O O . 
+5 . * * O O * * * O . 
+6 . X * * * * O * O . 
+7 . * * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * * * * * . 
-3 . * * * * X * * * . 
-4 . X * * * * * X * . 
-5 . * * * * * O * O . 
-6 . O * * X * * X O . 
-7 . O * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * * * * X * X * . 
+2 . O * * * * * X O . 
+3 . X * * X X * * * . 
+4 . * * * * * * O O . 
+5 . * * O O * * * O . 
+6 . X * * * * O * O . 
+7 . * * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 45-75 
+Time taken to decide move: 0.585 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * X O * X . 
-2 . * O * * * * * * . 
-3 . * * O * X * * * . 
-4 . X * * * * * X * . 
-5 . * * * * * O * O . 
-6 . O * * X * * X O . 
-7 . O * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * * * * X * X * . 
+2 . O * * * * * X * . 
+3 . X * * X X * O * . 
+4 . * * * * * * O O . 
+5 . * * O O * * * O . 
+6 . X * * * * O * O . 
+7 . * * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * X O * X . 
-2 . * O * * * * * * . 
-3 . * * O * * * * * . 
-4 . X * * * * * X * . 
-5 . * * * * X O * O . 
-6 . O * * X * * X O . 
-7 . O * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * * * * X * * * . 
+2 . O * * * * * X X . 
+3 . X * * X X * O * . 
+4 . * * * * * * O O . 
+5 . * * O O * * * O . 
+6 . X * * * * O * O . 
+7 . * * * * * * * O . 
+8 . * * X X * X X * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 86-68 
+Time taken to decide move: 0.512 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * X O * X . 
-2 . * O * * * * * * . 
-3 . * * O * * * * * . 
-4 . X * * * * * X * . 
-5 . * * * * X O * O . 
-6 . O O * X * * X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * * * * X * * * . 
+2 . O * * * * * X X . 
+3 . X * * X X * O * . 
+4 . * * * * * * O O . 
+5 . * * O O * * * O . 
+6 . X * * * * O * * . 
+7 . * * * * * * * O . 
+8 . * * X X * O X * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * X O * X . 
+1 . * * * * X * * * . 
+2 . O * * * * * X X . 
+3 . X * * X X * O * . 
+4 . * * * * * * O O . 
+5 . * * O X * * * O . 
+6 . X * * * * O * * . 
+7 . * * * * * * * O . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 84-64 
+Time taken to decide move: 0.418 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . O * * * * * X X . 
+3 . X * * X X * O * . 
+4 . * * * * * * * O . 
+5 . * * O X * * * O . 
+6 . X * * * O O * * . 
+7 . * * * * * * * O . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . O * * * * * X X . 
+3 . X * * * X * O * . 
+4 . * * * * * * * O . 
+5 . * X O X * * * O . 
+6 . X * * * O O * * . 
+7 . * * * * * * * O . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 66-55 
+Time taken to decide move: 0.449 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . O * * * * * X X . 
+3 . X * * * X * * * . 
+4 . * * * * * * * O . 
+5 . * X O X * * O O . 
+6 . X * * * O O * * . 
+7 . * * * * * * * O . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . O * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * X O . 
+5 . * X O X * * O O . 
+6 . X * * * O O * * . 
+7 . * * * * * * * O . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 75-53 
+Time taken to decide move: 0.291 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . O * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * X O . 
+5 . * X O X * * O O . 
+6 . X * * * O * * * . 
+7 . * * * * * * O O . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . O * * * * * * * . 
+3 . X * * * X * X * . 
+4 . * * * * * * X O . 
+5 . * X O X * * O O . 
+6 . X * * * O * * * . 
+7 . * * * * * * O O . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 75-48 
+Time taken to decide move: 0.377 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . O * * * * * * * . 
+3 . X * * * X * X * . 
+4 . * * * * * * X O . 
+5 . * X O X * * O O . 
+6 . X * * * O * * O . 
+7 . * * * * * * O O . 
+8 . * * X X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . O * * * * * * * . 
+3 . X * * * X * X * . 
+4 . * * * * * * X O . 
+5 . * * O X * * O O . 
+6 . X * X * O * * O . 
+7 . * * * * * * O O . 
+8 . * * X X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 35-57 
+Time taken to decide move: 0.366 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
 2 . * O * * * * * * . 
-3 . * * O * * * * * . 
-4 . X * * * * * X * . 
-5 . * * X * X O * O . 
-6 . O O * * * * X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * X O * X . 
-2 . * O * * * * * * . 
-3 . * * O * * * * * . 
-4 . X * * * * * X * . 
-5 . * * X * X O * O . 
-6 . O * * * * O X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
+3 . X * * * X * X * . 
+4 . * * * * * * X O . 
+5 . * * O X * * O O . 
+6 . X * X * O * * O . 
+7 . * * * * * * O O . 
+8 . * * X X * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * X O * X . 
-2 . * O * * * * * * . 
-3 . * * O * * * * * . 
-4 . X * * X * * X * . 
-5 . * * * * X O * O . 
-6 . O * * * * O X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * * * * X * * * . 
+2 . * O * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * X O . 
+5 . * * O X * * O O . 
+6 . X * X * O * * O . 
+7 . * * * * * * O O . 
+8 . * * X X * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 22-44 
+Time taken to decide move: 0.443 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * * . 
-3 . * * O * * * * * . 
-4 . X * * X * * X * . 
-5 . * * * * X O * O . 
-6 . O * * * * O X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * O * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * X O . 
+5 . * * O X * * O O . 
+6 . X * X * O * * O . 
+7 . * * * * * * O O . 
+8 . * * X X * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * * . 
-3 . * * O * * * * * . 
-4 . X * * * * * X * . 
-5 . * * X * X O * O . 
-6 . O * * * * O X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * O * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * X O . 
+5 . * X O X * * O O . 
+6 . X * * * O * * O . 
+7 . * * * * * * O O . 
+8 . * * X X * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 77-74 
+Time taken to decide move: 0.533 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * * . 
-3 . * * O * * * * * . 
-4 . X * * * * * X * . 
-5 . * * X * X O * O . 
-6 . * * * * O O X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * O * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * X O . 
+5 . * X O X * * O O . 
+6 . X * * * O * * O . 
+7 . * * * * * O O * . 
+8 . * * X X * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * * . 
-3 . * * O * * * * * . 
-4 . * * * * * * X * . 
-5 . * * X * X O * O . 
-6 . X * * * O O X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
+1 . * O * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * X * X O . 
+5 . * X O * * * O O . 
+6 . X * * * O * * O . 
+7 . * * * * * O O * . 
+8 . * * X X * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 21-41 
+Time taken to decide move: 0.426 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * O . 
-3 . * * O * * * * * . 
-4 . * * * * * * X * . 
-5 . * * X * X O * * . 
-6 . X * * * O O X O . 
-7 . * * X * * * O * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * O . 
-3 . * * O * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * X O * * . 
-6 . X * * * O O X O . 
+1 . * O * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * X * X O . 
+5 . * X O * * * O O . 
+6 . X * * * O * * O . 
 7 . * * * * * * O * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * O . 
-3 . * * * O * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * X O * * . 
-6 . X * * * O O X O . 
-7 . * * * * * * O * . 
-8 . X * * * * * X * . 
+8 . * * X X * O * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * O * X O * X . 
+1 . * O * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * X X * * O . 
+5 . * X O * * * O O . 
+6 . X * * * O * * O . 
+7 . * * * * * * O * . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 77-87 
+Time taken to decide move: 0.482 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * O * X * * * . 
+4 . * * * X X * * O . 
+5 . * X * * * * O O . 
+6 . X * * * O * * O . 
+7 . * * * * * * O * . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * O * X X * * . 
+4 . * * * X * * * O . 
+5 . * X * * * * O O . 
+6 . X * * * O * * O . 
+7 . * * * * * * O * . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 33-15 
+Time taken to decide move: 0.431 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X X * * . 
+4 . * * * X * * * O . 
+5 . * X * * * * O O . 
+6 . X * * * O * * O . 
+7 . * * * * * * O * . 
+8 . * * X X * O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X X * * . 
+4 . * * * X * * * O . 
+5 . * X * * * * O O . 
+6 . X * * X O * * O . 
+7 . * * * * * * O * . 
+8 . * * X * * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 21-41 
+Time taken to decide move: 0.535 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X X * * . 
+4 . * * * X * * * * . 
+5 . * X * * * * O O . 
+6 . X * * X O O * O . 
+7 . * * * * * * O * . 
+8 . * * X * * O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X X * * . 
+4 . * * * X * * * * . 
+5 . * X * * * * O O . 
+6 . X * * X O O * O . 
+7 . * * * * * * O * . 
+8 . * * * * X O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 56-65 
+Time taken to decide move: 0.484 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X X * * . 
+4 . * * * X * * * * . 
+5 . * X * * * * O O . 
+6 . X * * X O * * O . 
+7 . * * * * * * O * . 
+8 . * * * O X O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . * * * * X X * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O O . 
+6 . X * * X O * * O . 
+7 . * * * * * * O * . 
+8 . * * * O X O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 85-82 
+Time taken to decide move: 0.469 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . * * * * X X * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O O . 
+6 . X * * X O O * O . 
+7 . * * * * * * O * . 
+8 . * * * * X O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . * * * * X X * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O O . 
+6 . X * * * O O * O . 
+7 . * * * * * * O * . 
+8 . * X * * X O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 51-31 
+Time taken to decide move: 0.49 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . * * * * X X * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O O . 
+6 . X * * * * O * O . 
+7 . * * * O * * O * . 
+8 . * X * * X O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * X . 
+3 . * * * * X X * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O O . 
+6 . * * * * * O * O . 
+7 . * * * O * * O * . 
+8 . X X * * X O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 85-67 
+Time taken to decide move: 0.538 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
+2 . * * * * * * * O . 
+3 . * * * * X X * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . * * * * * O * O . 
+7 . * * * O * * O * . 
+8 . X X * * X O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * * * . 
 2 . * * * * X * * O . 
-3 . * * * O * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * * O * * . 
-6 . X * * * O O X O . 
-7 . * * * * * * O * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * O X * * O . 
-3 . * * * * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * * O * * . 
-6 . X * * * O O X O . 
-7 . * * * * * * O * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * O * * * O . 
-3 . * * * * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * X O * * . 
-6 . X * * * O O X O . 
-7 . * * * * * * O * . 
-8 . X * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * O * * * O . 
-3 . * * * * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * X * * * . 
-6 . X * * * O O X O . 
-7 . * * * * * * O * . 
-8 . X * O * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * O * * * O . 
-3 . * * * * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * X * * * . 
-6 . X * * * X O X O . 
-7 . * * * * * * O * . 
-8 . X * O * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * * * * O . 
-3 . * * * * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * X * * * . 
-6 . X * * * X O X O . 
-7 . * * * * * * O * . 
-8 . X * O * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * * * * O . 
-3 . * * * * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * X * * * . 
-6 . * * * * X O X O . 
-7 . * * * * * * O * . 
-8 . X * X * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * * * * O . 
-3 . * * * * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * X * O * . 
-6 . * * * * X * X O . 
-7 . * * * * * * O * . 
-8 . X * X * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * O * * * * * O . 
-3 . * * * * * * * * . 
-4 . * * * * * X X * . 
-5 . * * X * * * O * . 
-6 . * * * * X * X O . 
-7 . * * * * * * O * . 
-8 . X X X * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * O . 
-3 . * * * * * * * * . 
-4 . * * * O * X X * . 
-5 . * * X * * * O * . 
-6 . * * * * X * X O . 
-7 . * * * * * * O * . 
-8 . X X X * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * O . 
-3 . * * * * * * * * . 
-4 . * * * X * X * * . 
-5 . * * X * * * O * . 
-6 . * * * * X * X O . 
-7 . * * * * * * O * . 
-8 . X X X * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * O . 
-3 . * * * * * * * * . 
-4 . * * * X * X * O . 
-5 . * * X * * * * * . 
-6 . * * * * X * X O . 
-7 . * * * * * * O * . 
-8 . X X X * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * O . 
-3 . * * * * * * * * . 
-4 . * X * X * X * O . 
-5 . * * * * * * * * . 
-6 . * * * * X * X O . 
-7 . * * * * * * O * . 
-8 . X X X * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * X O * X . 
-2 . * * * * * * * O . 
-3 . * * * * * * * * . 
-4 . * X * X * X * * . 
-5 . * * * * * * O * . 
-6 . * * * * X * X O . 
-7 . * * * * * * O * . 
-8 . X X X * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * O * X . 
-2 . * * * * * * * O . 
 3 . * * * * X * * * . 
-4 . * X * X * X * * . 
-5 . * * * * * * O * . 
-6 . * * * * X * X O . 
-7 . * * * * * * O * . 
-8 . X X X * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * O * X . 
-2 . * * * * * * * O . 
-3 . * * * * X * * * . 
-4 . * X * X * X * * . 
-5 . * * * * * * * * . 
-6 . * * * * X O X O . 
-7 . * * * * * * O * . 
-8 . X X X * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * O * X . 
-2 . * * * * * * * O . 
-3 . * * * * X * * * . 
-4 . * X * X * X * * . 
-5 . * * * * * * * * . 
-6 . * * * * X O X O . 
-7 . X * * * * * O * . 
-8 . * X X * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * * * X . 
-2 . * * * * * * * O . 
-3 . * * * * X * * * . 
-4 . * X * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * X O X O . 
-7 . X * * * * * O * . 
-8 . * X X * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * * * X . 
-2 . * * * * * * * O . 
-3 . * * * * X * * * . 
-4 . * X * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * X O X O . 
-7 . X * * * * * O * . 
-8 . * X * * X * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * * * X . 
-2 . * * * * * * * O . 
-3 . * * * * X * * O . 
-4 . * X * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * X O X * . 
-7 . X * * * * * O * . 
-8 . * X * * X * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * O * * * * X . 
-2 . * X * * * * * O . 
-3 . * * * * X * * O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * X O X * . 
-7 . X * * * * * O * . 
-8 . * X * * X * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * X O * * * * O . 
-3 . * * * * X * * O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * X O X * . 
-7 . X * * * * * O * . 
-8 . * X * * X * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * X O * * * * O . 
-3 . * * * * * * X O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * X O X * . 
-7 . X * * * * * O * . 
-8 . * X * * X * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * X O * * * * O . 
-3 . * * * * * * X O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * X * X * . 
-7 . X * * * * * O * . 
-8 . * X * * X O * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * X O * * X * O . 
-3 . * * * * * * * O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * X * X * . 
-7 . X * * * * * O * . 
-8 . * X * * X O * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * X O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * O . 
-6 . * * * * X * X * . 
-7 . X * * * * * O * . 
-8 . * X * * X O * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * O . 
-6 . * * * * X * X * . 
-7 . X * * * * * O * . 
-8 . * X * * X O * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * O X * * . 
-3 . * * * * * * * O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * O . 
-6 . * * * * X * X * . 
-7 . X * * * * * O * . 
-8 . * X * * X O * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * O X * * . 
-3 . * * * * * * * O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * O . 
-6 . * * * * X * X * . 
-7 . * * * * * * O * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . * * * * * O * O . 
+7 . * * * O * * O * . 
 8 . X X * * X O * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 21-41 
+Time taken to decide move: 0.365 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * X * O * * . 
-5 . * * * * * * * O . 
-6 . * * * * X * X * . 
-7 . * * * * * * O * . 
+1 . * O * * O * * * . 
+2 . * * * * X * * O . 
+3 . * * * * X * * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . * * * * * O * O . 
+7 . * * * O O * * * . 
 8 . X X * * X O * * . 
 9 . . . . . . . . . . 
 It is player user's move.
@@ -1191,924 +765,840 @@ Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * * * O * * . 
-5 . * * * X * * * O . 
-6 . * * * * X * X * . 
-7 . * * * * * * O * . 
-8 . X X * * X O * * . 
+1 . * O * * O * * * . 
+2 . * * * * X * * O . 
+3 . * * * * X * * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . X * * * * O * O . 
+7 . * * * O O * * * . 
+8 . * X * * X O * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 75-76 
+Time taken to decide move: 0.378 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * * . 
-5 . * * * X * * * O . 
-6 . * * * O X * X * . 
-7 . * * * * * * O * . 
-8 . X X * * X O * * . 
+1 . * O * * O * * * . 
+2 . * * * * X * * O . 
+3 . * * * * X * * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . X * * O * O * O . 
+7 . * * * O O * * * . 
+8 . * X * * X * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X X * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * * . 
-5 . * * * * * * * O . 
-6 . * * * O X * X * . 
-7 . * * * * * * O * . 
-8 . X X * * X O * * . 
+1 . * O * * O * * * . 
+2 . * * * * X * * O . 
+3 . * * * * X * * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . X * * O * O * O . 
+7 . * * * O O X * * . 
+8 . * X * * * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 51-31 
+Time taken to decide move: 0.403 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X X * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * * . 
-5 . * * * * * * * O . 
-6 . * * * * X * X * . 
-7 . * * * * * * O * . 
-8 . X O * * X O * * . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * X * * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . X * * O * O * O . 
+7 . * * * O O X * * . 
+8 . * X * * * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * * . 
-5 . * * * X * * * O . 
-6 . * * * * X * X * . 
-7 . * * * * * * O * . 
-8 . X O * * X O * * . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * X * * * . 
+4 . * * * X * * * * . 
+5 . * X * X * * O * . 
+6 . X * * O * O * O . 
+7 . * * * O O X * * . 
+8 . * X * * * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 47-25 
+Time taken to decide move: 0.455 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * * X * X * . 
-7 . * * * * * * O * . 
-8 . X O * * X O * O . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * X * * * * . 
+5 . * X * X * * O * . 
+6 . X * * O * O * * . 
+7 . * * * O O X * * . 
+8 . * X * * * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * * X * * * . 
-5 . * * * X * * * * . 
-6 . * * * * X * * * . 
-7 . * * * * * * O * . 
-8 . X O * * X O * O . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . X * * O * O * * . 
+7 . * * * O O X * * . 
+8 . * X * * * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 46-28 
+Time taken to decide move: 0.408 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * * X * * * . 
-5 . * * * X * * * * . 
-6 . * * * * X * * * . 
-7 . * * * * * * * O . 
-8 . X O * * X O * O . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
+6 . X * * * * O * * . 
+7 . * * * O O X * * . 
+8 . * O * * * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * * X * * * . 
-5 . * * * X * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * * O . 
-8 . X O X * X O * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * * . 
-4 . * * * * X * * * . 
-5 . * * * X * O * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * * O . 
-8 . X O X * X O * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * * . 
-4 . * * * * X * * * . 
-5 . * * * X * O * * . 
-6 . * * * * X * * * . 
-7 . * * * * * * * O . 
-8 . X O X * * O * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * O * * X * * . 
-3 . * * * * * * * * . 
-4 . * * * * X * * * . 
-5 . * * * X * O * * . 
-6 . * * * * X * * * . 
-7 . * * * * * * O * . 
-8 . X O X * * O * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X * * X . 
-2 . * * O * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * * X * * * . 
-5 . * * * X * O * * . 
-6 . * * * * X * * * . 
-7 . * * * * * * O * . 
-8 . X O X * * O * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X * * X . 
-2 . * * O * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * * X * * * . 
-5 . * * * X * O * * . 
-6 . * * * * X * * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X * * X . 
-2 . * * O * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * * X * * * . 
-5 . * * * X * O * * . 
-6 . * * * * * * * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X * * X . 
-2 . * * O * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * * X * * * . 
-5 . * * * X * O * * . 
-6 . * * * * * O * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X * * X . 
-2 . * * O * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * * * * * * . 
-5 . * * * X * O * * . 
-6 . * * * * X O * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * X * * X . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * * O * * * . 
-5 . * * * X * O * * . 
-6 . * * * * X O * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * X * * . 
-3 . * * * * * * * * . 
-4 . * * * * O * * * . 
-5 . * * * X * O * * . 
-6 . * * * * X O * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * X * * . 
-3 . * * * * * * * * . 
-4 . * * * * O * * * . 
-5 . * * * X * * * O . 
-6 . * * * * X O * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * X * * . 
-3 . * * * * * * * * . 
-4 . * * * * O * * * . 
-5 . * * * X * * * O . 
-6 . * * X * X O * * . 
-7 . O * * * * * O * . 
-8 . X * * * * O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * X * * . 
-3 . * * * * * * * O . 
-4 . * * * * O * * * . 
-5 . * * * X * * * * . 
-6 . * * X * X O * * . 
-7 . O * * * * * O * . 
-8 . X * * * * O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * * X * . 
-3 . * * * * * * * O . 
-4 . * * * * O * * * . 
-5 . * * * X * * * * . 
-6 . * * X * X O * * . 
-7 . O * * * * * O * . 
-8 . X * * * * O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * * X * . 
-3 . * * * * * * * O . 
-4 . * * * * * O * * . 
-5 . * * * X * * * * . 
-6 . * * X * X O * * . 
-7 . O * * * * * O * . 
-8 . X * * * * O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * * X * . 
-3 . * * * * * * * O . 
-4 . * * * * * O * * . 
-5 . * * * X * * * * . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * X * * * * . 
+5 . X X * * * * O * . 
 6 . * * X * * O * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
+7 . * * * O O X * * . 
+8 . * O * * * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 28-25 
+Time taken to decide move: 0.32 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * * X * . 
-3 . * * * * * * * * . 
-4 . * * * * * O * * . 
-5 . * * * X * O * * . 
-6 . * * X * * O * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * * X * . 
-3 . * * * * * * * * . 
-4 . * * * * * O * * . 
-5 . * X * * * O * * . 
-6 . * * X * * O * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * O X * . 
-3 . * * * * * * * * . 
-4 . * * * * * O * * . 
-5 . * X * * * O * * . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . X X * * * * O * . 
 6 . * * X * * * * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
+7 . * * * O O X * * . 
+8 . * O * * * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * O X * . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * * X * * * * * . 
+7 . * * * O O X * * . 
+8 . * X * * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 57-68 
+Time taken to decide move: 0.225 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * * X * * * * * . 
+7 . * * * O * X * * . 
+8 . * X * * * O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * X * * * * * * . 
+7 . * * * O * X * * . 
+8 . * X * * * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 75-55 
+Time taken to decide move: 0.236 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * * * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * X * * * * * * . 
+7 . * * * O * X * * . 
+8 . * X * * * O * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * * * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * X * * . 
+8 . * * * * * O * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 31-33 
+Time taken to decide move: 0.237 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * * * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * X O * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * * * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 44-46 
+Time taken to decide move: 0.202 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * O * . 
+2 . * * * * X * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * O * . 
+2 . * * * * * * * * . 
+3 . * * * X O * * * . 
+4 . * * * O * * * * . 
+5 . X * * * * * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 44-66 
+Time taken to decide move: 0.228 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * O * . 
+2 . * * * * * * * * . 
+3 . * * * X O * * * . 
+4 . * * * * O * * * . 
+5 . X * * * * * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * O * . 
+2 . * * * * * * * * . 
+3 . * * * X O * * * . 
+4 . * * * * O * * * . 
+5 . * * X * * * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 77-74 
+Time taken to decide move: 0.228 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * O * . 
+2 . * * * * * * * * . 
+3 . * * * X O * * * . 
+4 . * * * O * * * * . 
+5 . * * X * * * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * O * O * . 
+2 . * * * * * * * * . 
+3 . * * * X O * * * . 
+4 . * * * O * * * * . 
+5 . * * X * X * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 75-72 
+Time taken to decide move: 0.223 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * O * O * . 
+2 . * * * * * * * * . 
+3 . * * * X * * * * . 
+4 . * * * O * * * * . 
+5 . * * X * X * O * . 
+6 . * X * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * O * O * . 
+2 . * * * * * * * * . 
+3 . * * * X * * * * . 
+4 . * * * O * * * * . 
+5 . * * X * X * O * . 
+6 . * * * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 75-78 
+Time taken to decide move: 0.209 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * O * . 
+2 . * * * * * * * * . 
+3 . * * * X O * * * . 
+4 . * * * O * * * * . 
+5 . * * X * X * O * . 
+6 . * * * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * O * . 
+2 . * * * * * * * * . 
+3 . * * * X O * * * . 
+4 . * * * O * * * * . 
+5 . * * X * X * O * . 
+6 . * * * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 77-68 
+Time taken to decide move: 0.228 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * * * * * * * . 
+3 . * * * X O * * * . 
+4 . * * * O * * * * . 
+5 . * * O * X * O * . 
+6 . * * * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * * * * * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . * * O * X X O * . 
+6 . * * * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 35-32 
+Time taken to decide move: 0.136 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * O * * * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . * * * * X X O * . 
+6 . * * * * * * * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * O * * * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . * * * * X * O * . 
+6 . * * * * * X * * . 
+7 . * * X O * * O * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 21-12 
+Time taken to decide move: 0.142 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * O * * * * * . 
+3 . * * * * O * * * . 
+4 . * * * O * * * * . 
+5 . * * * * X * O * . 
+6 . * * * * * X * * . 
+7 . * * X * * * O * . 
+8 . * * O * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * O * * * * * . 
+3 . * * * * O * X * . 
+4 . * * * O * * * * . 
+5 . * * * * * * O * . 
+6 . * * * * * X * * . 
+7 . * * X * * * O * . 
+8 . * * O * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 44-54 
+Time taken to decide move: 0.143 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * * * * . 
+2 . * * O * * * * * . 
+3 . * * * * O * X * . 
+4 . * * * O * O * * . 
+5 . * * * * * * O * . 
+6 . * * * * * X * * . 
+7 . * * X * * * O * . 
+8 . * * O * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * * * * . 
+2 . * * O * * * * * . 
+3 . * * * * O * X * . 
+4 . * * * O * O * * . 
+5 . * * * * * * O * . 
+6 . * * * * * X * * . 
+7 . * * X X * * O * . 
+8 . * * O * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 77-68 
+Time taken to decide move: 0.15 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * * * * . 
+2 . * * O * * * * * . 
+3 . * * * * * * X * . 
+4 . * * * O * O * * . 
+5 . * * O * * * O * . 
+6 . * * * * * X * * . 
+7 . * * X X * * O * . 
+8 . * * O * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * * * * . 
+2 . * * O * * * * * . 
+3 . * * * * * * X * . 
+4 . * * * O * O * * . 
+5 . * * O * * * O * . 
+6 . * * * * * * * * . 
+7 . * * X X * * O * . 
+8 . * * O X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 77-86 
+Time taken to decide move: 0.133 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * * * * . 
+2 . * * O O * * * * . 
+3 . * * * * * * X * . 
+4 . * * * O * * * * . 
+5 . * * O * * * O * . 
+6 . * * * * * * * * . 
+7 . * * X X * * O * . 
+8 . * * O X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * * * * . 
+2 . * * O O * * * * . 
+3 . * * * * * X * * . 
+4 . * * * O * * * * . 
+5 . * * O * * * O * . 
+6 . * * * * * * * * . 
+7 . * * X X * * O * . 
+8 . * * O X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 44-54 
+Time taken to decide move: 0.138 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O * * * * . 
+3 . * * * * * X * * . 
+4 . * * * O * * * * . 
+5 . * * O * * * O * . 
+6 . * * * * * * * * . 
+7 . * * X X * * O * . 
+8 . * * O X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O * * * * . 
+3 . * * * * * X * * . 
+4 . * * * O * * * * . 
+5 . * * O * * X O * . 
+6 . * * * * * * * * . 
+7 . * * X * * * O * . 
+8 . * * O X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 42-33 
+Time taken to decide move: 0.155 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O * * * * . 
+3 . * * * * * X * * . 
+4 . * * * O * * * * . 
+5 . * * O * * X * * . 
+6 . * * * * * * * * . 
+7 . * * X * O * O * . 
+8 . * * O X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O * * * * . 
+3 . * * * * * X * * . 
+4 . * * * O * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * * . 
+7 . * * X * O X O * . 
+8 . * * O X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 12-21 
+Time taken to decide move: 0.138 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O * * * * . 
+3 . * * * * * X * * . 
+4 . * * * O * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * * . 
+7 . * * X * * X O * . 
+8 . * * O X O * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O * * * * . 
+3 . * * * * * X * * . 
+4 . * * * O * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * * . 
+7 . * * * * * X O * . 
+8 . * X O X O * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 35-17 
+Time taken to decide move: 0.153 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O * * * * . 
+3 . * * * * * X * * . 
+4 . * * * O * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * O . 
+7 . * * * * * X * * . 
+8 . * X O X O * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O X * * * . 
+3 . * * * * * * * * . 
+4 . * * * O * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * O . 
+7 . * * * * * X * * . 
+8 . * X O X O * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 58-56 
+Time taken to decide move: 0.172 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O X O * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * O . 
+7 . * * * * * X * * . 
+8 . * X O X O * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O X O * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * O . 
+7 . * * * * X * * * . 
+8 . * X O X O * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 35-13 
+Time taken to decide move: 0.172 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O X O * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * O . 
+7 . * * * * X O * * . 
+8 . * X O X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O X O * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * O . 
+7 . * * X * * O * * . 
+8 . * X O X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 35-46 
+Time taken to decide move: 0.18 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * O O X O * * . 
 3 . * * * * * * * * . 
 4 . * * * * * O * * . 
-5 . * X * * * O * * . 
-6 . * * * X * * * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * * . 
+7 . * * X * * O * * . 
+8 . * X O X * * * * . 
 9 . . . . . . . . . . 
-It is player machine's move.
+It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X * * * * X . 
-2 . * * * * * O X * . 
+1 . * * * X * * * * . 
+2 . O * O O * O * * . 
 3 . * * * * * * * * . 
-4 . * * * * * * * * . 
-5 . * X * * * O * * . 
-6 . * * * O * * * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
+4 . * * * * * O * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * * . 
+7 . * * X * * O * * . 
+8 . * X O X * * * * . 
 9 . . . . . . . . . . 
-It is player user's move.
+It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 35-17 
+Time taken to decide move: 0.172 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X * O X * . 
+1 . * * * X * * * * . 
+2 . O * O O * O * * . 
 3 . * * * * * * * * . 
-4 . * * * * * * * * . 
-5 . * X * * * O * * . 
-6 . * * * O * * * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X * O X * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * * . 
-5 . * X * * * * * * . 
-6 . * * * O * * * * . 
-7 . O * * * * * O * . 
-8 . X * X * * O X * . 
+4 . * * * * * O * * . 
+5 . * * O * * * * * . 
+6 . * * * * * * * * . 
+7 . * * X O * * * * . 
+8 . * X O X * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X * O X * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * * . 
-5 . * X * * * * * * . 
-6 . * * * O * * * * . 
-7 . O * * * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X * * X * . 
-3 . * * * * * * O O . 
-4 . * * * * * * * * . 
-5 . * X * * * * * * . 
-6 . * * * O * * * * . 
-7 . O * * * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X * * X * . 
-3 . * * * * * * O O . 
-4 . * * * * * * * * . 
-5 . * * X * * * * * . 
-6 . * * * O * * * * . 
-7 . O * * * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X * * X * . 
-3 . * * * * * * O O . 
-4 . * * * * * * * * . 
-5 . * * X * * * * * . 
-6 . * * * O * * * * . 
-7 . * * O * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X X * * * . 
-3 . * * * * * * O O . 
-4 . * * * * * * * * . 
-5 . * * X * * * * * . 
-6 . * * * O * * * * . 
-7 . * * O * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X X * * * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * O . 
-5 . * * X * * * * * . 
-6 . * * * O * * * * . 
-7 . * * O * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * X . 
-2 . * * * X X * * * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * O . 
-5 . * X * * * * * * . 
-6 . * * * O * * * * . 
-7 . * * O * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * O . 
-4 . * * * * * * * * . 
-5 . * X * * * * * * . 
-6 . * * * O * * * * . 
-7 . * * O * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * O . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * O * * * * . 
-7 . * * O * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * O . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * O * * * * . 
-7 . O * * * * * O * . 
-8 . * * X * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * O . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * O X * * * . 
-7 . O * * * * * O * . 
-8 . * * * * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
+1 . * * * X * * * * . 
+2 . O * O O * O * * . 
 3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . * * * O X * * * . 
-7 . O * * * * * O * . 
-8 . * * * * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . * * * O X * * * . 
-7 . O * * * * * O X . 
-8 . * * * * X O * * . 
+4 . * * * * * O * * . 
+5 . X * O * * * * * . 
+6 . * * * * * * * * . 
+7 . * * * O * * * * . 
+8 . * X O X * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 38-56 
+Time taken to decide move: 0.168 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . O * * O X * * * . 
-7 . * * * * * * O X . 
-8 . * * * * X O * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . O * * O X * * * . 
-7 . * * * * * * O * . 
-8 . * * * * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . O * * O X O * * . 
+1 . * * * X * * * * . 
+2 . O * O O * O * * . 
+3 . * * * O * * * * . 
+4 . * * * * * O * * . 
+5 . X * O * * * * * . 
+6 . * * * * * * * * . 
 7 . * * * * * * * * . 
-8 . * * * * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . O * * O X O * * . 
-7 . * * * * * * X * . 
-8 . * * * * X O * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . O * * * X O * * . 
-7 . * * O * * * X * . 
-8 . * * * * X O * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . O * * * X O * * . 
-7 . * * O * * * * * . 
-8 . * * * * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * O . 
-6 . O * * * X O * * . 
-7 . * * O * * * * * . 
-8 . * * * * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X X * * * * * . 
-5 . * * * * * * * O . 
-6 . O * * * * O * * . 
-7 . * * O * * * * * . 
-8 . * * * * X O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X X * * * * * . 
-5 . O * * * * * * O . 
-6 . * * * * * O * * . 
-7 . * * O * * * * * . 
-8 . * * * * X O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X X * * * * * . 
-5 . O * * * * * * O . 
-6 . * * * * * O * * . 
-7 . * * O X * * * * . 
-8 . * * * * * O X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X X * * * * * . 
-5 . O * * * * * * * . 
-6 . * * * * * O * O . 
-7 . * * O X * * * * . 
-8 . * * * * * O X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . * X X * * * * * . 
-5 . O * * * * * * * . 
-6 . * * * * * O * O . 
-7 . * * O X * * * X . 
-8 . * * * * * O * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . O X X * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * O * O . 
-7 . * * O X * * * X . 
-8 . * * * * * O * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . O X * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * * * O * O . 
-7 . * * O X * * * X . 
-8 . * * * * * O * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . O X * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * * * O * O . 
-7 . * * * X * * * X . 
-8 . * * * O * O * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * X * O * O . 
-7 . * * * X * * * X . 
-8 . * * * O * O * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O * * . 
-2 . * * * X X * * * . 
-3 . * * * * * * * * . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * X * O * O . 
-7 . * * * X * * * X . 
-8 . * * * O * O * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * O * * . 
-2 . * * * X * * * * . 
-3 . * * * * * * * * . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * X * O * O . 
-7 . * * * X * * * X . 
-8 . * * * O * O * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * O * * . 
-2 . * * * X * * * * . 
-3 . * * * * * * * * . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * X * O * O . 
-7 . * * * X * * * X . 
-8 . * * * O * * * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * O * * . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * X * O * O . 
-7 . * * * X * * * X . 
-8 . * * * X * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * * * * * * . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * X * O * O . 
-7 . * * * X * * * X . 
-8 . * * * X * * * O . 
+8 . * X O X * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
@@ -2116,27 +1606,29 @@ Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
 1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * X * * * * . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * X * O * O . 
-7 . * * * X * * * X . 
-8 . * * * * * * * O . 
+2 . O * O O * O * * . 
+3 . * * * O * * * * . 
+4 . * * * * * O * * . 
+5 . X * O * * * * * . 
+6 . * * * * * * * * . 
+7 . X * * * * * * * . 
+8 . * * O X * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 35-24 
+Time taken to decide move: 0.12 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
 1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * X * * * O . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * X * O * * . 
-7 . * * * X * * * X . 
-8 . * * * * * * * O . 
+2 . O * O O * O * * . 
+3 . * * * O * * * * . 
+4 . * * * * * O * * . 
+5 . X * O * * * * * . 
+6 . * * * * * * * * . 
+7 . X O * * * * * * . 
+8 . * * * X * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
@@ -2144,27 +1636,29 @@ Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
 1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * X * * * O . 
-4 . O * * * * * * * . 
-5 . * * X X * * * * . 
-6 . * * * * * O * * . 
-7 . * * * X * * * X . 
-8 . * * * * * * * O . 
+2 . O * O O * O * * . 
+3 . * * * O * * * * . 
+4 . X * * * * O * * . 
+5 . X * O * * * * * . 
+6 . * * * * * * * * . 
+7 . * O * * * * * * . 
+8 . * * * X * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 35-24 
+Time taken to decide move: 0.16 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
 1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * X * * * O . 
-4 . * * * * * * * * . 
-5 . * * X X * * * * . 
-6 . * * O * * O * * . 
-7 . * * * X * * * X . 
-8 . * * * * * * * O . 
+2 . O * O O * O * * . 
+3 . * * * O * * * * . 
+4 . X * * * * O * * . 
+5 . X * O * * * * * . 
+6 . * * * * * * * * . 
+7 . O * * * * * * * . 
+8 . * * * X * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
@@ -2172,810 +1666,238 @@ Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
 1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * X * * * O . 
-4 . * * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * X O * * O * * . 
-7 . * * * X * * * X . 
-8 . * * * * * * * O . 
+2 . O * O O * O * * . 
+3 . * * * O * * * * . 
+4 . X * * * * O * * . 
+5 . X * O * * * * * . 
+6 . * * * * * * * * . 
+7 . O * * * X * * * . 
+8 . * * * * * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 42-45 
+Time taken to decide move: 0.164 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . O * O O * * * * . 
+3 . * * * O * * O * . 
+4 . X * * * * O * * . 
+5 . X * O * * * * * . 
+6 . * * * * * * * * . 
+7 . O * * * X * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
 1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * X * * * O . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
+2 . O * O O * * * * . 
+3 . * * * O * * O * . 
+4 . * * * * * O * * . 
+5 . X X O * * * * * . 
+6 . * * * * * * * * . 
+7 . O * * * X * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 43-63 
+Time taken to decide move: 0.097 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . O * * O * * * * . 
+3 . * * * O * * O * . 
+4 . * * O * * O * * . 
+5 . X X O * * * * * . 
+6 . * * * * * * * * . 
+7 . O * * * X * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . O * * O * * * * . 
+3 . * * * O * * O * . 
+4 . * * O * * O * * . 
+5 . X * O * * * * * . 
+6 . * * X * * * * * . 
+7 . O * * * X * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 42-24 
+Time taken to decide move: 0.093 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . O * * O * * * * . 
+3 . * * * O * * * * . 
+4 . * * O * * O * O . 
+5 . X * O * * * * * . 
+6 . * * X * * * * * . 
+7 . O * * * X * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * * . 
+2 . O * * O * * * * . 
+3 . * * * O * * * * . 
+4 . * * O * * O * O . 
+5 . X * O * * * * * . 
+6 . * * X * * * * * . 
+7 . O * * * X * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 35-53 
+Time taken to decide move: 0.107 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * * . 
+2 . O * * O * * * * . 
+3 . * * * O * * * * . 
+4 . * * O * * O * O . 
+5 . X * * * O * * * . 
+6 . * * X * * * * * . 
+7 . O * * * X * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * * . 
+2 . O * * O * * * * . 
+3 . * * * O * * * * . 
+4 . * * O * * O * O . 
+5 . X * * * O * * * . 
+6 . * * X * * * * * . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 55-54 
+Time taken to decide move: 0.079 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * * . 
+2 . O * * O * * * * . 
+3 . * * * * * * * * . 
+4 . * * O * O O * O . 
+5 . X * * * O * * * . 
+6 . * * X * * * * * . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * * . 
+2 . O * * O * * * * . 
+3 . * * * * * * * * . 
+4 . * * O * O O * O . 
+5 . X * * * O * * * . 
+6 . * X * * * * * * . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 12-21 
+Time taken to decide move: 0.099 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * * . 
+2 . O * * O * * * * . 
+3 . * * * * * * * * . 
+4 . * * O * O O * O . 
+5 . X * * * * * * * . 
 6 . * X * * * O * * . 
-7 . * * * X * * * X . 
-8 . * * * * * * * O . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * X * * * O . 
-4 . O * * * * * * * . 
-5 . * * * X * * * * . 
-6 . * * * * * O * * . 
-7 . * X * X * * * X . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * O * . 
-3 . * * * X * * * O . 
-4 . O * * * * * * * . 
-5 . * * * X * O * * . 
-6 . * * * * * * * * . 
-7 . * X * X * * * X . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * X * . 
-3 . * * * X * * * O . 
-4 . O * * * * * * * . 
-5 . * * * * * O * * . 
-6 . * * * * * * * * . 
-7 . * X * X * * * X . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * X * . 
-3 . * * * X * * * O . 
-4 . * O * * * * * * . 
-5 . * * * * * O * * . 
-6 . * * * * * * * * . 
-7 . * X * X * * * X . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * X * * X O . 
-4 . * O * * * * * * . 
-5 . * * * * * O * * . 
-6 . * * * * * * * * . 
-7 . * X * X * * * X . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * X * * X * . 
-4 . * O * * * * * * . 
-5 . * * * * * O * * . 
-6 . * * * * O * * * . 
-7 . * X * X * * * X . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * X * * X * . 
-4 . * O * * * * * * . 
-5 . * * * * * O * X . 
-6 . * * * * O * * * . 
-7 . * X * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * X * * X * . 
-4 . * O * * * O * * . 
-5 . * * * * * * * X . 
-6 . * * * * O * * * . 
-7 . * X * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * X * * X * . 
-4 . * O * * * O * * . 
-5 . * * * * * * * X . 
-6 . * * X * O * * * . 
-7 . * * * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * X * * X * . 
-4 . * O * * * O * * . 
-5 . * * * * * * * X . 
-6 . * * X * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * X * * X * . 
-4 . * O * * * O * * . 
-5 . * * * X * * * X . 
-6 . * * * * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * X * * X * . 
-4 . * O * * * O * * . 
-5 . * * * X * * * X . 
-6 . * * * * * O * * . 
-7 . * * * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * * * * X * . 
-4 . * O * * X O * * . 
-5 . * * * X * * * X . 
-6 . * * * * * O * * . 
-7 . * * * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * * * * X * . 
-4 . * O * * X O * * . 
-5 . * * * X * * * X . 
-6 . * * * * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * * X * X * . 
-4 . * O * * * O * * . 
-5 . * * * X * * * X . 
-6 . * * * * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * * O . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * * * X * X * . 
-4 . * O * * * O * * . 
-5 . * * * X * * * X . 
-6 . * * * * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * O * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * X * * . 
-3 . * * * * X * * * . 
-4 . * O * * * O * * . 
-5 . * * * X * * * X . 
-6 . * * * * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * O * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * X * * . 
-3 . * * O * X * * * . 
-4 . * * * * * O * * . 
-5 . * * * X * * * X . 
-6 . * * * * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * O * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * X * * . 
-3 . * * O * X * * * . 
-4 . * * * * * O * * . 
-5 . * * * * * * * X . 
-6 . * * X * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * O * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * X * * . 
-3 . * * O * X * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * X . 
-6 . * * X * * * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * O * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * X * * . 
-3 . * * O * X * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * X . 
-6 . * * * * X * O * . 
-7 . * * * X * * * * . 
-8 . * * * * * * O * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * X * * . 
-3 . * * O * X * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * X . 
-6 . * * * * X * * * . 
-7 . * * * X * * * * . 
-8 . * * * * O * O * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * O * X * * * . 
-4 . * * * X * * O * . 
-5 . * * * * * * * X . 
-6 . * * * * X * * * . 
-7 . * * * X * * * * . 
-8 . * * * * O * O * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * O * X * * * . 
-4 . * * * X O * * * . 
-5 . * * * * * * * X . 
-6 . * * * * X * * * . 
-7 . * * * X * * * * . 
-8 . * * * * O * O * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * * * * * . 
-3 . * * O * X * * * . 
-4 . * * * X O * * * . 
-5 . * * * * * * * * . 
-6 . * * * * X * * X . 
-7 . * * * X * * * * . 
-8 . * * * * O * O * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * O * * * * . 
-3 . * * * * X * * * . 
-4 . * * * X O * * * . 
-5 . * * * * * * * * . 
-6 . * * * * X * * X . 
-7 . * * * X * * * * . 
-8 . * * * * O * O * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * O * * * * . 
-3 . * * * * X * * * . 
-4 . * * * X O * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * X . 
-7 . * * * X * * * * . 
-8 . * * * * O * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * O * * * . 
-3 . * * * * X * * * . 
-4 . * * * X O * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * X . 
-7 . * * * X * * * * . 
-8 . * * * * O * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * O * * * . 
-3 . * * * * X * * * . 
-4 . * * * X O * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * X . 
-7 . * * * * * * * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * O * * * . 
-3 . * * * * X * * * . 
-4 . * * * X * * * * . 
-5 . * * * * * O * * . 
-6 . * * * * * * * X . 
-7 . * * * * * * * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * O * * * . 
-3 . * * * * X * * * . 
-4 . * * * X * * * * . 
-5 . * * * * * O * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * X * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * * . 
-2 . * * * * O * * * . 
-3 . * * * * X * * * . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * X * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X X * * * * . 
-2 . * * * * O * * * . 
+1 . * * * * * * * * . 
+2 . O X * O * * * * . 
 3 . * * * * * * * * . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * X * . 
-8 . * * X * O * X * . 
+4 . * * O * O O * O . 
+5 . X * * * * * * * . 
+6 . * X * * * O * * . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 84-73 
+Time taken to decide move: 0.085 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * X X * O * * . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * X * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X X * O * * . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * X * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * X X * O * * . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * * * O * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * O * * . 
-2 . * * * * * * * * . 
-3 . * * X * * * * * . 
-4 . * * * O * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * O * * . 
-2 . * * * * * * * * . 
-3 . * * X * O * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * O * * . 
-2 . * * * * * * * * . 
-3 . * * X * O * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * X . 
-6 . * * * * * * * * . 
-7 . * * * * * * * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * * * * * * . 
-3 . * * X * O * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * X . 
-6 . * * * * * * * * . 
-7 . * * * * * * * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * * * * * * . 
-3 . * * X * O * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * X * . 
-6 . * * * * * * * * . 
-7 . * * * * * * * * . 
-8 . * * X * O * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * * * * * * . 
-3 . * * X * O * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * X * . 
-6 . * * * * * * * * . 
-7 . * * * * * O * * . 
-8 . * * X * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * * * * * * . 
-3 . * * X * O * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * X * * . 
-7 . * * * * * O * * . 
-8 . * * X * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * O * * * * . 
-3 . * * X * * * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * X * * . 
-7 . * * * * * O * * . 
-8 . * * X * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * O * * * * . 
-3 . * * X * * * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * X * * X * * . 
-7 . * * * * * O * * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * * O * * * . 
-3 . * * X * * * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * X * * X * * . 
-7 . * * * * * O * * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * * O * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * X * * X * * . 
-7 . * * * * * O * * . 
-8 . * * * * * * X * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * * * * * * . 
+1 . * * * * * * * * . 
+2 . O X * * * * * * . 
 3 . * * * O * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * X * * X * * . 
-7 . * * * * * O * * . 
-8 . * * * * * * X * . 
+4 . * * O * O O * O . 
+5 . X * * * * * * * . 
+6 . * X * * * O * * . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
 Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * X * * * O . 
-2 . * * * * * * * * . 
+1 . * * X * * * * * . 
+2 . O * * * * * * * . 
 3 . * * * O * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * X * * X * * . 
-7 . * * * * * O * X . 
+4 . * * O * O O * O . 
+5 . X * * * * * * * . 
+6 . * X * * * O * * . 
+7 . O * X * * * * * . 
 8 . * * * * * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 84-85 
+Time taken to decide move: 0.087 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * O * * * O . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * X * * X * * . 
-7 . * * * * * O * X . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * O * * * O . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * X * * * * * * . 
-6 . * * * * * X * * . 
-7 . * * * * * O * X . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O * O . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * X * * * * * * . 
-6 . * * * * * X * * . 
-7 . * * * * * O * X . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O * O . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * X * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * O X X . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O * O . 
-2 . * * * * * * * * . 
-3 . * * * * * * * * . 
-4 . * X * * * * * * . 
-5 . * X * * * * * * . 
-6 . * * * * * * O * . 
-7 . * * * * * * X X . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O * O . 
-2 . * * * * * * * * . 
-3 . * * * X * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * O * . 
-7 . * * * * * * X X . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * * * * * * . 
+1 . * * X * * * * * . 
+2 . O * * * * * * * . 
 3 . * * * O * * * * . 
-4 . * X * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * O * . 
-7 . * * * * * * X X . 
+4 . * * O * * O * O . 
+5 . X * * O * * * * . 
+6 . * X * * * O * * . 
+7 . O * X * * * * * . 
 8 . * * * * * * * * . 
 9 . . . . . . . . . . 
 It is player user's move.
@@ -2983,280 +1905,74 @@ Where would you like to move?
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * * * * * * . 
-3 . * X * O * * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * O * . 
-7 . * * * * * * X X . 
+1 . * * * * * * * * . 
+2 . O X * * * * * * . 
+3 . * * * O * * * * . 
+4 . * * O * * O * O . 
+5 . X * * O * * * * . 
+6 . * X * * * O * * . 
+7 . O * X * * * * * . 
 8 . * * * * * * * * . 
 9 . . . . . . . . . . 
 It is player machine's move.
 Where would you like to move?
+Monte Carlo move: 34-16 
+Time taken to decide move: 0.084 seconds
 Good Move
   0 1 2 3 4 5 6 7 8 9 
 0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * * * * * * . 
-3 . * X * O * * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * X X . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * * O . 
-2 . * * * * * * * * . 
-3 . * X * O * * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * * X . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * * * * * * . 
-3 . * X * O * * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * * * X . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * * * * * * . 
-3 . * X * O * * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * X . 
-7 . * * * * * * * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * * * * * * . 
-3 . * X * * * O * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * X . 
-7 . * * * * * * * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * * O * . 
-2 . * * * * * * * * . 
-3 . * X * * * O * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * X * . 
-7 . * * * * * * * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . * X * * * * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * X * . 
-7 . * * * * * * * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . X * * * * * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * X * . 
-7 . * * * * * * * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . X * * * * O * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * X * . 
-7 . * * * * * * * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . X * * * * O * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . X * * * * * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . X * * * * * * * . 
-4 . * * * * * * O * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X X * . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . X * * * * * * * . 
-4 . * * * * * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X X * . 
-8 . * * * * * * * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . X * * * * * * * . 
-4 . * * * * * O * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * * * * * * * * . 
-3 . X * * * * * O * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * X * * * * * * . 
-3 . * * * * * * O * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * X * * * * * * . 
-3 . * * * * * O * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * * * * X * * . 
-9 . . . . . . . . . . 
-It is player user's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * X * * * * * * . 
-3 . * * * * * O * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * * * X * * * . 
-9 . . . . . . . . . . 
-It is player machine's move.
-Where would you like to move?
-Good Move
-  0 1 2 3 4 5 6 7 8 9 
-0 . . . . . . . . . . 
-1 . * * * * * O O * . 
-2 . * X * * * * O * . 
+1 . * * * * * * * * . 
+2 . O X * * * * * * . 
 3 . * * * * * * * * . 
-4 . * * * * * * * * . 
-5 . * * * * * * * * . 
-6 . * * * * * * * * . 
-7 . * * * * * X * * . 
-8 . * * * * X * * * . 
+4 . * * O * * O * O . 
+5 . X O * O * * * * . 
+6 . * X * * * O * * . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
 9 . . . . . . . . . . 
-Total moves made: 232
-Game Over! machine wins!
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * * * * * * * . 
+3 . X * * * * * * * . 
+4 . * * O * * O * O . 
+5 . X O * O * * * * . 
+6 . * X * * * O * * . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 45-54 
+Time taken to decide move: 0.16 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * * * * * * * . 
+3 . X * * * O * * * . 
+4 . * * O * * * * O . 
+5 . X O * O * * * * . 
+6 . * X * * * O * * . 
+7 . O * X * * * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * * * * . 
+2 . O * * * * * * * . 
+3 . * * * * O * * * . 
+4 . * * O * * * * O . 
+5 . X O * O * * * * . 
+6 . * X * * * O * * . 
+7 . X * X * * * * * . 
+8 . * * * * * * * * . 
+9 . . . . . . . . . . 
+Total moves made: 131
+Game Over! user wins!

@@ -2,6 +2,7 @@ package coms572;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Board {
 	
@@ -401,6 +402,14 @@ public class Board {
         }
     }
     
+    public Board cloneBoard(){
+    	Board clonedBoard = new Board();
+    	clonedBoard.setBoard(this.getConfigCopy());
+    	clonedBoard.setCurrPlayer(this.getCurrPlayer());
+    	clonedBoard.setMoves(this.getMoves());
+    	return clonedBoard;
+    }
+    
     public void printBoard(PrintWriter writer) {
     	writer.print("  ");
     	for(int i = 0;i<10;i++){ 
@@ -432,6 +441,32 @@ public class Board {
     	}
     }
     
+    public void retract() {
+        char[][] config = getBoard();
+        Move move = getMove(movesMade() - 1);
+        Player player = getCurrPlayer();
+        char curr, op;
+        removeMove();
+        if (player.getOpponent() == Constants.BLACK) {
+            curr = Constants.WHITE;
+            op = Constants.BLACK;
+        } else {
+        	curr = Constants.BLACK;
+            op = Constants.WHITE;
+        }
+        if (!move.is_capture()) {
+            op = Constants.EMPTY;
+        }
+        config[move.getR1()][move.getC1()] = op;
+        config[move.getR0()][move.getC0()] = curr;
+    }
+    
+    public Move getRandomMove(){
+    	ArrayList<Move> moves = this.legalMoves();
+		Random rndmGenerator = new Random();
+		int index = rndmGenerator.nextInt(moves.size());
+		return moves.get(index);
+	}
 /*    public static void main(String args[]){
     	Board b = new Board();
     	
