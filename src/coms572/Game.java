@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -26,7 +25,6 @@ public class Game {
 		player1 = Constants.user;
 		player2 = Constants.machine;
 		board.setCurrPlayer(player2);
-		startGame();
 	}
 
 	public void startGame() {
@@ -147,5 +145,6 @@ public class Game {
 
 	public static void main(String args[]) {
 		Game g = new Game();
+		g.startGame();
 	}
 }
