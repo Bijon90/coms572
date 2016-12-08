@@ -1100,10 +1100,8 @@ public class LoaGame
    }
 	int dfs(int i, int j, State gameState, Player pl)
     {
-		
-        //int player = board[i][j];
         Stack<int[]> s = new Stack<>();
-        int r = 0;  // result value
+        int r = 0;
         
         s.push(new int[]{i,j});
         visitedNodes[i][j] = 1;
@@ -1118,16 +1116,16 @@ public class LoaGame
             
             for(int d=0;d<8;d++)
             {
-                int ii = i + directions[d][0];
-                int jj = j + directions[d][1];
-                // check if we are on a valid position
-                if(ii<0 || ii>=size || jj<0 || jj>=size) continue;
+                int row = i + directions[d][0];
+                int col = j + directions[d][1];
+                // check the position is valid
+                if(row<0 || row>=size || col<0 || col>=size) continue;
                 
-                // check if we moved to another checker of the same player
-                if(visitedNodes[ii][jj] == 0 && gameState.board[ii][jj] == pl.name)
+                // check another checker of the same player
+                if(visitedNodes[row][col] == 0 && gameState.board[row][col] == pl.name)
                 {
-                	visitedNodes[ii][jj] = 1;
-                    s.push(new int[]{ii,jj});
+                	visitedNodes[row][col] = 1;
+                    s.push(new int[]{row,col});
                 }
             }            
         }        

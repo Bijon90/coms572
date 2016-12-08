@@ -27,7 +27,7 @@ public class LoaGameStart {
 		int depth=Integer.parseInt(sc.nextLine());
 		System.out.println("X corresponds to WHITE, O corresponds to BLACK");
 		System.out.println("Black has first turn");
-		
+		int noOfMoves=0;
 		try{
 			do{
 				
@@ -45,6 +45,7 @@ public class LoaGameStart {
 				if(game.isGameOver(state))
 				{
 					System.out.println("Random move has won !!!");
+					System.out.println("Total number of moves : " + noOfMoves);
 					System.exit(0);
 				}
 				if(state!=null)
@@ -82,13 +83,16 @@ public class LoaGameStart {
 				if(game.isGameOver(stateAfterAgentMove))
 				{
 					System.out.println("Agent has won !!!");
+					System.out.println("Total number of moves : " + noOfMoves);
 					System.exit(0);
 				}
 				if(stateAfterAgentMove!=null)
 				{
 					possibleActions = game.loaMovesPossible(stateAfterAgentMove, game.player);
 				}
+				noOfMoves++;
 			}while(possibleActions!=null && possibleActions.length>0);
+			System.out.println("Total number of moves : " + noOfMoves);
 
 		}catch(Exception e)
 		{
