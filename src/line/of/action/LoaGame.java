@@ -15,18 +15,19 @@ import java.util.Stack;
  * <p> The second element move[1] will correspond to column
  */
 
-public class LoaGame {
-	private static int depth;
+public class LoaGame 
+{
+	public static int depth;
 	public static final char W='X',B='O',EMPTY='_';
 	State gameState;
 	Player player;
-	static boolean debugging=false;
 	static int defaultDepth=3;
-	static int delay=1;
-	static int nodesExpanded=0;
+    static int nodesExpanded=0;
 	static int size=8;
 	int directions [][] = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
 	int [][] visitedNodes;
+	static boolean debugging=false;
+	static int delay;
 	
 	public LoaGame()
 	{
@@ -34,8 +35,8 @@ public class LoaGame {
 		depth=defaultDepth;
 		initializeBoard();
 		gameState.printBoard();
-		player= new Player(W);
-		player.setOtherPlayerName(B);
+		player= new Player(B);
+		player.setOtherPlayerName(W);
 		visitedNodes= new int[size][size]; // state of each position. 0=not visited, 1=in stack, 2=visited   
 	}
 	/*
@@ -52,15 +53,9 @@ public class LoaGame {
 		}
 	}
 	
-	
-	
-	
-	
-	
 	private int[] loaCheckLeftHorizontal(State state, Player player, int row,int column) 
 	{
 
-		//boolean leftMovePossible = false;
 		int countCoins=0;
 		for(int i=0;i<8;i++)
 		{
@@ -270,7 +265,7 @@ public class LoaGame {
 	 * @param player2
 	 * @return
 	 */
-	private int[][] loaMovesPossible(State currentState, Player player) 
+	int[][] loaMovesPossible(State currentState, Player player) 
 	{
 
 		ArrayList<int[]> movesPossible = new ArrayList<int[]>();
@@ -792,7 +787,8 @@ public class LoaGame {
 		}
 		return nodesBucket.get(0).getValue();
 	}
-	public static void main(String[] args) {
+	/*public static void main(String[] args) 
+	{
 		LoaGame game= new LoaGame();
 		State state2 = null;
 		int[][] possibleActions=null;
@@ -858,7 +854,7 @@ public class LoaGame {
 			e.printStackTrace();
 		}
 		sc.close();
-	}
+	}*/
 	
 	/*public static void main(String args[])
 	{
@@ -878,7 +874,7 @@ public class LoaGame {
 	 * @param moveStart
 	 * @return 
 	 */
-	private State getLoaNextState(State gameState, int[] moveStart, int[] moveEnd, Player player) 
+	State getLoaNextState(State gameState, int[] moveStart, int[] moveEnd, Player player) 
 	{
 		if(!isValidMove(gameState,moveStart,moveEnd,player))
 			return null;
@@ -1261,4 +1257,77 @@ public class LoaGame {
         }        
         return r;
     }
+	
+	static void gamePlay()
+	{
+		// TODO Auto-generated method stub
+
+		LoaGame game= new LoaGame();
+		State state2 = null;
+		int[][] possibleActions=null;
+		System.out.println("Please enter the value of depth ");
+		Scanner sc=new Scanner(System.in);
+		int depth=Integer.parseInt(sc.nextLine());
+		System.out.println("X corresponds to WHITE, O corresponds to BLACK");
+		System.out.println("White has first turn");
+		try{
+			do{
+				System.out.println("Please enter a move like r:c-fr:fc ");
+				String input = sc.nextLine();
+				String coor[] = input.split("-");
+				String startPos[]=coor[0].split(":");
+				String finalPos[]=coor[1].split(":");
+				int r = Integer.parseInt(startPos[0]);
+				int c = Integer.parseInt(startPos[1]);
+				
+				int fr = Integer.parseInt(finalPos[0]);
+				int fc = Integer.parseInt(finalPos[1]);
+
+				if(debugging) System.out.println("R >> " + r + " C >> " + c);
+				
+				State state=game.getLoaNextState(game.gameState,new int[]{r,c},new int[]{fr,fc},game.player);
+				//State state=game.getNextState(game.gameState,new int[]{r,c},game.player);
+				if(state!=null)
+					state.printBoard();
+				else
+				{
+					state=game.gameState;
+					System.out.println("That's an illegal move");
+					state.printBoard();
+				}
+				//game.gameState.printBoard();
+				System.out.println("Now Agent will generate the move");
+				Thread.sleep(delay);
+				State origState=new State(state);
+
+				long start= new Date().getTime();
+				int move[]=game.alphaBetaSearch(state,game.player.getOpponent(),depth);
+				//System.out.println("Agent generated the move. Nodes expanded >> "+ nodesExpanded);
+				System.out.println("Agent generated the move. Move = {"+move[0]+","+move[1]+"} - {"+move[2]+","+move[3]+"}");
+				long stop=new Date().getTime();
+				System.out.println("Moves generated in " + (stop-start) +" ms" );
+				nodesExpanded=0;
+				
+				if(move!=null)
+				{
+					System.out.println("New State ");
+					state2=game.getLoaNextState(origState,new int[]{move[0],move[1]}, new int[]{move[2],move[3]},game.player.getOpponent());
+					state2.printBoard();
+					game.gameState=state2;
+				}
+				if(state2!=null)
+				{
+					possibleActions = game.loaMovesPossible(state2, game.player);
+				}
+			}while(possibleActions!=null && possibleActions.length>0);
+
+		}catch(Exception e)
+		{
+			System.out.println("Incorrect input format");
+			e.printStackTrace();
+		}
+		sc.close();
+	
+
+	}
 }
