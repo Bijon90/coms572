@@ -3,15 +3,26 @@ package coms572;
 public class Move {
 	private int c0, r0, c1, r1;
 	private boolean _capture = false;
+	int moveScore;
 	
-	public Move(){}
+	public int getMoveScore() {
+		return moveScore;
+	}
+
+	public void setMoveScore(int moveScore) {
+		this.moveScore = moveScore;
+	}
+
+	public Move(){
+		moveScore = 0;
+	}
 	
     public Move(int col0, int row0, int col1, int row1) {
         this.c0 = col0;
         this.r0 = row0;
         this.c1 = col1;
         this.r1 = row1;
-
+        this.moveScore = 0;
     }
 
 	public int getC0() {

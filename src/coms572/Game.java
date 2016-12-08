@@ -12,6 +12,8 @@ public class Game {
 	Player player1, player2;
 	private final int moveLimit = 300;
 	PrintWriter writer;
+	public ArrayList<Double> times = new ArrayList<>();
+	public double maxTime = Double.MIN_VALUE, minTime = Double.MAX_VALUE, totalTime = 0.0, time = 0.0;
 
 	public Game() {
 		try {
@@ -24,7 +26,7 @@ public class Game {
 		board=new Board();
 		player1 = Constants.user;
 		player2 = Constants.machine;
-		board.setCurrPlayer(player2);
+		board.setCurrPlayer(player1);
 	}
 
 	public void startGame() {
@@ -39,7 +41,7 @@ public class Game {
 						System.out.println(player1.get_name()+" wins!");
 						writer.println(player1.get_name()+" wins!");
 					}
-					else{
+					else if(board.piecesContiguous(player2)){
 						System.out.println(player2.get_name()+" wins!");
 						writer.println(player2.get_name()+" wins!");
 					}
@@ -53,7 +55,6 @@ public class Game {
 				}
 				break;
 			}
-			setNextPlayer();
 			ArrayList<Move> moves = board.legalMoves();
 			if (moves.size() > 0) {
 				System.out.println("It is player " + board.getCurrPlayer().get_name()+ "'s move.");
@@ -83,10 +84,15 @@ public class Game {
 					myMove = getRandomMove(moves);
 				else{
 					double t1 = System.currentTimeMillis();
-					MonteCarloTreeSearch mcTS = new MonteCarloTreeSearch(this.board.cloneBoard());
+					MonteCarloTreeSearch mcTS = new MonteCarloTreeSearch(this.board.cloneBoard(), writer);
 					Move mcMove = mcTS.getMonteCarloMove(); 
 					double t2 = System.currentTimeMillis();
 					myMove = mcMove == null ? getRandomMove(moves) : mcMove;
+					time = (t2-t1)/1000;
+					times.add(time);
+					maxTime = Math.max(maxTime, time);
+					minTime = Math.min(minTime, time);
+					totalTime += time;
 					System.out.println("Monte Carlo move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
 					writer.println("Monte Carlo move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
 					
@@ -96,7 +102,6 @@ public class Game {
 					board.makeMove(myMove);
 					board.printBoard(writer);
 					board.printBoard();
-					board.addMove(myMove);
 					if(board.gameOver()){
 						if(board.piecesContiguous(player1) && !board.piecesContiguous(player2)){
 							System.out.println("Total moves made: "+board.movesMade());
@@ -128,6 +133,11 @@ public class Game {
 				setNextPlayer();
 			}
 		}
+		double avgTime = totalTime / times.size();
+		writer.println("Maximum time taken for a move: "+maxTime +" seconds");
+		writer.println("Minimum time taken for a move: "+minTime +" seconds");
+		writer.println("Average time taken per move: "+avgTime +" seconds");
+		writer.println("Total time taken for all moves: "+totalTime +" seconds");
 		writer.close();
 	}
 	public void setNextPlayer(){

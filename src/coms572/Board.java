@@ -6,31 +6,34 @@ import java.util.Random;
 
 public class Board {
 	
-	private static ArrayList<Move> moves = new ArrayList<Move>();
+	private ArrayList<Move> moves;
 	private char[][] board;
 	private Player currPlayer;
 	
 	public Board(char[][] initialContents, Player player) {
         board = initialContents;
         currPlayer = player;
+        this.moves = new ArrayList<>();
     }
 
 	/** A new board in the standard initial position. */
     public Board() {    	
         this(Constants.INITIAL_PIECES, Constants.user);
+        this.moves = new ArrayList<>();
     }
 	
     public Board(Board board) {
     	this.board = board.getBoard();
     	this.currPlayer = board.getCurrPlayer();
+    	this.moves = new ArrayList<>();
     }
     
-    public static ArrayList<Move> getMoves() {
+    public ArrayList<Move> getMoves() {
 		return moves;
 	}
 
-	public static void setMoves(ArrayList<Move> moves) {
-		Board.moves = moves;
+	public void setMoves(ArrayList<Move> moves) {
+		this.moves = moves;
 	}
 
 	public char[][] getBoard() {
@@ -67,13 +70,13 @@ public class Board {
     
     /** Return the column number (a value in the range 1-8) for SQ.
      *  SQ is in the form cr */
-    static int col(String sq) {
+    public int col(String sq) {
         return Integer.parseInt(sq.substring(0));
     }
 
     /** Return the row number (a value in the range 1-8) for SQ.
      *  SQ is in the form cr */
-    static int row(String sq) {
+    public int row(String sq) {
         return Integer.parseInt(sq.substring(1));
     }
 	
@@ -364,7 +367,7 @@ public class Board {
      *  an array of coordinates) is connected to any other piece in
      *  PIECES, and false otherwise. Pieces are considered connected
      *  if pieces are one square away from each other.*/
-    private static boolean isConnected(ArrayList<int[]> pieces
+    public boolean isConnected(ArrayList<int[]> pieces
             , int[] piece) {
         for (int[] target : pieces) {
             int xd = Math.abs(piece[0] - target[0]),
@@ -407,6 +410,9 @@ public class Board {
     	clonedBoard.setBoard(this.getConfigCopy());
     	clonedBoard.setCurrPlayer(this.getCurrPlayer());
     	clonedBoard.setMoves(this.getMoves());
+    	ArrayList<Move> copiedMoves = new ArrayList<>();
+    	copiedMoves.addAll(getMoves());
+    	clonedBoard.setMoves(copiedMoves);
     	return clonedBoard;
     }
     
@@ -434,6 +440,8 @@ public class Board {
     				move.set_capture(true);
     			board[move.getR1()][move.getC1()] = getCurrPlayer().get_marker();
     			board[move.getR0()][move.getC0()] = Constants.EMPTY;
+    			addMove(move);
+    			setCurrPlayer(currPlayer.getNextPlayer());
     		}
     	}
     	else{
@@ -442,7 +450,8 @@ public class Board {
     }
     
     public void retract() {
-        char[][] config = getBoard();
+    	this.setCurrPlayer(currPlayer.getNextPlayer());
+    	char[][] config = getBoard();
         Move move = getMove(movesMade() - 1);
         Player player = getCurrPlayer();
         char curr, op;

@@ -1,0 +1,1688 @@
+Play Line of Action! Start Game! user vs. machine
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X X X * . 
+2 . O * * * * * * O . 
+3 . O * * * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . * X X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O * * * * * * O . 
+3 . O * * * * X * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . * X X X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 46-48 
+Time taken to decide move: 36.628 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O * O * * * * O . 
+3 . O * * * * X * O . 
+4 . * * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . * X X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O * O * * * * O . 
+3 . O * X * * * * O . 
+4 . * * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . * X X X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 67-85 
+Time taken to decide move: 0.591 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O * O * * * * O . 
+3 . O * X * * * * O . 
+4 . * * * * * * * O . 
+5 . O * * * * O * * . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . * X X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O * O * * * * O . 
+3 . O * X * * * * O . 
+4 . * * * * * * * O . 
+5 . O * * * * O * * . 
+6 . O * * X * * * O . 
+7 . O * * * * * * O . 
+8 . * X X * X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 68-67 
+Time taken to decide move: 1.852 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O * O * * * * O . 
+3 . O * X * * * * O . 
+4 . * * * * * * * O . 
+5 . O * * * * O * * . 
+6 . O * * X * * * O . 
+7 . O * * * * O * * . 
+8 . * X X * X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O * * * * O * * . 
+6 . O * * X * * * O . 
+7 . O * * * * O * * . 
+8 . * X X * X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 38-27 
+Time taken to decide move: 27.196 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O * * * * O * * . 
+6 . O * * X * * * O . 
+7 . O * * O * * * * . 
+8 . * X X * X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O * X * * O * * . 
+6 . O * * X * * * O . 
+7 . O * * O * * * * . 
+8 . * X X * X * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 78-87 
+Time taken to decide move: 0.243 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O * X * * O * * . 
+6 . * * * X * * * O . 
+7 . O * * O * * * * . 
+8 . * X X * X * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O X X * * O * * . 
+6 . * * * X * * * O . 
+7 . O * * O * * * * . 
+8 . * * X * X * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 78-56 
+Time taken to decide move: 0.307 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O X X * * * * * . 
+6 . * * * X * O * O . 
+7 . O * * O * * * * . 
+8 . * * X * X * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O X * * * * * * . 
+6 . * * * X * O * O . 
+7 . O * * O * * * * . 
+8 . * * X * X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 77-75 
+Time taken to decide move: 4.941 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O X * * * * * * . 
+6 . * * * X O O * * . 
+7 . O * * O * * * * . 
+8 . * * X * X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X X * X * . 
+2 . O X O * * * * O . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O X * * * * * * . 
+6 . * * * X O O * * . 
+7 . O * * O * * X * . 
+8 . * * X * X * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 25-14 
+Time taken to decide move: 0.487 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X X * X * . 
+2 . O X O O * * * * . 
+3 . O * * * * * * O . 
+4 . * * * * * * * O . 
+5 . O X * * * * * * . 
+6 . * * * X O O * * . 
+7 . O * * O * * X * . 
+8 . * * X * X * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X * * X * . 
+2 . O X O O * * * * . 
+3 . O * * * * * X O . 
+4 . * * * * * * * O . 
+5 . O X * * * * * * . 
+6 . * * * X O O * * . 
+7 . O * * O * * X * . 
+8 . * * X * X * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 28-58 
+Time taken to decide move: 0.355 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X * * X * . 
+2 . O X O O * * * * . 
+3 . O * * * * * X O . 
+4 . * * * * O * * O . 
+5 . O X * * * * * * . 
+6 . * * * X * O * * . 
+7 . O * * O * * X * . 
+8 . * * X * X * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X X X * * X * . 
+2 . O X O O * * * * . 
+3 . O * * * * * X O . 
+4 . * * * * O * * O . 
+5 . O * * X * * * * . 
+6 . * * * X * O * * . 
+7 . O * * O * * X * . 
+8 . * * X * X * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Monte Carlo move: 46-68 
+Time taken to decide move: 0.483 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O X X * * X * . 
+2 . O X O O * * * * . 
+3 . O * * * * * X O . 
+4 . * * * * * * * O . 
+5 . O * * X * * * * . 
+6 . * * * X * O * * . 
+7 . O * * O * * X * . 
+8 . * * X * X * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O X X * * X * . 
+2 . O X O O * * * * . 
+3 . O * * * * * X O . 
+4 . * * * * * * * O . 
+5 . O * * X * * * * . 
+6 . * * * X * O * * . 
+7 . O * * O * * X * . 
+8 . * * X * * * X X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Monte Carlo move: 65-56 
+Time taken to decide move: 0.639 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O X X * * X * . 
+2 . O X O O * * * * . 
+3 . O * * * * * X O . 
+4 . * * * * * * O O . 
+5 . O * * X * * * * . 
+6 . * * * X * O * * . 
+7 . O * * * * * X * . 
+8 . * * X * * * X X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O X X * * X * . 
+2 . O X O O * * * * . 
+3 . O * * * * * X O . 
+4 . * * * * * * O O . 
+5 . O * * X * * * * . 
+6 . * * * * * X * * . 
+7 . O * * * * * X * . 
+8 . * * X * * * X X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 57-55 
+Time taken to decide move: 0.345 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O X X * * X * . 
+2 . O X O O O * * * . 
+3 . O * * * * * X O . 
+4 . * * * * * * * O . 
+5 . O * * X * * * * . 
+6 . * * * * * X * * . 
+7 . O * * * * * X * . 
+8 . * * X * * * X X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * X * * X X . 
+2 . O X O O O * * * . 
+3 . O * * * * * X O . 
+4 . * * * * * * * O . 
+5 . O * * X * * * * . 
+6 . * * * * * X * * . 
+7 . O * * * * * X * . 
+8 . * * X * * * X X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 77-74 
+Time taken to decide move: 0.526 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * X * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X O . 
+4 . * O * * * * * O . 
+5 . O * * X * * * * . 
+6 . * * * * * X * * . 
+7 . O * * * * * X * . 
+8 . * * X * * * X X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * X * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X O . 
+4 . * O * * * * * O . 
+5 . O * * X * * * * . 
+6 . * * * * * X * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 85-74 
+Time taken to decide move: 0.608 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * X * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X * . 
+4 . * O * * * * O O . 
+5 . O * * X * * * * . 
+6 . * * * * * X * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * X * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X * . 
+4 . * O * * * * O X . 
+5 . O * * X * * * * . 
+6 . * * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 67-85 
+Time taken to decide move: 0.488 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * X * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X * . 
+4 . * O * * * * O X . 
+5 . O * * X * * * * . 
+6 . O * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * X * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X * . 
+4 . * O * * * * O X . 
+5 . O * * X * * * X . 
+6 . O * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 66-55 
+Time taken to decide move: 0.602 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * X * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X * . 
+4 . * O * * * * O X . 
+5 . O * * X * * * X . 
+6 . * * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * X * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X * . 
+4 . * O * * * * O X . 
+5 . O * * X X * * * . 
+6 . * * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 88-87 
+Time taken to decide move: 23.481 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * O * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X * . 
+4 . * O * * * * * X . 
+5 . O * * X X * * * . 
+6 . * * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * O * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * * X * . 
+4 . * O * * * * * * . 
+5 . O * * X X * X * . 
+6 . * * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 55-82 
+Time taken to decide move: 42.516 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * * * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * O X * . 
+4 . * O * * * * * * . 
+5 . O * * X X * X * . 
+6 . * * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * * * * X X . 
+2 . O X O * O * * * . 
+3 . O * * * * O X * . 
+4 . * O * * * X * * . 
+5 . O * * X X * * * . 
+6 . * * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 78-76 
+Time taken to decide move: 0.438 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * * * * X X . 
+2 . O X O * O * * * . 
+3 . O * O * * O X * . 
+4 . * O * * * X * * . 
+5 . * * * X X * * * . 
+6 . * * * * * * * * . 
+7 . O X * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * * * * X X . 
+2 . O X O * O * * * . 
+3 . O * O * * X X * . 
+4 . * O * * * X * * . 
+5 . * * * X X * * * . 
+6 . * * * * * * * * . 
+7 . O * * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 57-77 
+Time taken to decide move: 0.317 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * * * * X X . 
+2 . O X O * O * * * . 
+3 . * * O * * X X * . 
+4 . * O * * * X * * . 
+5 . * * O X X * * * . 
+6 . * * * * * * * * . 
+7 . O * * * * * X * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * * * * X X . 
+2 . O X O * O * * * . 
+3 . * * O * * X X * . 
+4 . * O * * * X * * . 
+5 . * * O X X * * * . 
+6 . * * * * * * * X . 
+7 . O * * * * * * * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 78-67 
+Time taken to decide move: 0.234 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * * * * X X . 
+2 . O X O * O * * * . 
+3 . O * O * * X X * . 
+4 . * O * * * X * * . 
+5 . * * * X X * * * . 
+6 . * * * * * * * X . 
+7 . O * * * * * * * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O O * * * * X X . 
+2 . O X O * O * X * . 
+3 . O * O * * X X * . 
+4 . * O * * * X * * . 
+5 . * * * * X * * * . 
+6 . * * * * * * * X . 
+7 . O * * * * * * * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 74-84 
+Time taken to decide move: 29.186 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * * X X . 
+2 . O X O * O * X * . 
+3 . O * O O * X X * . 
+4 . * O * * * X * * . 
+5 . * * * * X * * * . 
+6 . * * * * * * * X . 
+7 . O * * * * * * * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * * X X . 
+2 . O X O * O * * * . 
+3 . O * O O * X X * . 
+4 . * O * * * X * * . 
+5 . * * * * X * * * . 
+6 . * * * * * * X X . 
+7 . O * * * * * * * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Monte Carlo move: 48-47 
+Time taken to decide move: 0.444 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * * X X . 
+2 . O X O * O * * * . 
+3 . * * O O * O X * . 
+4 . * O * * * X * * . 
+5 . * * * * X * * * . 
+6 . * * * * * * X X . 
+7 . O * * * * * * * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * * X X . 
+2 . O X O * O * * * . 
+3 . * * O O * O X * . 
+4 . * O * * * X * X . 
+5 . * * * * X * * * . 
+6 . * * * * * * X * . 
+7 . O * * * * * * * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Monte Carlo move: 57-58 
+Time taken to decide move: 0.475 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * O X X . 
+2 . O X O * O * * * . 
+3 . * * O * * O X * . 
+4 . * O * * * X * X . 
+5 . * * * * X * * * . 
+6 . * * * * * * X * . 
+7 . O * * * * * * * . 
+8 . * * * * * * X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * O X X . 
+2 . O X O * O * * * . 
+3 . * * O * * O X * . 
+4 . * O * * * X * X . 
+5 . * * * * X * * * . 
+6 . * * * * * * X * . 
+7 . O * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 66-56 
+Time taken to decide move: 0.467 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * O X X . 
+2 . O X O * O * * * . 
+3 . * * O * * * X * . 
+4 . * O * * * X * X . 
+5 . * * * * X * * O . 
+6 . * * * * * * X * . 
+7 . O * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * O X X . 
+2 . O X O * O * * * . 
+3 . * * O * * * X * . 
+4 . * O * * * X * X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . O * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 57-77 
+Time taken to decide move: 0.449 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * O X X . 
+2 . O X O * O * * * . 
+3 . * * O * * * X * . 
+4 . O O * * * X * X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * O X X . 
+2 . O X O * O * * * . 
+3 . * * O * * * X * . 
+4 . O O * * * * * X . 
+5 . * * X * * * * O . 
+6 . * * * X * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 64-24 
+Time taken to decide move: 2.932 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O * * * * O X X . 
+2 . O X O * O * * * . 
+3 . * * O * * * X * . 
+4 . O * * * O * * X . 
+5 . * * X * * * * O . 
+6 . * * * X * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . O X * * * O X X . 
+2 . O * O * O * * * . 
+3 . * * O * * * X * . 
+4 . O * * * O * * X . 
+5 . * * X * * * * O . 
+6 . * * * X * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 65-63 
+Time taken to decide move: 0.458 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * * O X X . 
+2 . O * O * O * * * . 
+3 . * * O * * * X * . 
+4 . O * * O O * * X . 
+5 . * * X * * * * O . 
+6 . * * * X * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * * O * X . 
+2 . O * O * O * * * . 
+3 . * * O * * * X * . 
+4 . O * * X O * * X . 
+5 . * * X * * * * O . 
+6 . * * * X * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 74-52 
+Time taken to decide move: 0.197 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * * O * X . 
+2 . O * O * * * * * . 
+3 . * * O * * * X * . 
+4 . O * * X O * O X . 
+5 . * * X * * * * O . 
+6 . * * * X * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * * * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * * O * X . 
+2 . O * O * * * * * . 
+3 . * * O * * * X * . 
+4 . O * * X O * O X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * X * * * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 35-33 
+Time taken to decide move: 0.279 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * * O * X . 
+2 . * * O * * * * * . 
+3 . * O O * * * X * . 
+4 . O * * X O * O X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * X * * * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * * O * X . 
+2 . * * O * * * * * . 
+3 . * O O * * * * * . 
+4 . O * * X O X O X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * X * * * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 55-33 
+Time taken to decide move: 14.65 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * * O * X . 
+2 . * * O * O * * * . 
+3 . * O O * * * * * . 
+4 . O * * X O X * X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * X * * * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * * O * X . 
+2 . * * O * O * * * . 
+3 . * O O * * * * * . 
+4 . O * * X O X * X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * X * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 84-74 
+Time taken to decide move: 0.127 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * O * O * * * . 
+3 . * * O * * * * * . 
+4 . O * * X O X * X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * X * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * O * O * * * . 
+3 . * * O * * * X * . 
+4 . O * * X O * * X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * X * X . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 77-68 
+Time taken to decide move: 0.165 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * O * * * O * . 
+3 . * * O * * * X * . 
+4 . O * * X O * * X . 
+5 . * * X * * * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * X * X . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * O * * * O * . 
+3 . * * O * * * X * . 
+4 . O * * X O * * X . 
+5 . * * X * X * * O . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 63-41 
+Time taken to decide move: 0.22 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * O * * * O * . 
+3 . * * O * * * X * . 
+4 . O * * X O * * X . 
+5 . * * X * O * * * . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * O * * X O * . 
+3 . * * O * * * X * . 
+4 . O * * * O * * X . 
+5 . * * X * O * * * . 
+6 . * * * * * * X * . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 37-48 
+Time taken to decide move: 0.144 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * * * * X O * . 
+3 . * * O * * * X * . 
+4 . O * * * O * * X . 
+5 . * * X * O * * * . 
+6 . * * * * * * O * . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * * * * X O * . 
+3 . * * O * * * X * . 
+4 . O * * * O * * * . 
+5 . * * X * O * * * . 
+6 . * * * * * * O X . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 76-74 
+Time taken to decide move: 0.099 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * * * * X O * . 
+3 . * * O * * * X * . 
+4 . * * * * O * * * . 
+5 . * O X * O * * * . 
+6 . * * * * * * O X . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * * * * X O * . 
+3 . * * X * * * X * . 
+4 . * * * * O * * * . 
+5 . * O * * O * * * . 
+6 . * * * * * * O X . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 26-17 
+Time taken to decide move: 0.211 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * * * * X O * . 
+3 . * * X * * * X * . 
+4 . * * * * O * * * . 
+5 . * O * * O * * O . 
+6 . * * * * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * * * * * O * . 
+3 . * * X * * * X * . 
+4 . * * * * O * * * . 
+5 . * O * * O X * O . 
+6 . * * * * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 67-65 
+Time taken to decide move: 0.085 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * * * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * * O * * * . 
+5 . * O * O O X * O . 
+6 . * * * * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * * X * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O * * * O * X . 
+2 . * * * * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * * O * * * . 
+5 . * O * O O X * O . 
+6 . * * * * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 28-37 
+Time taken to decide move: 0.345 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * X . 
+2 . * * * * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * * O * * * . 
+5 . * O * O O X * O . 
+6 . * * * * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * X . 
+2 . * * * * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * * O * * * . 
+5 . * O * O O * * O . 
+6 . * * * * * X * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 68-77 
+Time taken to decide move: 0.133 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * X . 
+2 . * * * * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * O * * * * . 
+5 . * O * O O * * O . 
+6 . * * * * * X * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * O * * * X . 
+5 . * O * O O * * O . 
+6 . * * * * * X * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 57-46 
+Time taken to decide move: 0.117 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * O * * * X . 
+5 . * O * * O * * O . 
+6 . * * O * * X * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * O O * * * * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * O * * * X . 
+5 . * O * * O * * O . 
+6 . * * X * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 78-87 
+Time taken to decide move: 0.124 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O * * * * * . 
+2 . * * O * * * * * . 
+3 . * * X * * * X * . 
+4 . * * * O * * * X . 
+5 . * O * * O * * O . 
+6 . * * X * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O * * * * * . 
+2 . * * O * * X * * . 
+3 . * * X * * * X * . 
+4 . * * * O * * * * . 
+5 . * O * * O * * O . 
+6 . * * X * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 27-26 
+Time taken to decide move: 0.141 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O * * * * * . 
+2 . * * O * * X * * . 
+3 . * * X * * * X * . 
+4 . * * * * * * * * . 
+5 . * O * * O * * O . 
+6 . * O X * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O * * * * * . 
+2 . * * O * * X * * . 
+3 . * * X * * * X * . 
+4 . * * * * * * * * . 
+5 . * O * * O * * O . 
+6 . * O * * * X * X . 
+7 . * * * * * * * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 87-76 
+Time taken to decide move: 0.237 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O * * * * * . 
+2 . * * O * * X * * . 
+3 . * * X * * * X * . 
+4 . * * * * * * * * . 
+5 . * O * * O * * * . 
+6 . * O * * * X * X . 
+7 . * * * * * O * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O * * * * * . 
+2 . * * O * * X X * . 
+3 . * * X * * * * * . 
+4 . * * * * * * * * . 
+5 . * O * * O * * * . 
+6 . * O * * * X * X . 
+7 . * * * * * O * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 86-85 
+Time taken to decide move: 0.11 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O O * * * * . 
+2 . * * * * * X X * . 
+3 . * * X * * * * * . 
+4 . * * * * * * * * . 
+5 . * O * * O * * * . 
+6 . * O * * * X * X . 
+7 . * * * * * O * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O O * * * * . 
+2 . * * * * * X X * . 
+3 . * * X * * * * * . 
+4 . * * * * * * * * . 
+5 . * O * * O * * * . 
+6 . * O X * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 85-67 
+Time taken to decide move: 0.28 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O O * * * * . 
+2 . * * * * * X X * . 
+3 . * * X * * * * * . 
+4 . * * * O * * * * . 
+5 . * O * * O * * * . 
+6 . * * X * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * * X * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O O * * * * . 
+2 . * * * * * X X * . 
+3 . * * X * * * * * . 
+4 . * * * O * * * * . 
+5 . * O * * O * * * . 
+6 . * * X * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 85-65 
+Time taken to decide move: 0.118 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O O * * * * . 
+2 . * * * * * X X * . 
+3 . * * X * * * * * . 
+4 . * * * * O * * * . 
+5 . * O * * O * * * . 
+6 . * * X * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O O * * * * . 
+2 . * * * * * X X * . 
+3 . * * * X * * * * . 
+4 . * * * * O * * * . 
+5 . * O * * O * * * . 
+6 . * * X * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 55-52 
+Time taken to decide move: 0.022 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O O * * * * . 
+2 . * * * * * X X * . 
+3 . * * * X * * * * . 
+4 . * * * * O * * * . 
+5 . * O * * * * O * . 
+6 . * * X * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O O * * * * . 
+2 . * * * * * X X * . 
+3 . * * * X * * * * . 
+4 . * * * * O * * * . 
+5 . * O * * * * O * . 
+6 . * * * * * * * X . 
+7 . * * * * * O * * . 
+8 . * * X X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 75-73 
+Time taken to decide move: 0.156 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O * * * * * . 
+2 . * * O * * X X * . 
+3 . * * * X * * * * . 
+4 . * * * * O * * * . 
+5 . * O * * * * O * . 
+6 . * * * * * * * X . 
+7 . * * * * * O * * . 
+8 . * * X X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * O * * * * * . 
+2 . * * O * * X X * . 
+3 . * * * X * * * * . 
+4 . * * * * O * * * . 
+5 . * O X * * * O * . 
+6 . * * * * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Move can result in win for machine
+Monte Carlo move: 35-37 
+Time taken to decide move: 0.084 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * O * * * * . 
+2 . * * O * * X X * . 
+3 . * * * X * * * * . 
+4 . * * * * O * * * . 
+5 . * O X * * * O * . 
+6 . * * * * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * O * * * * . 
+2 . * * O * * * X * . 
+3 . * * * X * * * * . 
+4 . * * * * O X * * . 
+5 . * O X * * * O * . 
+6 . * * * * * * * X . 
+7 . * * * * * O * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Monte Carlo move: 67-76 
+Time taken to decide move: 0.164 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * O * * * * . 
+2 . * * O * * * X * . 
+3 . * * * X * * * * . 
+4 . * * * * O X * * . 
+5 . * O X * * O O * . 
+6 . * * * * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * O * * * * . 
+2 . * * O * * * X * . 
+3 . * * * X * * X * . 
+4 . * * * * O * * * . 
+5 . * O X * * O O * . 
+6 . * * * * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Move can result in win for machine
+Monte Carlo move: 84-81 
+Time taken to decide move: 0.162 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * O * * * * . 
+2 . * * O * * * X * . 
+3 . * * * O * * X * . 
+4 . * * * * O * * * . 
+5 . * * X * * O O * . 
+6 . * * * * * * * X . 
+7 . * * * * * * * * . 
+8 . * * * X * * * * . 
+9 . . . . . . . . . . 
+Total moves made: 2383172
+Game Over! machine wins!
+Maximum time taken for a move: 42.516 seconds
+Minimum time taken for a move: 0.022 seconds
+Average time taken per move: 3.7703461538461536 seconds
+Total time taken for all moves: 196.058 seconds
