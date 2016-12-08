@@ -37,7 +37,7 @@ public class LoaGame
 		gameState.printBoard();
 		player= new Player(B);
 		player.setOtherPlayerName(W);
-		visitedNodes= new int[size][size]; // state of each position. 0=not visited, 1=in stack, 2=visited   
+		visitedNodes= new int[size][size]; // for each location on board. 0=not visited,1=in stack,2=visited   
 	}
 	/*
 	 * Initialize the board
@@ -72,6 +72,272 @@ public class LoaGame
 		return new int[]{row,column-countCoins};
 		
 	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckRightHorizontal(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		for(int i=0;i<8;i++)
+		{
+			if(state.board[row][i]!=EMPTY)
+				countCoins++;
+		}
+		for(int i=column;i<column+countCoins;i++)
+		{
+			if(i>7 ||(state.board[row][i]==player.getOtherPlayerName()))
+				return null;
+		}
+		if((column+countCoins>7) || state.board[row][column+countCoins]==player.name)
+			return null;
+		return new int[]{row,column+countCoins};
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckUpMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		for(int i=0;i<8;i++)
+		{
+			if(state.board[row][i]!=EMPTY)
+				countCoins++;
+		}
+		for(int i=column;i>column-countCoins;i--)
+		{
+			if(i<0 ||(state.board[row][i]==player.getOtherPlayerName()))
+				return null;
+		}
+		if((column-countCoins<0) || state.board[row][column-countCoins]==player.name)
+			return null;
+		return new int[]{row,column-countCoins};
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckDownMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		for(int i=0;i<8;i++)
+		{
+			if(state.board[i][column]!=EMPTY)
+				countCoins++;
+		}
+		for(int i=row;i<row+countCoins;i++)
+		{
+			if(i>7 ||(state.board[i][column]==player.getOtherPlayerName()))
+				return null;
+		}
+		if((row+countCoins>7) || state.board[row+countCoins][column]==player.name)
+			return null;
+		return new int[]{row+countCoins,column};
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckNorthEastMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		if(row+column <= 7)
+		{
+			int startR=row+column,startC=0;
+			for(int k=startR;k>=0 && startC<8;k--,startC++)
+			{
+				if(state.board[k][startC]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+			
+		}
+		else
+		{
+			int startC=(row+column)-7,startR=7;
+			for(int k=startC;k<8 && startR>=0;k++,startR--)
+			{
+				if(state.board[startR][k]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+		}
+		int startR=row,startC=column;
+		for(int k=startR;k>startR-countCoins;k--,startC++)
+		{
+			if(k<0 || startC>7 ||(state.board[k][startC]==player.getOtherPlayerName()))
+				return null;
+				
+		}
+		if((row-countCoins<0) || (column+countCoins>7) || state.board[row-countCoins][column+countCoins]==player.name)
+			return null;
+		return new int[]{row-countCoins,column+countCoins}; 
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckNorthWestMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		if(row>=column)
+		{
+			int startR=row-column,startC=0;
+			for(int k=startR;k<8 && startC<8;k++,startC++)
+			{
+				if(state.board[k][startC]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+			
+		}
+		else
+		{
+			int startC=column-row,startR=0;
+			for(int k=startC;k<8 && startR<8 ;k++,startR++)
+			{
+				if(state.board[startR][k]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+		}
+		// TO-DO
+		int startR=row,startC=column;
+		for(int k=startR;k>startR-countCoins;k--,startC--)
+		{
+			if(k<0 || startC<0 ||(state.board[k][startC]==player.getOtherPlayerName()))
+				return null;
+				
+		}
+		if((row-countCoins<0) || (column-countCoins<0) || state.board[row-countCoins][column-countCoins]==player.name)
+			return null;
+		return new int[]{row-countCoins,column-countCoins}; 
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckSouthEastMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		if(row>=column)
+		{
+			int startR=row-column,startC=0;
+			for(int k=startR;k<8 && startC<8;k++,startC++)
+			{
+				if(state.board[k][startC]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+			
+		}
+		else
+		{
+			int startC=column-row,startR=0;
+			for(int k=startC;k<8 && startR<8;k++,startR++)
+			{
+				if(state.board[startR][k]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+		}
+		// TO-DO
+		int startR=row,startC=column;
+		for(int k=startR;k<startR+countCoins;k++,startC++)
+		{
+			if(k>7 || startC>7 ||(state.board[k][startC]==player.getOtherPlayerName()))
+				return null;
+				
+		}
+		if((row+countCoins>7) || (column+countCoins>7) || state.board[row+countCoins][column+countCoins]==player.name)
+			return null;
+		return new int[]{row+countCoins,column+countCoins}; 
+	
+	}
+	/**
+	 * @param currentState
+	 * @param player2
+	 * @param i
+	 * @param j
+	 * @return
+	 */
+	private int[] loaCheckSouthWestMove(State state, Player player, int row,int column) 
+	{
+		int countCoins=0;
+		if(row+column<=7)
+		{
+			int startR=row+column,startC=0;
+			for(int k=startR;k>=0 && startC<8;k--,startC++)
+			{
+				if(state.board[k][startC]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+			
+		}
+		else
+		{
+			int startC=(row+column)-7,startR=7;
+			for(int k=startC;k<8 && startR>=0;k++,startR--)
+			{
+				if(state.board[startR][k]!=EMPTY)
+				{
+					countCoins++;
+				}
+					
+			}
+		}
+		// TO-DO
+		int startR=row,startC=column;
+		for(int k=startR;k<startR+countCoins;k++,startC--)
+		{
+			if(k>7 || startC<0 ||(state.board[k][startC]==player.getOtherPlayerName()))
+				return null;
+				
+		}
+		if((row+countCoins>7) || (column-countCoins<0) || state.board[row+countCoins][column-countCoins]==player.name)
+			return null;
+		return new int[]{row+countCoins,column-countCoins}; 
+	
+	}
+	
 	
 	private void loaAddMove(ArrayList<int[]> legalMoves, int[] startMove, int[] endMove) 
 	{
@@ -104,9 +370,7 @@ public class LoaGame
 			int depth=0;
 
 			ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
-			//int[][] possibleActions = movesPossible(nextState, player);
 			int[][] loaPossibleActions = loaMovesPossible(nextState, player);
-			//if(isTerminalState(currentState))
 			if(isGameOver(currentState))
 			{
 				System.out.println("Terminal state reached ");
@@ -141,57 +405,11 @@ public class LoaGame
 	 * @param currentState
 	 * @return
 	 */
-	private boolean isGameOver(State currentState) 
+	public boolean isGameOver(State currentState) 
 	{
 		return piecesContiguous(currentState,W) || piecesContiguous(currentState,B);
 	}
 	
-	private int noOfPiecesDisContiguous(State currentState, Player pl) 
-	{
-		//Player pl= new Player(w);
-		ArrayList<int[]> remaining = getCoordinates(currentState,pl);
-        if (remaining.size() <= 1) 
-        {
-            return 0;
-        }
-        /*ArrayList<int[]> grouped = new ArrayList<int[]>();
-        grouped.add(remaining.get(0)); remaining.remove(0);
-        boolean connected, allAway;
-        while (remaining.size() != 0) {
-            allAway = true;
-            for (int[] piece : remaining) {
-                connected = isConnected(grouped, piece);
-                if (connected) {
-                    grouped.add(piece); remaining.remove(piece);
-                    break;
-                }
-            }
-        }*/
-        int disconnected=0;
-        for (int[] piece : remaining)
-        {
-        	int row=piece[0], col=piece[1];
-        	boolean connected=false;
-        	//check left
-        	if(col-1>= 0 && currentState.board[row][col-1]==pl.name)
-        	{
-        		connected=true;
-        		break;
-        	}
-        	//check right
-        	if(col+1<8 && currentState.board[row][col+1]==pl.name)
-        	{
-        		connected=true;
-        		break;
-        	}
-        	//check down
-        	//if(row+1<8 && currentState.)
-        	
-        	
-        }
-        System.out.println("No of disconnected pieces: " + disconnected);
-        return remaining.size();
-	}
 	/**
 	 * @param currentState 
 	 * @param w2
@@ -254,7 +472,9 @@ public class LoaGame
 			for(int j=0;j<8;j++)
 			{
 				if(currentState.board[i][j]==pl.name)
+					{
 					coor.add(new int[]{i,j});
+					}
 					
 			}
 		}
@@ -267,10 +487,7 @@ public class LoaGame
 	 */
 	int[][] loaMovesPossible(State currentState, Player player) 
 	{
-
 		ArrayList<int[]> movesPossible = new ArrayList<int[]>();
-		
-		
 		for (int i = 0; i < currentState.board.length; i++) 
 		{
 			for (int j = 0; j < currentState.board[i].length; j++) 
@@ -288,14 +505,12 @@ public class LoaGame
 					{
 						// get legal moves on right side horizontally
 						int[] rightMove = loaCheckRightHorizontal(currentState, player,i,j );
-						//addMove(movesPossible, rightMove);
 						loaAddMove(movesPossible, new int[]{i,j},rightMove);
 					}
 
 					if (i > 0) 
 					{
 						// get legal moves in up direction
-						//int[] upMove = checkUpMove(currentState, player, i, j);
 						int[] upMove = loaCheckUpMove(currentState, player, i, j);
 						loaAddMove(movesPossible , new int[]{i,j} , upMove);
 					}
@@ -303,7 +518,6 @@ public class LoaGame
 					if (i < 7) 
 					{
 						// get legal moves in down direction
-						//int[] downMove = checkDownMove(currentState, player, i, j);
 						int[] downMove = loaCheckDownMove(currentState, player, i, j);
 						loaAddMove(movesPossible,new int[]{i,j}, downMove);
 					}
@@ -346,398 +560,6 @@ public class LoaGame
 			result[i]=movesPossible.get(i);
 		}
 		return result;
-	
-		//return null;
-	}
-	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
-	 */
-	private int[] loaCheckSouthWestMove(State state, Player player, int row,int column) 
-	{
-		int countCoins=0;
-		if(row+column<=7)
-		{
-			int startR=row+column,startC=0;
-			for(int k=startR;k>=0 && startC<8;k--,startC++)
-			{
-				if(state.board[k][startC]!=EMPTY)
-				{
-					countCoins++;
-				}
-					
-			}
-			
-		}
-		else
-		{
-			int startC=(row+column)-7,startR=7;
-			for(int k=startC;k<8 && startR>=0;k++,startR--)
-			{
-				if(state.board[startR][k]!=EMPTY)
-				{
-					countCoins++;
-				}
-					
-			}
-		}
-		// TO-DO
-		int startR=row,startC=column;
-		for(int k=startR;k<startR+countCoins;k++,startC--)
-		{
-			if(k>7 || startC<0 ||(state.board[k][startC]==player.getOtherPlayerName()))
-				return null;
-				
-		}
-		if((row+countCoins>7) || (column-countCoins<0) || state.board[row+countCoins][column-countCoins]==player.name)
-			return null;
-		return new int[]{row+countCoins,column-countCoins}; 
-	
-	}
-	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
-	 */
-	private int[] loaCheckSouthEastMove(State state, Player player, int row,int column) 
-	{
-		int countCoins=0;
-		if(row>=column)
-		{
-			int startR=row-column,startC=0;
-			for(int k=startR;k<8 && startC<8;k++,startC++)
-			{
-				if(state.board[k][startC]!=EMPTY)
-				{
-					countCoins++;
-				}
-					
-			}
-			
-		}
-		else
-		{
-			int startC=column-row,startR=0;
-			for(int k=startC;k<8 && startR<8;k++,startR++)
-			{
-				if(state.board[startR][k]!=EMPTY)
-				{
-					countCoins++;
-				}
-					
-			}
-		}
-		// TO-DO
-		int startR=row,startC=column;
-		for(int k=startR;k<startR+countCoins;k++,startC++)
-		{
-			if(k>7 || startC>7 ||(state.board[k][startC]==player.getOtherPlayerName()))
-				return null;
-				
-		}
-		if((row+countCoins>7) || (column+countCoins>7) || state.board[row+countCoins][column+countCoins]==player.name)
-			return null;
-		return new int[]{row+countCoins,column+countCoins}; 
-	
-	}
-	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
-	 */
-	private int[] loaCheckNorthWestMove(State state, Player player, int row,int column) 
-	{
-		int countCoins=0;
-		if(row>=column)
-		{
-			int startR=row-column,startC=0;
-			for(int k=startR;k<8 && startC<8;k++,startC++)
-			{
-				if(state.board[k][startC]!=EMPTY)
-				{
-					countCoins++;
-				}
-					
-			}
-			
-		}
-		else
-		{
-			int startC=column-row,startR=0;
-			for(int k=startC;k<8 && startR<8 ;k++,startR++)
-			{
-				if(state.board[startR][k]!=EMPTY)
-				{
-					countCoins++;
-				}
-					
-			}
-		}
-		// TO-DO
-		int startR=row,startC=column;
-		for(int k=startR;k>startR-countCoins;k--,startC--)
-		{
-			if(k<0 || startC<0 ||(state.board[k][startC]==player.getOtherPlayerName()))
-				return null;
-				
-		}
-		if((row-countCoins<0) || (column-countCoins<0) || state.board[row-countCoins][column-countCoins]==player.name)
-			return null;
-		return new int[]{row-countCoins,column-countCoins}; 
-	
-	}
-	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
-	 */
-	private int[] loaCheckNorthEastMove(State state, Player player, int row,int column) 
-	{
-		int countCoins=0;
-		if(row+column <= 7)
-		{
-			int startR=row+column,startC=0;
-			for(int k=startR;k>=0 && startC<8;k--,startC++)
-			{
-				if(state.board[k][startC]!=EMPTY)
-				{
-					countCoins++;
-				}
-					
-			}
-			
-		}
-		else
-		{
-			int startC=(row+column)-7,startR=7;
-			for(int k=startC;k<8 && startR>=0;k++,startR--)
-			{
-				if(state.board[startR][k]!=EMPTY)
-				{
-					countCoins++;
-				}
-					
-			}
-		}
-		int startR=row,startC=column;
-		for(int k=startR;k>startR-countCoins;k--,startC++)
-		{
-			if(k<0 || startC>7 ||(state.board[k][startC]==player.getOtherPlayerName()))
-				return null;
-				
-		}
-		if((row-countCoins<0) || (column+countCoins>7) || state.board[row-countCoins][column+countCoins]==player.name)
-			return null;
-		return new int[]{row-countCoins,column+countCoins}; 
-	
-	}
-	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
-	 */
-	private int[] loaCheckDownMove(State state, Player player, int row,int column) 
-	{
-		int countCoins=0;
-		for(int i=0;i<8;i++)
-		{
-			if(state.board[i][column]!=EMPTY)
-				countCoins++;
-		}
-		for(int i=row;i<row+countCoins;i++)
-		{
-			if(i>7 ||(state.board[i][column]==player.getOtherPlayerName()))
-				return null;
-		}
-		if((row+countCoins>7) || state.board[row+countCoins][column]==player.name)
-			return null;
-		return new int[]{row+countCoins,column};
-	
-	}
-	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
-	 */
-	private int[] loaCheckUpMove(State state, Player player, int row,int column) 
-	{
-		int countCoins=0;
-		for(int i=0;i<8;i++)
-		{
-			if(state.board[row][i]!=EMPTY)
-				countCoins++;
-		}
-		for(int i=column;i>column-countCoins;i--)
-		{
-			if(i<0 ||(state.board[row][i]==player.getOtherPlayerName()))
-				return null;
-		}
-		if((column-countCoins<0) || state.board[row][column-countCoins]==player.name)
-			return null;
-		return new int[]{row,column-countCoins};
-	
-	}
-	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
-	 */
-	private int[] loaCheckRightHorizontal(State state, Player player, int row,int column) 
-	{
-		// TODO Auto-generated method stub
-		int countCoins=0;
-		for(int i=0;i<8;i++)
-		{
-			if(state.board[row][i]!=EMPTY)
-				countCoins++;
-		}
-		for(int i=column;i<column+countCoins;i++)
-		{
-			if(i>7 ||(state.board[row][i]==player.getOtherPlayerName()))
-				return null;
-		}
-		if((column+countCoins>7) || state.board[row][column+countCoins]==player.name)
-			return null;
-		return new int[]{row,column+countCoins};
-	}
-	private void sortBucketNodesForMax(ArrayList<SearchNode> nodesBucket) 
-	{
-		Collections.sort(nodesBucket, new Comparator<SearchNode>() 
-				{
-			@Override
-			public int compare(SearchNode n1, SearchNode n2) 
-			{
-				if (n1.getValue()!=n2.getValue()) 
-				{
-					// order highest to lowest
-					return (n2.getValue()-n1.getValue());
-				} 
-				else 
-				{
-					// if value is same, pick the smallest row number
-					int row1 = n1.getMove()[2];
-					int col1 = n1.getMove()[3];
-					int row2 = n2.getMove()[2];
-					int col2 = n2.getMove()[3];
-					if (row1 != row2) 
-					{
-						return row1 - row2;
-					} 
-					else 
-					{
-						return col1 - col2;
-					}
-				}
-			}
-				});
-
-	}
-	private int minValue(State state, int[] prevMove, Player currPlayer, int depth,int maxDepth, Integer alpha, Integer beta) 
-	{
-		ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
-		try{
-			if(debugging) System.out.println("After minValue is called");
-			State nextState=new State(state);
-			if(depth==maxDepth || isGameOver(nextState))
-			{
-				int value=loaGetUtilityValue(nextState, currPlayer.getOpponent());
-				/*
-				 * Use an improved version of utility function in which you can more weightage is given to corner and sides
-				 */
-				//int value=getUtilityValueImproved(nextState,currPlayer.getOpponent());
-				if(debugging) System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ min Depth reached ");
-				if(debugging) System.out.println("Minvalue : " + value);
-				return value;
-			}
-			int[][] possibleActions = loaMovesPossible(nextState, currPlayer);
-			if(possibleActions.length<1)
-				System.out.println("Possible action size is zero");
-			if(possibleActions.length>0)
-			{
-				for(int[]move : possibleActions)
-				{
-					State newState= getLoaNextState(nextState, new int[]{move[0],move[1]}, new int[]{move[2], move[3]},currPlayer);
-					nodesExpanded++;
-					int val = maxValue(newState,move,currPlayer.getOpponent(),depth+1,maxDepth,alpha,beta);
-					SearchNode node= new SearchNode(move,val);
-					nodesBucket.add(node);
-					sortBucketNodesForMin(nodesBucket);
-					int minVal=nodesBucket.get(0).getValue();
-					if(minVal<alpha)
-					{
-						return minVal;
-					}
-					if(minVal<beta)
-					{
-						beta=minVal;
-					}
-					nextState= new State(state);
-				}
-			}
-			sortBucketNodesForMin(nodesBucket);
-		}catch(Exception e)
-		{
-			e.printStackTrace();
-		}
-		return nodesBucket.get(0).getValue();
-	}
-	
-	
-	/**
-	 * @param nextState
-	 * @param opponent
-	 * @return
-	 */
-	private int loaGetUtilityValue(State state, Player pl) 
-	{
-		return evaluate(state,pl);
-		/*int noOfDisconnected=noOfPiecesDisContiguous(state, pl);
-		return (12-noOfDisconnected);*/
-	}
-	private void sortBucketNodesForMin(ArrayList<SearchNode> nodesBucket) 
-	{
-		Collections.sort(nodesBucket, new Comparator<SearchNode>() 
-		{
-			@Override
-			public int compare(SearchNode n1, SearchNode n2) 
-			{
-				if (n1.getValue() != n2.getValue()) 
-				{
-					return (n1.getValue() - n2.getValue());
-				} 
-				else 
-				{
-					// if value is same, pick the smallest row number
-					int row1 = n1.getMove()[2];
-					int col1 = n1.getMove()[3];
-					int row2 = n2.getMove()[2];
-					int col2 = n2.getMove()[3];
-					if (row1 != row2) 
-					{
-						return row1 - row2;
-					} 
-					else 
-					{
-						return col1 - col2;
-					}
-				}
-			}
-		});
 	}
 	private int maxValue(State state, int[] prevMove, Player currPlayer, int depth,int maxDepth, Integer alpha, Integer beta) 
 	{
@@ -748,7 +570,7 @@ public class LoaGame
 			State nextState=new State(state);
 			if(depth==maxDepth || isGameOver(nextState))
 			{
-				int value=loaGetUtilityValue(nextState, currPlayer);
+				int value=evaluate(nextState, currPlayer);
 				/*
 				 * Use an improved version of utility function in which you can more weightage is given to corner and sides
 				 */
@@ -787,74 +609,124 @@ public class LoaGame
 		}
 		return nodesBucket.get(0).getValue();
 	}
-	/*public static void main(String[] args) 
+	
+	private int minValue(State state, int[] prevMove, Player currPlayer, int depth,int maxDepth, Integer alpha, Integer beta) 
 	{
-		LoaGame game= new LoaGame();
-		State state2 = null;
-		int[][] possibleActions=null;
-		System.out.println("Please enter the value of depth ");
-		Scanner sc=new Scanner(System.in);
-		depth=Integer.parseInt(sc.nextLine());
-		System.out.println("X corresponds to WHITE, O corresponds to BLACK");
-		System.out.println("White has first turn");
+		ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
 		try{
-			do{
-				System.out.println("Please enter a move like r:c-fr:fc ");
-				String input = sc.nextLine();
-				String coor[] = input.split("-");
-				String startPos[]=coor[0].split(":");
-				String finalPos[]=coor[1].split(":");
-				int r = Integer.parseInt(startPos[0]);
-				int c = Integer.parseInt(startPos[1]);
-				
-				int fr = Integer.parseInt(finalPos[0]);
-				int fc = Integer.parseInt(finalPos[1]);
-
-				if(debugging) System.out.println("R >> " + r + " C >> " + c);
-				
-				State state=game.getLoaNextState(game.gameState,new int[]{r,c},new int[]{fr,fc},game.player);
-				//State state=game.getNextState(game.gameState,new int[]{r,c},game.player);
-				if(state!=null)
-					state.printBoard();
-				else
+			if(debugging) System.out.println("After minValue is called");
+			State nextState=new State(state);
+			if(depth==maxDepth || isGameOver(nextState))
+			{
+				int value=evaluate(nextState, currPlayer.getOpponent());
+				if(debugging) System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ min Depth reached ");
+				if(debugging) System.out.println("Minvalue : " + value);
+				return value;
+			}
+			int[][] possibleActions = loaMovesPossible(nextState, currPlayer);
+			if(possibleActions.length>0)
+			{
+				for(int[]move : possibleActions)
 				{
-					state=game.gameState;
-					System.out.println("That's an illegal move");
-					state.printBoard();
+					State newState= getLoaNextState(nextState, new int[]{move[0],move[1]}, new int[]{move[2], move[3]},currPlayer);
+					nodesExpanded++;
+					int val = maxValue(newState,move,currPlayer.getOpponent(),depth+1,maxDepth,alpha,beta);
+					SearchNode node= new SearchNode(move,val);
+					nodesBucket.add(node);
+					sortBucketNodesForMin(nodesBucket);
+					int minVal=nodesBucket.get(0).getValue();
+					if(minVal<alpha)
+					{
+						return minVal;
+					}
+					if(minVal<beta)
+					{
+						beta=minVal;
+					}
+					nextState= new State(state);
 				}
-				//game.gameState.printBoard();
-				System.out.println("Now Agent will generate the move");
-				Thread.sleep(delay);
-				State origState=new State(state);
-
-				long start= new Date().getTime();
-				int move[]=game.alphaBetaSearch(state,game.player.getOpponent(),depth);
-				//System.out.println("Agent generated the move. Nodes expanded >> "+ nodesExpanded);
-				System.out.println("Agent generated the move. Move = {"+move[0]+","+move[1]+"} - {"+move[2]+","+move[3]+"}");
-				long stop=new Date().getTime();
-				System.out.println("Moves generated in " + (stop-start) +" ms" );
-				nodesExpanded=0;
-				
-				if(move!=null)
-				{
-					System.out.println("New State ");
-					state2=game.getLoaNextState(origState,new int[]{move[0],move[1]}, new int[]{move[2],move[3]},game.player.getOpponent());
-					state2.printBoard();
-					game.gameState=state2;
-				}
-				if(state2!=null)
-				{
-					possibleActions = game.loaMovesPossible(state2, game.player);
-				}
-			}while(possibleActions!=null && possibleActions.length>0);
-
+			}
+			sortBucketNodesForMin(nodesBucket);
 		}catch(Exception e)
 		{
-			System.out.println("Incorrect input format");
 			e.printStackTrace();
 		}
-		sc.close();
-	}*/
+		return nodesBucket.get(0).getValue();
+	}
+	private void sortBucketNodesForMax(ArrayList<SearchNode> nodesBucket) 
+	{
+		Collections.sort(nodesBucket, new Comparator<SearchNode>() 
+				{
+			@Override
+			public int compare(SearchNode n1, SearchNode n2) 
+			{
+				if (n1.getValue()!=n2.getValue()) 
+				{
+					// order highest to lowest
+					return (n2.getValue()-n1.getValue());
+				} 
+				else 
+				{
+					// if value is same, pick the smallest row number
+					int row1 = Math.abs(n1.getMove()[2]- 4 );
+					int col1 = Math.abs(n1.getMove()[3]-4 );
+					
+					int row2 = Math.abs(n2.getMove()[2]- 4);
+					int col2 = Math.abs(n2.getMove()[3]- 4);
+					if(row1+col1 != row2+col2)
+					{
+						//return (row2+col2 - row1- col1);
+						return (row1+col1 - row2 - col2);
+					}
+					else if (row1 != row2) 
+					{
+						return row2 - row1;
+					} 
+					else 
+					{
+						return col2 - col1;
+					}
+				}
+			}
+				});
+
+	}
+	
+	private void sortBucketNodesForMin(ArrayList<SearchNode> nodesBucket) 
+	{
+		Collections.sort(nodesBucket, new Comparator<SearchNode>() 
+		{
+			@Override
+			public int compare(SearchNode n1, SearchNode n2) 
+			{
+				if (n1.getValue() != n2.getValue()) 
+				{
+					return (n1.getValue() - n2.getValue());
+				} 
+				else 
+				{
+					// if value is same, pick the smallest row number
+					int row1 = Math.abs(n1.getMove()[2]- 4 );
+					int col1 = Math.abs(n1.getMove()[3]-4 );
+					
+					int row2 = Math.abs(n2.getMove()[2]- 4);
+					int col2 = Math.abs(n2.getMove()[3]- 4);
+					if(row1+col1 != row2+col2)
+					{
+						return (row2+col2 - row1- col1);
+					}
+					else if (row1 != row2) 
+					{
+						return row1 - row2;
+					} 
+					else 
+					{
+						return col1 - col2;
+					}
+				}
+			}
+		});
+	}
 	
 	/*public static void main(String args[])
 	{
@@ -877,7 +749,11 @@ public class LoaGame
 	State getLoaNextState(State gameState, int[] moveStart, int[] moveEnd, Player player) 
 	{
 		if(!isValidMove(gameState,moveStart,moveEnd,player))
+		{
+			if(debugging)
+				System.out.println("Move = {"+moveStart[0]+","+moveStart[1]+"} - {"+moveEnd[0]+","+moveEnd[1]+"} is invalid");
 			return null;
+		}
 		State nextState = new State(gameState);
 		int r=moveStart[0];
 		int c=moveStart[1];
@@ -1159,7 +1035,7 @@ public class LoaGame
 	// -1 means I loose
 	public int evaluate(State gameState,Player player)  // evaluates the current board
    {
-		int plyrCount=0,oppPlCount=0;
+	   int plyrCount=0,oppPlCount=0;
        for(int i=0; i<size; i++)
        {
            for(int j=0;j<size; j++)
@@ -1216,8 +1092,8 @@ public class LoaGame
        
        // now compute the relative percentage compared with the other player
        float totPct = bestMePct + bestOtherPct;        
-       //float myPct = (bestMePct / totPct)*2.f-1.f; // range [-1,1]
-       Float myPct = (bestMePct / totPct)*100;
+       Float myPct = (bestMePct / totPct)*2.f-1.f; // range [-1,1]
+       //Float myPct = (bestMePct / totPct)*100;
        return myPct.intValue();
        //return player == whoami ? myPct : -myPct;
        
@@ -1258,76 +1134,5 @@ public class LoaGame
         return r;
     }
 	
-	static void gamePlay()
-	{
-		// TODO Auto-generated method stub
-
-		LoaGame game= new LoaGame();
-		State state2 = null;
-		int[][] possibleActions=null;
-		System.out.println("Please enter the value of depth ");
-		Scanner sc=new Scanner(System.in);
-		int depth=Integer.parseInt(sc.nextLine());
-		System.out.println("X corresponds to WHITE, O corresponds to BLACK");
-		System.out.println("White has first turn");
-		try{
-			do{
-				System.out.println("Please enter a move like r:c-fr:fc ");
-				String input = sc.nextLine();
-				String coor[] = input.split("-");
-				String startPos[]=coor[0].split(":");
-				String finalPos[]=coor[1].split(":");
-				int r = Integer.parseInt(startPos[0]);
-				int c = Integer.parseInt(startPos[1]);
-				
-				int fr = Integer.parseInt(finalPos[0]);
-				int fc = Integer.parseInt(finalPos[1]);
-
-				if(debugging) System.out.println("R >> " + r + " C >> " + c);
-				
-				State state=game.getLoaNextState(game.gameState,new int[]{r,c},new int[]{fr,fc},game.player);
-				//State state=game.getNextState(game.gameState,new int[]{r,c},game.player);
-				if(state!=null)
-					state.printBoard();
-				else
-				{
-					state=game.gameState;
-					System.out.println("That's an illegal move");
-					state.printBoard();
-				}
-				//game.gameState.printBoard();
-				System.out.println("Now Agent will generate the move");
-				Thread.sleep(delay);
-				State origState=new State(state);
-
-				long start= new Date().getTime();
-				int move[]=game.alphaBetaSearch(state,game.player.getOpponent(),depth);
-				//System.out.println("Agent generated the move. Nodes expanded >> "+ nodesExpanded);
-				System.out.println("Agent generated the move. Move = {"+move[0]+","+move[1]+"} - {"+move[2]+","+move[3]+"}");
-				long stop=new Date().getTime();
-				System.out.println("Moves generated in " + (stop-start) +" ms" );
-				nodesExpanded=0;
-				
-				if(move!=null)
-				{
-					System.out.println("New State ");
-					state2=game.getLoaNextState(origState,new int[]{move[0],move[1]}, new int[]{move[2],move[3]},game.player.getOpponent());
-					state2.printBoard();
-					game.gameState=state2;
-				}
-				if(state2!=null)
-				{
-					possibleActions = game.loaMovesPossible(state2, game.player);
-				}
-			}while(possibleActions!=null && possibleActions.length>0);
-
-		}catch(Exception e)
-		{
-			System.out.println("Incorrect input format");
-			e.printStackTrace();
-		}
-		sc.close();
 	
-
-	}
 }
