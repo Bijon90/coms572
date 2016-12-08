@@ -34,8 +34,8 @@ public class LoaGame {
 		depth=defaultDepth;
 		initializeBoard();
 		gameState.printBoard();
-		player= new Player(B);
-		player.setOtherPlayerName(W);
+		player= new Player(W);
+		player.setOtherPlayerName(B);
 		visitedNodes= new int[size][size]; // state of each position. 0=not visited, 1=in stack, 2=visited   
 	}
 	/*
@@ -800,7 +800,7 @@ public class LoaGame {
 		Scanner sc=new Scanner(System.in);
 		depth=Integer.parseInt(sc.nextLine());
 		System.out.println("X corresponds to WHITE, O corresponds to BLACK");
-		System.out.println("Black has first turn");
+		System.out.println("White has first turn");
 		try{
 			do{
 				System.out.println("Please enter a move like r:c-fr:fc ");
