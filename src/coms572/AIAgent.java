@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
-public class MonteCarloTreeSearch {
+public class AIAgent {
 	private Board board;
 	private int turns = 2000;
 	PrintWriter writer;
@@ -20,7 +20,7 @@ public class MonteCarloTreeSearch {
 	/** Row center of board. */
 	private static final double COMROW = 4.5;
 
-	public MonteCarloTreeSearch(Board board){
+	public AIAgent(Board board){
 		this.board = board;
 		try{
 			this.writer = new PrintWriter(new File("C:\\output.txt"));
@@ -29,7 +29,7 @@ public class MonteCarloTreeSearch {
 		}
 	}
 
-	public MonteCarloTreeSearch(Board board, PrintWriter writer){
+	public AIAgent(Board board, PrintWriter writer){
 		this.board = board;
 		this.writer = writer;
 	}

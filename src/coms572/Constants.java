@@ -11,7 +11,7 @@ public class Constants {
 	public static Player machine = new Player(WHITE, "machine");
 	
 	/** The standard initial configuration for Lines of Action. */
-    static final char[][] INITIAL_PIECES = {
+    public static final char[][] INITIAL_PIECES = {
         { BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER  },
         { BUFFER, EMPTY, BLACK,  BLACK,  BLACK,  BLACK,  BLACK,  BLACK,  EMPTY, BUFFER  },
         { BUFFER, WHITE,  EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, WHITE, BUFFER  },

@@ -8,16 +8,19 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
-	Board board;
-	Player player1, player2;
+	private Board board;
+	private Player player1, player2;
 	private final int moveLimit = 300;
 	PrintWriter writer;
 	public ArrayList<Double> times = new ArrayList<>();
 	public double maxTime = Double.MIN_VALUE, minTime = Double.MAX_VALUE, totalTime = 0.0, time = 0.0;
+	private int i;
+	public double avgTime;
+	public String result;
 
-	public Game() {
+	public Game(int i) {
 		try {
-			writer = new PrintWriter("C:\\Users\\Bijon\\workspace\\LineOfAction\\LOA_Output.txt","UTF-8");
+			writer = new PrintWriter("C:\\Users\\Bijon\\workspace\\LineOfAction\\LOA_Output"+i+".txt","UTF-8");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (UnsupportedEncodingException e) {
@@ -27,6 +30,15 @@ public class Game {
 		player1 = Constants.user;
 		player2 = Constants.machine;
 		board.setCurrPlayer(player1);
+		this.i =i;
+	}
+	
+	public Board getBoard() {
+		return board;
+	}
+
+	public void setBoard(Board board) {
+		this.board = board;
 	}
 
 	public void startGame() {
@@ -40,10 +52,12 @@ public class Game {
 					if(board.piecesContiguous(player1)){
 						System.out.println(player1.get_name()+" wins!");
 						writer.println(player1.get_name()+" wins!");
+						result = player1.get_name();
 					}
 					else if(board.piecesContiguous(player2)){
 						System.out.println(player2.get_name()+" wins!");
 						writer.println(player2.get_name()+" wins!");
+						result = player2.get_name();
 					}
 					break;
 				}
@@ -52,6 +66,7 @@ public class Game {
 					writer.println("Total moves made: "+board.movesMade());
 					System.out.println("Game drawn!");
 					writer.println("Game drawn!");
+					result = "Draw!";
 				}
 				break;
 			}
@@ -84,7 +99,7 @@ public class Game {
 					myMove = getRandomMove(moves);
 				else{
 					double t1 = System.currentTimeMillis();
-					MonteCarloTreeSearch mcTS = new MonteCarloTreeSearch(this.board.cloneBoard(), writer);
+					AIAgent mcTS = new AIAgent(this.board.cloneBoard(), writer);
 					Move mcMove = mcTS.getMonteCarloMove(); 
 					double t2 = System.currentTimeMillis();
 					myMove = mcMove == null ? getRandomMove(moves) : mcMove;
@@ -93,8 +108,8 @@ public class Game {
 					maxTime = Math.max(maxTime, time);
 					minTime = Math.min(minTime, time);
 					totalTime += time;
-					System.out.println("Monte Carlo move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
-					writer.println("Monte Carlo move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
+					System.out.println("Agent move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
+					writer.println("Agent move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
 					
 				}
 				if (board.isLegal(myMove)) {
@@ -108,18 +123,21 @@ public class Game {
 							writer.println("Total moves made: "+board.movesMade());
 							System.out.println("Game Over! "+player1.get_name()+" wins!");
 							writer.println("Game Over! "+player1.get_name()+" wins!");
+							result = player1.get_name();
 						}
 						else if(board.piecesContiguous(player2) && !board.piecesContiguous(player1)){
 							System.out.println("Total moves made: "+board.movesMade());
 							writer.println("Total moves made: "+board.movesMade());
 							System.out.println("Game Over! "+player2.get_name()+" wins!");
 							writer.println("Game Over! "+player2.get_name()+" wins!");
+							result = player2.get_name();
 						}
 						else{
 							System.out.println("Total moves made: "+board.movesMade());
 							writer.println("Total moves made: "+board.movesMade());
 							System.out.println("Game Drawn!");
 							writer.println("Game Drawn!");
+							result = "Draw!";
 						}
 						break;
 					}
@@ -133,7 +151,7 @@ public class Game {
 				setNextPlayer();
 			}
 		}
-		double avgTime = totalTime / times.size();
+		avgTime = totalTime / times.size();
 		writer.println("Maximum time taken for a move: "+maxTime +" seconds");
 		writer.println("Minimum time taken for a move: "+minTime +" seconds");
 		writer.println("Average time taken per move: "+avgTime +" seconds");
@@ -153,8 +171,4 @@ public class Game {
 		return moves.get(index);
 	}
 
-	public static void main(String args[]) {
-		Game g = new Game();
-		g.startGame();
-	}
 }

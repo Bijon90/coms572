@@ -17,8 +17,22 @@ public class Board {
     }
 
 	/** A new board in the standard initial position. */
-    public Board() {    	
-        this(Constants.INITIAL_PIECES, Constants.user);
+    public Board() {
+    	char[][] initboard = {
+    			{ Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER  },
+    	        { Constants.BUFFER, Constants.EMPTY, Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.EMPTY, Constants.BUFFER  },
+    	        { Constants.BUFFER, Constants.WHITE,  Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.WHITE, Constants.BUFFER  },
+    	        { Constants.BUFFER, Constants.WHITE,  Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.WHITE, Constants.BUFFER  },
+    	        { Constants.BUFFER, Constants.WHITE,  Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.WHITE, Constants.BUFFER  },
+    	        { Constants.BUFFER, Constants.WHITE,  Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.WHITE, Constants.BUFFER  },
+    	        { Constants.BUFFER, Constants.WHITE,  Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.WHITE, Constants.BUFFER  },
+    	        { Constants.BUFFER, Constants.WHITE,  Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.EMPTY, Constants.WHITE, Constants.BUFFER  },
+    	        { Constants.BUFFER, Constants.EMPTY, Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.EMPTY, Constants.BUFFER },
+    	        { Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER  }
+    	    };
+        //this(initboard, Constants.user);
+    	this.setBoard(initboard);
+    	this.setCurrPlayer(Constants.user);
         this.moves = new ArrayList<>();
     }
 	
@@ -476,6 +490,19 @@ public class Board {
 		int index = rndmGenerator.nextInt(moves.size());
 		return moves.get(index);
 	}
+    
+    public boolean equalsB(Board b1){
+    	if(b1.getCurrPlayer() != this.getCurrPlayer())
+    		return false;
+    	char[][] b1Board = b1.getBoard();
+    	for (int i = 0; i < b1Board.length; i++) {
+			for (int j = 0; j < b1Board[0].length; j++) {
+				if(b1Board[i][j] != this.board[i][j])
+					return false;
+			}
+		}
+    	return true;
+    }
 /*    public static void main(String args[]){
     	Board b = new Board();
     	
