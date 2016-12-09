@@ -1,7 +1,9 @@
 package coms572;
 
 public class Player {
+	//Name of the player
 	private String _name;
+	//Marker for the player
 	private char _marker;
 	
 	Player(){}
@@ -39,6 +41,9 @@ public class Player {
 			return 'X';	
 	}
 	
+	/**
+	 * @return oponent
+	 */
 	public Player getNextPlayer(){
 		return this._name.equals("user")? Constants.machine : Constants.user;
 	}

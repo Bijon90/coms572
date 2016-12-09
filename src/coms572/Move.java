@@ -1,8 +1,15 @@
 package coms572;
 
+/**
+ * @author Bijon
+ *
+ */
 public class Move {
+	//Starting and ending position co-ordinates for move
 	private int c0, r0, c1, r1;
+	//If move captures a piece of opponent or not
 	private boolean _capture = false;
+	//Assign the score to move
 	int moveScore;
 	
 	public int getMoveScore() {
@@ -61,10 +68,18 @@ public class Move {
 		return _capture;
 	}
 
+	/**
+	 * @param _capture
+	 * Sets true if move captures apiece of opponent
+	 */
 	public void set_capture(boolean _capture) {
 		this._capture = _capture;
 	}
 	
+	/**
+	 * @param move2
+	 * @return true if move is equal with another move
+	 */
 	public boolean isEqual(Move move2){
 		return this.hashCode() == move2.hashCode();
 	}
@@ -76,6 +91,9 @@ public class Move {
         + String.valueOf(getC1())+ String.valueOf(getR1()) + String.valueOf(cap));
     }
 	
+    /**
+     * @return distance between starting and ending position
+     */
     public int getMoveLength() {
         return Math.max(Math.abs(r1 - r0), Math.abs(c1 - c0));
     }

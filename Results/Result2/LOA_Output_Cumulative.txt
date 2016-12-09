@@ -1,0 +1,555 @@
+************************
+
+Game 1 :
+Total number of moves by machine: 44
+Maximum Time taken for a move: 0.469
+Minimum Time taken for a move: 0.025
+Average Time taken per move: 0.16325000000000006
+Total Time taken by machine: 7.1830000000000025
+Result: machine
+
+************************
+************************
+
+Game 2 :
+Total number of moves by machine: 58
+Maximum Time taken for a move: 0.36
+Minimum Time taken for a move: 0.001
+Average Time taken per move: 0.10029310344827586
+Total Time taken by machine: 5.816999999999999
+Result: machine
+
+************************
+************************
+
+Game 3 :
+Total number of moves by machine: 46
+Maximum Time taken for a move: 0.405
+Minimum Time taken for a move: 0.044
+Average Time taken per move: 0.1911739130434783
+Total Time taken by machine: 8.794000000000002
+Result: machine
+
+************************
+************************
+
+Game 4 :
+Total number of moves by machine: 77
+Maximum Time taken for a move: 0.406
+Minimum Time taken for a move: 0.005
+Average Time taken per move: 0.062324675324675304
+Total Time taken by machine: 4.798999999999999
+Result: machine
+
+************************
+************************
+
+Game 5 :
+Total number of moves by machine: 50
+Maximum Time taken for a move: 0.373
+Minimum Time taken for a move: 0.044
+Average Time taken per move: 0.15406000000000003
+Total Time taken by machine: 7.703000000000002
+Result: machine
+
+************************
+************************
+
+Game 6 :
+Total number of moves by machine: 40
+Maximum Time taken for a move: 0.661
+Minimum Time taken for a move: 0.008
+Average Time taken per move: 0.3155
+Total Time taken by machine: 12.62
+Result: machine
+
+************************
+************************
+
+Game 7 :
+Total number of moves by machine: 20
+Maximum Time taken for a move: 0.534
+Minimum Time taken for a move: 0.044
+Average Time taken per move: 0.26789999999999997
+Total Time taken by machine: 5.358
+Result: machine
+
+************************
+************************
+
+Game 8 :
+Total number of moves by machine: 58
+Maximum Time taken for a move: 0.438
+Minimum Time taken for a move: 0.004
+Average Time taken per move: 0.11341379310344823
+Total Time taken by machine: 6.577999999999998
+Result: machine
+
+************************
+************************
+
+Game 9 :
+Total number of moves by machine: 39
+Maximum Time taken for a move: 0.584
+Minimum Time taken for a move: 0.007
+Average Time taken per move: 0.18376923076923077
+Total Time taken by machine: 7.167
+Result: machine
+
+************************
+************************
+
+Game 10 :
+Total number of moves by machine: 123
+Maximum Time taken for a move: 0.862
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.17521138211382112
+Total Time taken by machine: 21.551
+Result: machine
+
+************************
+************************
+
+Game 11 :
+Total number of moves by machine: 117
+Maximum Time taken for a move: 0.386
+Minimum Time taken for a move: 0.002
+Average Time taken per move: 0.09563247863247865
+Total Time taken by machine: 11.189000000000002
+Result: machine
+
+************************
+************************
+
+Game 12 :
+Total number of moves by machine: 52
+Maximum Time taken for a move: 0.57
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.16021153846153846
+Total Time taken by machine: 8.331
+Result: machine
+
+************************
+************************
+
+Game 13 :
+Total number of moves by machine: 16
+Maximum Time taken for a move: 0.521
+Minimum Time taken for a move: 0.101
+Average Time taken per move: 0.2655
+Total Time taken by machine: 4.248
+Result: machine
+
+************************
+************************
+
+Game 14 :
+Total number of moves by machine: 43
+Maximum Time taken for a move: 0.469
+Minimum Time taken for a move: 0.008
+Average Time taken per move: 0.16158139534883723
+Total Time taken by machine: 6.948
+Result: machine
+
+************************
+************************
+
+Game 15 :
+Total number of moves by machine: 41
+Maximum Time taken for a move: 0.561
+Minimum Time taken for a move: 0.008
+Average Time taken per move: 0.1579512195121952
+Total Time taken by machine: 6.4760000000000035
+Result: machine
+
+************************
+************************
+
+Game 16 :
+Total number of moves by machine: 17
+Maximum Time taken for a move: 0.324
+Minimum Time taken for a move: 0.024
+Average Time taken per move: 0.1606470588235294
+Total Time taken by machine: 2.731
+Result: machine
+
+************************
+************************
+
+Game 17 :
+Total number of moves by machine: 150
+Maximum Time taken for a move: 0.562
+Minimum Time taken for a move: 0.017
+Average Time taken per move: 0.12352666666666665
+Total Time taken by machine: 18.528999999999996
+Result: Draw!
+
+************************
+************************
+
+Game 18 :
+Total number of moves by machine: 114
+Maximum Time taken for a move: 0.537
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.08753508771929817
+Total Time taken by machine: 9.978999999999992
+Result: machine
+
+************************
+************************
+
+Game 19 :
+Total number of moves by machine: 54
+Maximum Time taken for a move: 0.53
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.14985185185185182
+Total Time taken by machine: 8.091999999999999
+Result: machine
+
+************************
+************************
+
+Game 20 :
+Total number of moves by machine: 124
+Maximum Time taken for a move: 0.375
+Minimum Time taken for a move: 0.001
+Average Time taken per move: 0.12729032258064513
+Total Time taken by machine: 15.783999999999997
+Result: machine
+
+************************
+************************
+
+Game 21 :
+Total number of moves by machine: 82
+Maximum Time taken for a move: 0.76
+Minimum Time taken for a move: 0.006
+Average Time taken per move: 0.1802926829268293
+Total Time taken by machine: 14.784
+Result: machine
+
+************************
+************************
+
+Game 22 :
+Total number of moves by machine: 25
+Maximum Time taken for a move: 0.442
+Minimum Time taken for a move: 0.11
+Average Time taken per move: 0.24040000000000006
+Total Time taken by machine: 6.010000000000002
+Result: machine
+
+************************
+************************
+
+Game 23 :
+Total number of moves by machine: 45
+Maximum Time taken for a move: 0.554
+Minimum Time taken for a move: 0.005
+Average Time taken per move: 0.19219999999999998
+Total Time taken by machine: 8.649
+Result: machine
+
+************************
+************************
+
+Game 24 :
+Total number of moves by machine: 80
+Maximum Time taken for a move: 0.562
+Minimum Time taken for a move: 0.008
+Average Time taken per move: 0.09822499999999999
+Total Time taken by machine: 7.858
+Result: machine
+
+************************
+************************
+
+Game 25 :
+Total number of moves by machine: 76
+Maximum Time taken for a move: 0.757
+Minimum Time taken for a move: 0.001
+Average Time taken per move: 0.15746052631578952
+Total Time taken by machine: 11.967000000000004
+Result: machine
+
+************************
+************************
+
+Game 26 :
+Total number of moves by machine: 150
+Maximum Time taken for a move: 0.387
+Minimum Time taken for a move: 0.01
+Average Time taken per move: 0.1186066666666666
+Total Time taken by machine: 17.79099999999999
+Result: Draw!
+
+************************
+************************
+
+Game 27 :
+Total number of moves by machine: 25
+Maximum Time taken for a move: 0.737
+Minimum Time taken for a move: 0.14
+Average Time taken per move: 0.31976000000000004
+Total Time taken by machine: 7.9940000000000015
+Result: machine
+
+************************
+************************
+
+Game 28 :
+Total number of moves by machine: 86
+Maximum Time taken for a move: 0.44
+Minimum Time taken for a move: 0.01
+Average Time taken per move: 0.11502325581395348
+Total Time taken by machine: 9.892
+Result: machine
+
+************************
+************************
+
+Game 29 :
+Total number of moves by machine: 72
+Maximum Time taken for a move: 0.614
+Minimum Time taken for a move: 0.002
+Average Time taken per move: 0.16266666666666676
+Total Time taken by machine: 11.712000000000007
+Result: machine
+
+************************
+************************
+
+Game 30 :
+Total number of moves by machine: 118
+Maximum Time taken for a move: 0.512
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.0868050847457627
+Total Time taken by machine: 10.242999999999999
+Result: machine
+
+************************
+************************
+
+Game 31 :
+Total number of moves by machine: 149
+Maximum Time taken for a move: 0.594
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.0976711409395973
+Total Time taken by machine: 14.552999999999999
+Result: machine
+
+************************
+************************
+
+Game 32 :
+Total number of moves by machine: 118
+Maximum Time taken for a move: 0.565
+Minimum Time taken for a move: 0.002
+Average Time taken per move: 0.09783898305084743
+Total Time taken by machine: 11.544999999999996
+Result: machine
+
+************************
+************************
+
+Game 33 :
+Total number of moves by machine: 102
+Maximum Time taken for a move: 0.348
+Minimum Time taken for a move: 0.001
+Average Time taken per move: 0.05285294117647057
+Total Time taken by machine: 5.390999999999998
+Result: machine
+
+************************
+************************
+
+Game 34 :
+Total number of moves by machine: 83
+Maximum Time taken for a move: 0.606
+Minimum Time taken for a move: 0.002
+Average Time taken per move: 0.12253012048192773
+Total Time taken by machine: 10.170000000000002
+Result: machine
+
+************************
+************************
+
+Game 35 :
+Total number of moves by machine: 68
+Maximum Time taken for a move: 0.835
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.12260294117647055
+Total Time taken by machine: 8.336999999999998
+Result: machine
+
+************************
+************************
+
+Game 36 :
+Total number of moves by machine: 73
+Maximum Time taken for a move: 0.502
+Minimum Time taken for a move: 0.002
+Average Time taken per move: 0.18298630136986296
+Total Time taken by machine: 13.357999999999997
+Result: machine
+
+************************
+************************
+
+Game 37 :
+Total number of moves by machine: 130
+Maximum Time taken for a move: 0.514
+Minimum Time taken for a move: 0.002
+Average Time taken per move: 0.10363076923076923
+Total Time taken by machine: 13.472000000000001
+Result: machine
+
+************************
+************************
+
+Game 38 :
+Total number of moves by machine: 115
+Maximum Time taken for a move: 0.462
+Minimum Time taken for a move: 0.002
+Average Time taken per move: 0.07830434782608689
+Total Time taken by machine: 9.004999999999992
+Result: machine
+
+************************
+************************
+
+Game 39 :
+Total number of moves by machine: 130
+Maximum Time taken for a move: 0.396
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.08303846153846157
+Total Time taken by machine: 10.795000000000005
+Result: machine
+
+************************
+************************
+
+Game 40 :
+Total number of moves by machine: 27
+Maximum Time taken for a move: 0.427
+Minimum Time taken for a move: 0.031
+Average Time taken per move: 0.21574074074074076
+Total Time taken by machine: 5.825
+Result: machine
+
+************************
+************************
+
+Game 41 :
+Total number of moves by machine: 81
+Maximum Time taken for a move: 0.673
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.11409876543209878
+Total Time taken by machine: 9.242
+Result: machine
+
+************************
+************************
+
+Game 42 :
+Total number of moves by machine: 98
+Maximum Time taken for a move: 0.443
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.08343877551020408
+Total Time taken by machine: 8.177
+Result: machine
+
+************************
+************************
+
+Game 43 :
+Total number of moves by machine: 30
+Maximum Time taken for a move: 0.523
+Minimum Time taken for a move: 0.065
+Average Time taken per move: 0.29703333333333337
+Total Time taken by machine: 8.911000000000001
+Result: machine
+
+************************
+************************
+
+Game 44 :
+Total number of moves by machine: 97
+Maximum Time taken for a move: 0.706
+Minimum Time taken for a move: 0.006
+Average Time taken per move: 0.15107216494845357
+Total Time taken by machine: 14.653999999999996
+Result: machine
+
+************************
+************************
+
+Game 45 :
+Total number of moves by machine: 19
+Maximum Time taken for a move: 0.5
+Minimum Time taken for a move: 0.022
+Average Time taken per move: 0.1938947368421052
+Total Time taken by machine: 3.683999999999999
+Result: machine
+
+************************
+************************
+
+Game 46 :
+Total number of moves by machine: 147
+Maximum Time taken for a move: 0.617
+Minimum Time taken for a move: 0.009
+Average Time taken per move: 0.10776870748299319
+Total Time taken by machine: 15.841999999999999
+Result: machine
+
+************************
+************************
+
+Game 47 :
+Total number of moves by machine: 53
+Maximum Time taken for a move: 0.405
+Minimum Time taken for a move: 0.003
+Average Time taken per move: 0.15896226415094347
+Total Time taken by machine: 8.425000000000004
+Result: machine
+
+************************
+************************
+
+Game 48 :
+Total number of moves by machine: 109
+Maximum Time taken for a move: 0.427
+Minimum Time taken for a move: 0.01
+Average Time taken per move: 0.10791743119266058
+Total Time taken by machine: 11.763000000000003
+Result: machine
+
+************************
+************************
+
+Game 49 :
+Total number of moves by machine: 150
+Maximum Time taken for a move: 0.589
+Minimum Time taken for a move: 0.006
+Average Time taken per move: 0.08844666666666665
+Total Time taken by machine: 13.266999999999996
+Result: Draw!
+
+************************
+************************
+
+Game 50 :
+Total number of moves by machine: 27
+Maximum Time taken for a move: 0.531
+Minimum Time taken for a move: 0.006
+Average Time taken per move: 0.2248888888888889
+Total Time taken by machine: 6.072
+Result: machine
+
+************************
+Cumulative Average Time: 0.15145564165030442
+Cumulative Average Moves: 76.96
+Cumulative Average maxTime: 0.5271000000000001
+Cumulative Average minTime: 0.016680000000000007
+Cumulative Average Total Time: 9.7853

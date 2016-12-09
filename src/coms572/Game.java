@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * @author Bijon
+ *
+ */
 public class Game {
 	private Board board;
 	private Player player1, player2;
@@ -18,6 +22,9 @@ public class Game {
 	public double avgTime;
 	public String result;
 
+	/**
+	 * @param i denotes #gameplay in testing
+	 */
 	public Game(int i) {
 		try {
 			writer = new PrintWriter("C:\\Users\\Bijon\\workspace\\LineOfAction\\LOA_Output"+i+".txt","UTF-8");
@@ -32,7 +39,7 @@ public class Game {
 		board.setCurrPlayer(player1);
 		this.i =i;
 	}
-	
+
 	public Board getBoard() {
 		return board;
 	}
@@ -41,10 +48,13 @@ public class Game {
 		this.board = board;
 	}
 
+	/**
+	 * Plays the game
+	 */
 	public void startGame() {
 		System.out.println("Play Line of Action! Start Game! "+player1.get_name()+" vs. "+player2.get_name());
 		writer.println("Play Line of Action! Start Game! "+player1.get_name()+" vs. "+player2.get_name());
-		//Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		board.printBoard(writer);
 		while (true) {
 			if(board.movesMade() >= moveLimit){
@@ -71,36 +81,37 @@ public class Game {
 				break;
 			}
 			ArrayList<Move> moves = board.legalMoves();
+			Move myMove;
 			if (moves.size() > 0) {
 				System.out.println("It is player " + board.getCurrPlayer().get_name()+ "'s move.");
 				writer.println("It is player " + board.getCurrPlayer().get_name()+ "'s move.");
 				System.out.println("Where would you like to move?");
 				writer.println("Where would you like to move?");
-				/*System.out.println("From Column: ");
-				int c0 = in.nextInt();
-				System.out.println("From row: ");
-				int r0 = in.nextInt();
-				System.out.println("To Column: ");
-				int c1 = in.nextInt();
-				System.out.println("To row: ");
-				int r1 = in.nextInt();
+				if(board.getCurrPlayer() == player1){
+					System.out.println("From Column: ");
+					int c0 = in.nextInt();
+					System.out.println("From row: ");
+					int r0 = in.nextInt();
+					System.out.println("To Column: ");
+					int c1 = in.nextInt();
+					System.out.println("To row: ");
+					int r1 = in.nextInt();
 
-				System.out.println("Enter move (c0r0-c1r1): ")
-				String moveString = sc.nextLine();
-				int c0 = moveString.charAt(0) - '0';
-				int r0 = moveString.charAt(1) - '0';
-				int c1 = moveString.charAt(3) - '0';
-				int r1 = moveString.charAt(4) - '0';
-
-				Move move = new Movee(c0,r0,c1,r1);
-				 */
-				Move myMove;
-				if(board.getCurrPlayer() == player1)
-					myMove = getRandomMove(moves);
+					/*System.out.println("Enter move (c0r0-c1r1): ")
+					String moveString = sc.nextLine();
+					int c0 = moveString.charAt(0) - '0';
+					int r0 = moveString.charAt(1) - '0';
+					int c1 = moveString.charAt(3) - '0';
+					int r1 = moveString.charAt(4) - '0';
+					 */
+					myMove = new Move(c0,r0,c1,r1);
+					//Move myMove;
+					//myMove = getRandomMove(moves);
+				}
 				else{
 					double t1 = System.currentTimeMillis();
 					AIAgent mcTS = new AIAgent(this.board.cloneBoard(), writer);
-					Move mcMove = mcTS.getMonteCarloMove(); 
+					Move mcMove = mcTS.getAgentMove(); 
 					double t2 = System.currentTimeMillis();
 					myMove = mcMove == null ? getRandomMove(moves) : mcMove;
 					time = (t2-t1)/1000;
@@ -108,9 +119,9 @@ public class Game {
 					maxTime = Math.max(maxTime, time);
 					minTime = Math.min(minTime, time);
 					totalTime += time;
-					System.out.println("Agent move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
-					writer.println("Agent move: "+mcTS.getMonteCarloMove()+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
-					
+					System.out.println("Agent move: "+mcMove+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
+					writer.println("Agent move: "+mcMove+" \nTime taken to decide move: "+((t2-t1)/1000)+" seconds");
+
 				}
 				if (board.isLegal(myMove)) {
 					writer.println("Good Move");
@@ -158,6 +169,10 @@ public class Game {
 		writer.println("Total time taken for all moves: "+totalTime +" seconds");
 		writer.close();
 	}
+	
+	/**
+	 * Sets next player
+	 */
 	public void setNextPlayer(){
 		if(board.getCurrPlayer() == player1)
 			board.setCurrPlayer(player2);
@@ -165,6 +180,10 @@ public class Game {
 			board.setCurrPlayer(player1);
 	}
 
+	/**
+	 * @param moves
+	 * @return a random move from the list of available moves
+	 */
 	public Move getRandomMove(ArrayList<Move> moves){
 		Random rndmGenerator = new Random();
 		int index = rndmGenerator.nextInt(moves.size());

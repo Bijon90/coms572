@@ -1,0 +1,2612 @@
+Play Line of Action! Start Game! user vs. machine
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X X X X X X * . 
+2 . O * * * * * * O . 
+3 . O * * * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . * X X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . O * * * * * * O . 
+3 . O * * * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . * X X X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 12-18 
+Time taken to decide move: 0.155 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * * * * * * * O . 
+3 . O * * * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . O X X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * X X X . 
+2 . * * * * * * * O . 
+3 . O * X * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . O X X X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 82-72 
+Time taken to decide move: 0.44 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * X X X . 
+2 . * * * * * * O * . 
+3 . O * X * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . O X X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X * * X X . 
+2 . * * * * * * O * . 
+3 . O * X * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * * O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . O X X X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 72-75 
+Time taken to decide move: 0.403 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X * * X X . 
+2 . * * * * * * * * . 
+3 . O * X * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * O O . 
+6 . O * * * * * * O . 
+7 . O * * * * * * O . 
+8 . O X X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X * * X X . 
+2 . * * * * * * * * . 
+3 . O * X * * * * O . 
+4 . O * * * * * * O . 
+5 . O * * * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * X X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 13-35 
+Time taken to decide move: 0.142 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X * * X X . 
+2 . * * * * * * * * . 
+3 . * * X * * * * O . 
+4 . O * * * * * * O . 
+5 . O * O * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X X * X X . 
+2 . * * * * * * * * . 
+3 . * * * * * * * O . 
+4 . O * * * * * * O . 
+5 . O * O * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * X X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 83-72 
+Time taken to decide move: 0.214 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X X * X X . 
+2 . * * * * * * O * . 
+3 . * * * * * * * * . 
+4 . O * * * * * * O . 
+5 . O * O * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X X * * X . 
+2 . * * * * * * O * . 
+3 . * * * * * * * * . 
+4 . O * * X * * * O . 
+5 . O * O * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * X X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 72-83 
+Time taken to decide move: 0.237 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X X * * X . 
+2 . * * * * * * * * . 
+3 . * * * * * * * O . 
+4 . O * * X * * * O . 
+5 . O * O * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * X X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X X * * X . 
+2 . * * * * * * * * . 
+3 . * * * * * * * O . 
+4 . O * * X * * * O . 
+5 . O * X * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * * X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 83-72 
+Time taken to decide move: 0.14 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * X X X * * X . 
+2 . * * * * * * O * . 
+3 . * * * * * * * * . 
+4 . O * * X * * * O . 
+5 . O * X * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * * X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X * X . 
+2 . * * * * * * O * . 
+3 . * * * * * * * * . 
+4 . O * * X * * * O . 
+5 . O * X * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * * X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 72-82 
+Time taken to decide move: 0.313 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X * X . 
+2 . * * * * * * * O . 
+3 . * * * * * * * * . 
+4 . O * * X * * * O . 
+5 . O * X * * * O O . 
+6 . O * * * * * * O . 
+7 . O X * * * * * O . 
+8 . O * * X X X X * . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X * X . 
+2 . * * * * * * * O . 
+3 . * * * * * * * * . 
+4 . O * * X * * * O . 
+5 . O * X * * * O O . 
+6 . O X * * * * * O . 
+7 . O * * * * * * O . 
+8 . O * * X X X X * . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 82-88 
+Time taken to decide move: 0.174 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X * X . 
+2 . * * * * * * * * . 
+3 . * * * * * * * * . 
+4 . O * * X * * * O . 
+5 . O * X * * * O O . 
+6 . O X * * * * * O . 
+7 . O * * * * * * O . 
+8 . O * * X X X X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * * * * * * * * . 
+3 . * * * * * * * * . 
+4 . O * * X * * * O . 
+5 . O * * * * * O O . 
+6 . O X * * * * * O . 
+7 . O * * * * * * O . 
+8 . O * * X X X X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 14-36 
+Time taken to decide move: 0.166 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * * * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * X * * * O . 
+5 . O * * * * * O O . 
+6 . O X O * * * * O . 
+7 . O * * * * * * O . 
+8 . O * * X X X X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * O . 
+5 . O * * * * * O O . 
+6 . O X O * * * * O . 
+7 . O * * * * * * O . 
+8 . O * * X X X X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-62 
+Time taken to decide move: 0.412 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * O * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . O * * * * * O O . 
+6 . O X O * * * * O . 
+7 . O * * * * * * O . 
+8 . O * * X X X X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * O * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . O * * * * * O O . 
+6 . O X X * * * * O . 
+7 . O * * * * * * O . 
+8 . O * * X * X X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 62-65 
+Time taken to decide move: 0.278 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . O * * * * O O O . 
+6 . O X X * * * * O . 
+7 . O * * * * * * O . 
+8 . O * * X * X X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . O * * * * O O O . 
+6 . O X X X * * * O . 
+7 . O * * * * * * O . 
+8 . O * * * * X X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 15-55 
+Time taken to decide move: 0.266 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * O O O O . 
+6 . O X X X * * * O . 
+7 . O * * * * * * O . 
+8 . O * * * * X X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * O O O O . 
+6 . O * X X * * X O . 
+7 . O * * * * * * O . 
+8 . O * * * * X X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 55-57 
+Time taken to decide move: 0.349 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * * O O O . 
+6 . O * X X * * X O . 
+7 . O * * * O * * O . 
+8 . O * * * * X X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * * O O O . 
+6 . O * X X * * X O . 
+7 . O * * * O * * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 65-67 
+Time taken to decide move: 0.204 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X X X . 
+2 . * X * * * * * * . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * * * O O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X * X . 
+2 . * X * * * * * X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * * * O O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 75-72 
+Time taken to decide move: 0.142 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X * X . 
+2 . * X * * * * O X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * * * * O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X * X . 
+2 . * * * * * * O X . 
+3 . * * * * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 72-75 
+Time taken to decide move: 0.192 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X X X * X . 
+2 . * * * * * * * X . 
+3 . * * * * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * * X * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 75-72 
+Time taken to decide move: 0.094 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * O X . 
+3 . * * * X * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * X * * O X . 
+3 . * * * X * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * * * * O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 72-75 
+Time taken to decide move: 0.271 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * X * * * X . 
+3 . * * * X * * * * . 
+4 . * * * * * * * * . 
+5 . * * * * * * O O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * * X * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 75-72 
+Time taken to decide move: 0.104 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * O X . 
+3 . * * * X * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O * X X * * X O . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * O X . 
+3 . * * * X * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O * * X * * X X . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 72-75 
+Time taken to decide move: 0.194 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * * X * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O * * X * * X X . 
+7 . O * * * O O * O . 
+8 . O X * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * * X * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 75-72 
+Time taken to decide move: 0.213 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * O X . 
+3 . * * * X * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * O X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 72-75 
+Time taken to decide move: 0.229 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 75-73 
+Time taken to decide move: 0.189 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * X * * * O * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X * * X . 
+2 . * * * * * * * X . 
+3 . * * X * * X O * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-75 
+Time taken to decide move: 0.101 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X * * X . 
+2 . * * * * * * * X . 
+3 . * * X * * X * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * O O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 75-73 
+Time taken to decide move: 0.185 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * X * * * O * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X X X . 
+2 . * * * * * * * X . 
+3 . * * X * * * O * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O X * X * * X X . 
+7 . O * * * O O * O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-76 
+Time taken to decide move: 0.238 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X X X . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O X * X * * O X . 
+7 . O * * * O O * O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X X X . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * O . 
+6 . O X * X * * O X . 
+7 . O * * * O O * O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.041 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X X X . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * O * . 
+5 . * * * * * * * * . 
+6 . O X * X * * O X . 
+7 . O * * * O O * O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * O * . 
+5 . * * * * * * * * . 
+6 . O X * X * * O X . 
+7 . O * * * O O * O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-77 
+Time taken to decide move: 0.103 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * X X * X . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * * . 
+6 . O X * X * * O X . 
+7 . O * * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * X . 
+2 . * * * * * * * X . 
+3 . * * X * X * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * * . 
+6 . O X * X * * O X . 
+7 . O * * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 16-27 
+Time taken to decide move: 0.13 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * X . 
+2 . * * * * * * * X . 
+3 . * * X * X * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * * . 
+6 . * X * X * * O X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * X . 
+2 . * * * * * * * X . 
+3 . X * X * X * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * * . 
+6 . * X * * * * O X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 76-73 
+Time taken to decide move: 0.129 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * X . 
+2 . * * * * * * * X . 
+3 . X * X * X * O * . 
+4 . * X * * * * * * . 
+5 . * * * * * * * * . 
+6 . * X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * X . 
+2 . * * * * * * * X . 
+3 . X * * * X * O * . 
+4 . * X * * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-76 
+Time taken to decide move: 0.043 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * X . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * X * * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * O X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * X . 
+2 . * * * * X * * X . 
+3 . X * * * X * * * . 
+4 . * X * * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * O X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 76-73 
+Time taken to decide move: 0.172 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * X . 
+2 . * * * * X * * X . 
+3 . X * * * X * O * . 
+4 . * X * * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * X . 
+2 . * * X * * * * X . 
+3 . X * * * X * O * . 
+4 . * X * * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-76 
+Time taken to decide move: 0.201 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * X . 
+2 . * * X * * * * X . 
+3 . X * * * X * * * . 
+4 . * X * * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * O X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * X . 
+2 . * * X * * * * X . 
+3 . X * * * X * * * . 
+4 . * * X * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * O X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 76-73 
+Time taken to decide move: 0.088 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * * * X . 
+2 . * * X * * * * X . 
+3 . X * * * X * O * . 
+4 . * * X * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . * * X * * * * X . 
+3 . X * * * X * O * . 
+4 . * * X * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-76 
+Time taken to decide move: 0.18 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . * * X * * * * X . 
+3 . X * * * X * * * . 
+4 . * * X * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * O X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . X * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * X * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * O X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 76-73 
+Time taken to decide move: 0.083 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . X * * * * * * X . 
+3 . X * * * X * O * . 
+4 . * * X * * * * * . 
+5 . X * * * * * * * . 
+6 . * X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . X * * * * * * X . 
+3 . X * * * X * O * . 
+4 . * * X * * * * * . 
+5 . * * * * * * * * . 
+6 . * X * * * * * X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-76 
+Time taken to decide move: 0.136 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . X * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * X * * * * * . 
+5 . * * * * * * * * . 
+6 . * X * * * * O X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . X * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * * * . 
+5 . * * * * * * * * . 
+6 . X X * * * * O X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 76-73 
+Time taken to decide move: 0.039 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . X * * * * * * X . 
+3 . X * * * X * O * . 
+4 . * * * * * * * * . 
+5 . * * * * * * * * . 
+6 . X X * * * * * X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * O * . 
+4 . * * * * * * * * . 
+5 . * * * X * * * * . 
+6 . X X * * * * * X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-76 
+Time taken to decide move: 0.039 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X * * X * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * * * . 
+5 . * * * X * * * * . 
+6 . X X * * * * O X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * * * . 
+4 . * * * * * * * * . 
+5 . * * * X * * * * . 
+6 . X X * * * * O X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 76-73 
+Time taken to decide move: 0.166 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * * * * . 
+2 . * * * * * * * X . 
+3 . X * * * X * O * . 
+4 . * * * * * * * * . 
+5 . * * * X * * * * . 
+6 . X X * * * * * X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * * * * . 
+2 . * * * * * * X X . 
+3 . X * * * X * O * . 
+4 . * * * * * * * * . 
+5 . * * * * * * * * . 
+6 . X X * * * * * X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-84 
+Time taken to decide move: 0.122 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * * * * . 
+2 . * * * * * * X X . 
+3 . X * * * X * * * . 
+4 . * * * * * * * O . 
+5 . * * * * * * * * . 
+6 . X X * * * * * X . 
+7 . O O X * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * * * * . 
+2 . * * * * * * X X . 
+3 . X * * * X * * * . 
+4 . * * * * * * * O . 
+5 . * * X * * * * * . 
+6 . X X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-73 
+Time taken to decide move: 0.08 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * * * * . 
+2 . * * * * * * X X . 
+3 . X * * * X * O * . 
+4 . * * * * * * * * . 
+5 . * * X * * * * * . 
+6 . X X * * * * * X . 
+7 . O O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * * * * . 
+2 . * * * * * * X X . 
+3 . * * * * X * O * . 
+4 . * * * * * * * * . 
+5 . * * X * * * * * . 
+6 . X X * * * * * X . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-84 
+Time taken to decide move: 0.12 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * X X * * * * . 
+2 . * * * * * * X X . 
+3 . * * * * X * * * . 
+4 . * * * * * * * O . 
+5 . * * X * * * * * . 
+6 . X X * * * * * X . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . * X * * * * X X . 
+3 . * * * * X * * * . 
+4 . * * * * * * * O . 
+5 . * * X * * * * * . 
+6 . X X * * * * * X . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-73 
+Time taken to decide move: 0.033 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . * X * * * * X X . 
+3 . * * * * X * O * . 
+4 . * * * * * * * * . 
+5 . * * X * * * * * . 
+6 . X X * * * * * X . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . * X * * * * X X . 
+3 . * * * * X * O * . 
+4 . * * * * * * * * . 
+5 . * * X * * * * * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-84 
+Time taken to decide move: 0.137 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . * X * * * * X X . 
+3 . * * * * X * * * . 
+4 . * * * * * * * O . 
+5 . * * X * * * * * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * X * O . 
+5 . * * X * * * * * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-73 
+Time taken to decide move: 0.098 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * O * . 
+4 . * * * * * X * * . 
+5 . * * X * * * * * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * O * . 
+4 . * * * * * * * * . 
+5 . * * X * * * X * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 73-84 
+Time taken to decide move: 0.108 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * X * * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * O . 
+5 . * * X * * * X * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * O . 
+5 . * * X * * * X * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-62 
+Time taken to decide move: 0.114 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * O X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X * * * X * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * * * * X O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * O X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X * * * X * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 62-64 
+Time taken to decide move: 0.036 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * O * * . 
+5 . * * X * * * X * . 
+6 . X X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * O * * . 
+5 . * X X * * * X * . 
+6 . * X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 64-66 
+Time taken to decide move: 0.058 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * X X * * * X * . 
+6 . * X * * X O * * . 
+7 . X O * * O O O O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X * X * X * . 
+6 . * X * * X O * * . 
+7 . X O * * O O O O . 
+8 . O * * X * * * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 66-68 
+Time taken to decide move: 0.034 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X * X * X * . 
+6 . * X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * X * O * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X X X * * * . 
+6 . * X * * X * * * . 
+7 . X O * * O O O O . 
+8 . O * * X * O * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 27-38 
+Time taken to decide move: 0.133 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * X * * * * X X . 
+3 . * * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X X X * * * . 
+6 . * X * * X * * * . 
+7 . X * * * O O O O . 
+8 . O * O X * O * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X X X * * * . 
+6 . * X * * X * * * . 
+7 . X * * * O O O O . 
+8 . O * O X * O * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 57-75 
+Time taken to decide move: 0.019 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X X X * O * . 
+6 . * X * * X * * * . 
+7 . X * * * * O O O . 
+8 . O * O X * O * O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X X X * O * . 
+6 . * X * X X * * * . 
+7 . X * * * * O O O . 
+8 . O * O * * O * O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 75-78 
+Time taken to decide move: 0.029 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * * X X X * * * . 
+6 . * X * X X * * * . 
+7 . X * * * * O O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * X X X X * * * . 
+6 . * * * X X * * * . 
+7 . X * * * * O O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 67-76 
+Time taken to decide move: 0.023 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * X X X X * * * . 
+6 . * * * X X * O * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * X X X X * * * . 
+6 . * X * X * * O * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 76-85 
+Time taken to decide move: 0.024 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * X X X X * * O . 
+6 . * X * X * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * X X * X * * O . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.022 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * X X . 
+3 . X * * * * * * * . 
+4 . * * * * * * O * . 
+5 . * X X * X * * * . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * X . 
+3 . X * * * * * * * . 
+4 . * * * * * * O * . 
+5 . * X X * X * * * . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.026 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * X . 
+3 . X * * * * * * * . 
+4 . * * * * * * * * . 
+5 . * X X * X * * O . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * * X * * * * . 
+4 . * * * * * * * * . 
+5 . * X X * X * * O . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.021 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . X * * X * * * * . 
+4 . * * * * * * O * . 
+5 . * X X * X * * * . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X X * * * * . 
+4 . * * * * * * O * . 
+5 . * X X * X * * * . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.065 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X X * * * * . 
+4 . * * * * * * * * . 
+5 . * X X * X * * O . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * * * * * * * * . 
+5 . * X X * X * * O . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.02 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * * * * * * O * . 
+5 . * X X * X * * * . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * * * * * * O * . 
+5 . * X * * X X * * . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.026 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * * * * * * * * . 
+5 . * X * * X X * O . 
+6 . * X * X * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * X * * X X * O . 
+6 . * X * * * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.073 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * O * . 
+5 . * X * * X X * * . 
+6 . * X * * * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * O * . 
+5 . * * * * X X * * . 
+6 . X X * * * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.022 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * X X * O . 
+6 . X X * * * * * * . 
+7 . X * * X * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * X X * O . 
+6 . X X X * * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.016 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * O * . 
+5 . * * * * X X * * . 
+6 . X X X * * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * O * . 
+5 . * * * * * X X * . 
+6 . X X X * * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.02 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * * X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * X X O . 
+6 . X X X * * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * * * * . 
+5 . * * * * * X X O . 
+6 . X * X * * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.02 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * X * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * * O * . 
+5 . * * * * * X X * . 
+6 . X * X * * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * X * O * . 
+5 . * * * * * X X * . 
+6 . X * X * * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.018 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * X * * * . 
+5 . * * * * * X X O . 
+6 . X * X * * * * * . 
+7 . X * * * * * O O . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * X * * * . 
+5 . * * * * * X X O . 
+6 . X * X * * * * * . 
+7 . * * * * * * O O . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.025 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * X * O * . 
+5 . * * * * * X X * . 
+6 . X * X * * * * * . 
+7 . * * * * * * O O . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * X X O * . 
+5 . * * * * * X * * . 
+6 . X * X * * * * * . 
+7 . * * * * * * O O . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.021 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * X X * * . 
+5 . * * * * * X * O . 
+6 . X * X * * * * * . 
+7 . * * * * * * O O . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * X * * . 
+5 . * * * * * X * O . 
+6 . X * X * * * * * . 
+7 . * * * * * * O X . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.02 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * X O * . 
+5 . * * * * * X * * . 
+6 . X * X * * * * * . 
+7 . * * * * * * O X . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * X O X . 
+5 . * * * * * X * * . 
+6 . X * X * * * * * . 
+7 . * * * * * * O * . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.02 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X * * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * X * X . 
+5 . * * * * * X * O . 
+6 . X * X * * * * * . 
+7 . * * * * * * O * . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * X * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * X * X . 
+5 . * * * * * X * O . 
+6 . X * X * * * * * . 
+7 . * * * * * * O * . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-74 
+Time taken to decide move: 0.024 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * X * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * X O X . 
+5 . * * * * * X * * . 
+6 . X * X * * * * * . 
+7 . * * * * * * O * . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * X * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * X O X . 
+5 . * * * * * * * * . 
+6 . X * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 74-85 
+Time taken to decide move: 0.064 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * X * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * * X * X . 
+5 . * * * * * * * O . 
+6 . X * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * X * * . 
+2 . * * * * * * * X . 
+3 . * X X * * * * * . 
+4 . * X * * X X * * . 
+5 . * * * * * * * O . 
+6 . X * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 85-82 
+Time taken to decide move: 0.072 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * X * * . 
+2 . * * * * * * * O . 
+3 . * X X * * * * * . 
+4 . * X * * X X * * . 
+5 . * * * * * * * * . 
+6 . X * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O X O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * X * * . 
+2 . * * * * * * * O . 
+3 . * X X * * * * * . 
+4 . * X * * X X * * . 
+5 . * * * * * * * * . 
+6 . X * X * * * X * . 
+7 . X * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 82-84 
+Time taken to decide move: 0.026 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * * X * * . 
+2 . * * * * * * * * . 
+3 . * X X * * * * * . 
+4 . * X * * X X * O . 
+5 . * * * * * * * * . 
+6 . X * X * * * X * . 
+7 . X * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * X * * * * * * . 
+4 . * X * * X X * O . 
+5 . * * * * * * * * . 
+6 . X * X * * * X * . 
+7 . X * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-86 
+Time taken to decide move: 0.107 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * X * * * * * * . 
+4 . * X * * X X * * . 
+5 . * * * * * * * * . 
+6 . X * X * * * X O . 
+7 . X * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . * X * * X X * * . 
+5 . * * * * * * * * . 
+6 . X * X * * * X O . 
+7 . X * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 86-84 
+Time taken to decide move: 0.104 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . * X * * X X * O . 
+5 . * * * * * * * * . 
+6 . X * X * * * X * . 
+7 . X * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . * X * * X * * O . 
+5 . * * * * X * * * . 
+6 . X * X * * * X * . 
+7 . X * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-86 
+Time taken to decide move: 0.021 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . * X * * X * * * . 
+5 . * * * * X * * * . 
+6 . X * X * * * X O . 
+7 . X * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * X * * * . 
+5 . * * * * X * * * . 
+6 . X * X * * * X O . 
+7 . * * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 86-84 
+Time taken to decide move: 0.058 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . * * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * X * * O . 
+5 . * * * * X * * * . 
+6 . X * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * X * * O . 
+5 . * * * * * * * * . 
+6 . X * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-86 
+Time taken to decide move: 0.121 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * X * * * . 
+5 . * * * * * * * * . 
+6 . X * X * * * X O . 
+7 . * * * * * * O * . 
+8 . O * O * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * X * * * . 
+5 . * * * * * * * * . 
+6 . * * X * * * X O . 
+7 . * * * * * * O * . 
+8 . O * X * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 86-84 
+Time taken to decide move: 0.01 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * X * * O . 
+5 . * * * * * * * * . 
+6 . * * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O * X * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * * * * O . 
+5 . * * * * * * * * . 
+6 . * * X * X * X * . 
+7 . * * * * * * O * . 
+8 . O * X * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-86 
+Time taken to decide move: 0.017 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * * * * * . 
+5 . * * * * * * * * . 
+6 . * * X * X * X O . 
+7 . * * * * * * O * . 
+8 . O * X * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * * * X * . 
+5 . * * * * * * * * . 
+6 . * * X * * * X O . 
+7 . * * * * * * O * . 
+8 . O * X * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 86-84 
+Time taken to decide move: 0.052 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X X * * * * X O . 
+5 . * * * * * * * * . 
+6 . * * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O * X * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X * * * * X X O . 
+5 . * * * * * * * * . 
+6 . * * X * * * X * . 
+7 . * * * * * * O * . 
+8 . O * X * * O O O . 
+9 . . . . . . . . . . 
+It is player machine's move.
+Where would you like to move?
+Agent move: 84-86 
+Time taken to decide move: 0.018 seconds
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X * * * * X X * . 
+5 . * * * * * * * * . 
+6 . * * X * * * X O . 
+7 . * * * * * * O * . 
+8 . O * X * * O O O . 
+9 . . . . . . . . . . 
+It is player user's move.
+Where would you like to move?
+Good Move
+  0 1 2 3 4 5 6 7 8 9 
+0 . . . . . . . . . . 
+1 . X * * * X X * * . 
+2 . * * * * * * * * . 
+3 . * * X * * * * * . 
+4 . X * * * * X X * . 
+5 . * * * * * * * * . 
+6 . * * * * * * X O . 
+7 . * * * * * * O * . 
+8 . X * X * * O O O . 
+9 . . . . . . . . . . 
+Total moves made: 173
+Game Over! machine wins!
+Maximum time taken for a move: 0.44 seconds
+Minimum time taken for a move: 0.01 seconds
+Average time taken per move: 0.11502325581395348 seconds
+Total time taken for all moves: 9.892 seconds

@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Board {
+public class Board{
 	
 	private ArrayList<Move> moves;
 	private char[][] board;
@@ -16,7 +16,9 @@ public class Board {
         this.moves = new ArrayList<>();
     }
 
-	/** A new board in the standard initial position. */
+	/** 
+	 * A new board in the standard initial position. 
+	 */
     public Board() {
     	char[][] initboard = {
     			{ Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER  },
@@ -30,7 +32,6 @@ public class Board {
     	        { Constants.BUFFER, Constants.EMPTY, Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.BLACK,  Constants.EMPTY, Constants.BUFFER },
     	        { Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER, Constants.BUFFER  }
     	    };
-        //this(initboard, Constants.user);
     	this.setBoard(initboard);
     	this.setCurrPlayer(Constants.user);
         this.moves = new ArrayList<>();
@@ -66,35 +67,45 @@ public class Board {
 		this.currPlayer = currPlayer;
 	}
 	
-	/** Return the contents of column C, row R, where 1 <= C,R <= 8,
+	/** 
+	 *  Return the contents of column C, row R, where 1 <= C,R <= 8,
      *  where column 1 corresponds to column 'a' in the standard
-     *  notation. */
+     *  notation. 
+     */
     public char getPiece(int r, int c){
     	return board[r][c];
     }
     
-    /** Return the contents of the square SQ.  SQ must be the
+    /** 
+     * @return the contents of the square SQ.  SQ must be the
      *  standard printed designation of a square (having the form cr,
-     *  where c and r each are a digit from 1-8). */
+     *  where c and r each are a digit from 1-8). 
+     */
     public char getPiece(String pos){
     	if(isValidPos(pos))
     		return board[(pos.charAt(1) - '0')][pos.charAt(0)-'0'];
     	return '.';
     }
     
-    /** Return the column number (a value in the range 1-8) for SQ.
-     *  SQ is in the form cr */
+    /** 
+     * @return the column number (a value in the range 1-8) for SQ.
+     *  SQ is in the form cr 
+     */
     public int col(String sq) {
         return Integer.parseInt(sq.substring(0));
     }
 
-    /** Return the row number (a value in the range 1-8) for SQ.
-     *  SQ is in the form cr */
+    /** 
+     * @return the row number (a value in the range 1-8) for SQ.
+     *  SQ is in the form cr 
+     */
     public int row(String sq) {
         return Integer.parseInt(sq.substring(1));
     }
 	
-    /** Return true iff MOVE is legal for the player currently on move. */
+    /** 
+     * @return true iff move is legal for the player currently on move. 
+     */
     public boolean isLegal(Move move) {
         if (move.getC0() > 8 || move.getR0() > 8 
         		|| move.getC1() > 8 || move.getR1() > 8
@@ -140,8 +151,11 @@ public class Board {
         return isLegal2(fro, count, move.getMoveLength());
     }
     
-    /** The second part of isLegal() to pass the stylecheck.
-     *  FRO, COUNT, MOVELENGTH. Return the result.
+    /**
+     * @param fro
+     * @param count
+     * @param moveLength
+     * @return true if move is legal
      */
     private boolean isLegal2(ArrayList<Character> fro, int count, int moveLength) {
         for (Character piece : fro) {
@@ -158,8 +172,9 @@ public class Board {
         }
     }
 	
-    /** Sub method to get past style check. Check's
-     *  MOVE's direction and returns true if it is valid. */
+    /** 
+     * Sub method to get past style check. Check's move's direction and returns true if it is valid. 
+     */
     private boolean legalDirectionCheck(Move move) {
         int cd = Math.abs(move.getC1() - move.getC0());
         int cr = Math.abs(move.getR1() - move.getR0());
@@ -169,7 +184,9 @@ public class Board {
         return true;
     }
 
-    /** Return an ArrayList of all legal moves for current player. */
+    /** 
+     * @return an ArrayList of all legal moves for current player. 
+     */
     public ArrayList<Move> legalMoves() {
         ArrayList<Move> legalMoves = new ArrayList<Move>();
         int x = 0, y = 0;
@@ -204,7 +221,7 @@ public class Board {
         return legalMoves;
     }
     
-	private boolean isValidPos(String pos) {
+	public boolean isValidPos(String pos) {
 		int x = pos.charAt(1) - '0';
 		int y = pos.charAt(0) - '0';
 		if((x >= 1 && x <=8)&&(y >= 1 && y <=8))
@@ -212,26 +229,33 @@ public class Board {
 		return false;
 	}
     
-    /** A utility method that returns a new row based on
-     *  original row C, direction D, and DISTANCE. */
-    private int moveC(int c, int d, int distance) {
+    /**
+     * @param c
+     * @param d
+     * @param distance
+     * @return a new row based on original column c, direction d, and distance.
+     */
+	public int moveC(int c, int d, int distance) {
         return c + Constants.UNIT_VECTORS[d][0] * distance;
     }
 
-    /** A utility method that returns a new row based on
-     *  original row R, direction D, and DISTANCE. */
-    private int moveR(int r, int d, int distance) {
+    /**
+     * @param r
+     * @param d
+     * @param distance
+     * @return a new row based on original row r, direction d, and distance.
+     */
+	public int moveR(int r, int d, int distance) {
         return r + Constants.UNIT_VECTORS[d][1] * distance;
     }
     
-    /** A utility method that takes a starting position p =(C, R) and
-     *  a direction D and returns an ArrayList of two ArrayLists.
-     *  The first of these ArrayLists contains the pieces on the line
-     *  starting from p and pointing in D, while the second ArrayList
-     *  contains the pieces starting from p - 1 and pointing in -D.
-     *  THESE LISTS INCLUDE '*' SPACES AS PIECES.
-     *  0 <= D < 8, where the number refers to one of the
-     *  8 compass directions, counted clockwise with north = 0.
+    /**
+     * A utility method that takes a starting position p =(c, r) and
+     * a direction d
+     * @param c
+     * @param r
+     * @param d
+     * @return an ArrayList of two ArrayLists in two opposite directions d and -d
      */
     public ArrayList<ArrayList<Character>> getLinePieces(int c, int r, int d) {
         int colUnit = Constants.UNIT_VECTORS[d][0], rowUnit = Constants.UNIT_VECTORS[d][1], 
@@ -254,11 +278,15 @@ public class Board {
         return result;
     }
     
-    /** A utility method that takes a starting position (C0, R0) and
-     *  end position (C1, R1) and returns an ArrayList of two ArrayLists,
-     *  as per getLinePieces(int c, int r, int d).
+    /**
+     * A utility method that takes a starting position (c0, r0) and end position (c1, r1) 
+     * @param c0
+     * @param r0
+     * @param c1
+     * @param r1
+     * @return an ArrayList of two ArrayLists as per getLinePieces(int c, int r, int d)
      */
-    ArrayList<ArrayList<Character>> getLinePieces(int c0, int r0, int c1, int r1) {
+    public ArrayList<ArrayList<Character>> getLinePieces(int c0, int r0, int c1, int r1) {
         Move temp =  new Move(c0, r0, c1, r1);
         int cd = (c1 - c0) / temp.getMoveLength(), 
         	rd = (r1 - r0) / temp.getMoveLength(), 
@@ -297,10 +325,12 @@ public class Board {
         return getLinePieces(c0, r0, d);
     }
 
-    /** A utility method that returns an ArrayList of coordinates in the
-     *  form {x, y} of PLAYER's pieces on the board. x and y are not
-     *  indices. I.E. x = 1 refers to the first column.*/
-    ArrayList<int[]> getCoordinates(Player player) {
+    /**
+     * @param player 
+     *  A utility method that returns an ArrayList of coordinates in the form {x, y} 
+     *  of player's pieces on the board. 
+     */
+    public ArrayList<int[]> getCoordinates(Player player) {
         ArrayList<int[]> result = new ArrayList<int[]>();
         int y = 0;
         for (char[] row : board) {
@@ -320,14 +350,18 @@ public class Board {
         return result;
     }
     
-    /** Return true iff the game is currently over.  A game is over if
-     *  either player has all his pieces continguous. */
-    boolean gameOver() {
+    /** 
+     * @return true iff the game is currently over.  
+     * A game is over if either or both the players have all his pieces contiguous. 
+     */
+    public boolean gameOver() {
         return piecesContiguous(getCurrPlayer()) || piecesContiguous(currPlayer.getNextPlayer());
     }
 
-    /** Return true iff PLAYER's pieces are continguous. */
-    boolean piecesContiguous(Player player) {
+    /** 
+     * @return true iff player's pieces are contiguous. 
+     */
+    public boolean piecesContiguous(Player player) {
         ArrayList<int[]> remaining = getCoordinates(player);
         if (remaining.size() <= 1) {
             return true;
@@ -354,35 +388,41 @@ public class Board {
         return true;
     }
 
-    /** Return the total number of moves that have been made (and not
-     *  retracted).  Each valid call to makeMove with a normal move increases
-     *  this number by 1. */
-    int movesMade() {
+    /** 
+     * @return the total number of moves that have been made and not retracted 
+     */
+    public int movesMade() {
         return moves.size();
     }
 
-    /** Returns move #K used to reach the current position, where
-     *  0 <= K < movesMade().  Does not include retracted moves. */
-    Move getMove(int k) {
+    /** 
+     * @returns move #k used to reach the current position, where
+     *  0 <= k < movesMade().  Does not include retracted moves. 
+     */
+    public Move getMove(int k) {
         return moves.get(k);
     }
 
-    /** Adds a MOVE to MOVES. */
+    /** 
+     * Adds a move to moves made on board till now. 
+     */
     public void addMove(Move move) {
         moves.add(move);
     }
 
-    /** Removes the last move from MOVES. */
+    /** 
+     * Removes the last move from MOVES. 
+     */
     public void removeMove() {
         moves.remove(moves.size() - 1);
     }
-    
-    /** A utility method that returns true if PIECE (represented by
-     *  an array of coordinates) is connected to any other piece in
-     *  PIECES, and false otherwise. Pieces are considered connected
-     *  if pieces are one square away from each other.*/
-    public boolean isConnected(ArrayList<int[]> pieces
-            , int[] piece) {
+
+    /**
+     * @param pieces
+     * @param piece
+     * @return true if pieces are all connected and false otherwise.
+     */
+    public boolean isConnected(ArrayList<int[]> pieces, int[] piece) {
         for (int[] target : pieces) {
             int xd = Math.abs(piece[0] - target[0]),
                 yd = Math.abs(piece[1] - target[1]);
@@ -393,7 +433,9 @@ public class Board {
         return false;
     }
     
-    /** @return a copy of my configuration. */
+    /** 
+     * @return a copy of my current configuration. 
+     */
     public char[][] getConfigCopy() {
         char[][] result = new char[board.length][board.length];
         for (int i = 0; i < board.length; i++) {
@@ -405,6 +447,9 @@ public class Board {
 
     }
     
+    /**
+     * Prints board to Standard Output
+     */
     public void printBoard() {
     	System.out.print("  ");
     	for(int i = 0;i<10;i++){ System.out.print(i+" ");}
@@ -419,6 +464,9 @@ public class Board {
         }
     }
     
+    /**
+     * @return cloned board from board's current configuration
+     */
     public Board cloneBoard(){
     	Board clonedBoard = new Board();
     	clonedBoard.setBoard(this.getConfigCopy());
@@ -430,6 +478,10 @@ public class Board {
     	return clonedBoard;
     }
     
+    /**
+     * @param writer
+     * Prints board to file
+     */
     public void printBoard(PrintWriter writer) {
     	writer.print("  ");
     	for(int i = 0;i<10;i++){ 
@@ -446,6 +498,10 @@ public class Board {
         }
     }
     
+    /**
+     * @param move
+     * Applies move to board's current configuration
+     */
     public void makeMove(Move move){
     	if(isLegal(move)){
     		if(board[move.getR0()][move.getC0()] == getCurrPlayer().get_marker() &&
@@ -463,6 +519,9 @@ public class Board {
     	}
     }
     
+    /**
+     * Undo last move made on the board
+     */
     public void retract() {
     	this.setCurrPlayer(currPlayer.getNextPlayer());
     	char[][] config = getBoard();
@@ -484,6 +543,9 @@ public class Board {
         config[move.getR0()][move.getC0()] = curr;
     }
     
+    /**
+     * @return a random move from list of available legal moves
+     */
     public Move getRandomMove(){
     	ArrayList<Move> moves = this.legalMoves();
 		Random rndmGenerator = new Random();
@@ -491,6 +553,10 @@ public class Board {
 		return moves.get(index);
 	}
     
+    /**
+     * @param b1
+     * @return true or false whether b1 equal current board
+     */
     public boolean equalsB(Board b1){
     	if(b1.getCurrPlayer() != this.getCurrPlayer())
     		return false;
@@ -503,35 +569,4 @@ public class Board {
 		}
     	return true;
     }
-/*    public static void main(String args[]){
-    	Board b = new Board();
-    	
- 	    b.printBoard();
-    	b.setCurrPlayer(Constants.user);
-    	System.out.println(b.getCurrPlayer());
-    	System.out.println(b.getLinePieces(4, 3, 0));
-    	System.out.println(b.legalMoves());
-    	System.out.println(b.isValidPos("09"));
-    	System.out.println(b.getPiece(1, 2));
-    	ArrayList<int[]> getPieces = b.getCoordinates(b.currPlayer);
-    	for (int[] is : getPieces) {
-			System.out.println(is[0]+" : "+is[1]);
-		}
-    	
-    	char[][] board1 = {
-    	        {'.','.','.','.','.','.','.','.','.','.'},
-    	        {'.','*','*','X','X','X','X','*','*','.'},
-    	        {'.','O','*','X','*','*','*','*','O','.'},
-    	        {'.','O','*','*','X','*','*','*','O','.'},
-    	        {'.','O','*','X','*','*','*','*','O','.'},
-    	        {'.','O','*','X','X','*','*','*','O','.'},
-    	        {'.','O','*','*','X','*','*','*','O','.'},
-    	        {'.','O','*','*','*','X','*','*','O','.'},
-    	        {'.','*','*','*','*','X','*','*','*','.'},
-    	        {'.','.','.','.','.','.','.','.', '.','.'}
-    	    };
-    	b.setBoard(board1);
-    	b.printBoard();
-    	System.out.println(b.gameOver());
-    }*/
 }

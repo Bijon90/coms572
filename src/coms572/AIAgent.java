@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+/**
+ * @author Bijon
+ *
+ */
 public class AIAgent {
 	private Board board;
 	private int turns = 2000;
@@ -19,26 +23,41 @@ public class AIAgent {
 	private static final double COMCOL = 4.5;
 	/** Row center of board. */
 	private static final double COMROW = 4.5;
+	public boolean terminalWin = false;
 
+	
+	/**
+	 * Constructor
+	 * @param board
+	 */
 	public AIAgent(Board board){
 		this.board = board;
 		try{
-			this.writer = new PrintWriter(new File("C:\\output.txt"));
+			this.writer = new PrintWriter(new File("C:\\Users\\Bijon\\workspace\\LineOfAction\\LOA_Output.txt","UTF-8"));
 		}catch(Exception e){
 			e.printStackTrace();
 		}
 	}
 
+	/**
+	 * Constructor
+	 * @param board
+	 * @param writer
+	 */
 	public AIAgent(Board board, PrintWriter writer){
 		this.board = board;
 		this.writer = writer;
 	}
 
-	public Move getMonteCarloMove(){
+	/**
+	 * Gets agent move by running a simulation of the game driven by evaluation function
+	 * @return selected move
+	 */
+	public Move getAgentMove(){
 		ArrayList<Move> moves = board.legalMoves();
 		if(moves.size() <= 0)
 			return null;
-		Move resultMove = findBestMove(this.board, 2, Double.MAX_VALUE);
+		Move resultMove = guessBestMove(this.board);
 		boolean win = false;
 		Collections.shuffle(moves);
 		Board simBoard;
@@ -47,8 +66,7 @@ public class AIAgent {
 			simBoard.makeMove(move);
 			win = simBoard.piecesContiguous(Constants.machine);
 			if (win) {
-				//System.out.println("Move results in win for machine");
-				//writer.println("Move results in win for machine");
+				terminalWin = win;
 				return move;
 			} else {
 				if(simBoard.piecesContiguous(Constants.user)){
@@ -59,6 +77,7 @@ public class AIAgent {
 					turns = 500;
 					win = runSimulation(simBoard.cloneBoard());
 					if(win){
+						terminalWin = win;
 						System.out.println("Move can result in win for machine");
 						writer.println("Move can result in win for machine");
 						return move;
@@ -71,18 +90,28 @@ public class AIAgent {
 		return resultMove;
 	}
 
+	/**
+	 * Runs a simulation of the game from current configuration of the board
+	 * @param b
+	 * @return true or false depending on whether agent wins or loses
+	 */
 	private boolean runSimulation(Board b) {
+		//If turns exceeds the pre-defined maximum limit, 
+		//simulation ends and random move is returned
 		if (turns <= 0) {
 			return false;
 		}
 		Board forCheckMove = b.cloneBoard();
 		Move currMove = guessBestMove(forCheckMove);
+		//Move currMove = b.getRandomMove();	//When moves are chosen randomly during simulation
 		b.makeMove(currMove);
 		turns --;
 		if(b.piecesContiguous(Constants.machine)){
+			terminalWin = true;
 			return true;
 		}
 		else if(b.piecesContiguous(Constants.user)){
+			terminalWin = false;
 			return false;
 		}
 		else
@@ -90,6 +119,9 @@ public class AIAgent {
 		return false;
 	}
 
+	/**
+	 * @return opponent
+	 */
 	public Player getNextPlayer(){
 		if(board.getCurrPlayer() == Constants.user)
 			return Constants.machine;
@@ -97,9 +129,13 @@ public class AIAgent {
 			return Constants.user;
 	}
 
-	/** Return best move DEPTH steps ahead on board START of turn SIDE
-	 * using CUTOFF to prune. */
-	Move findBestMove(Board start, int depth, double cutoff) {
+	/**
+	 * @param start
+	 * @param depth
+	 * @param cutoff 
+	 * @return best move going until DEPTH steps ahead on board and usning CUTOFF to prune 
+	 */
+	public Move findBestMove(Board start, int depth, double cutoff) {
 		Player curPlayer = start.getCurrPlayer();
 		if (start.piecesContiguous(curPlayer)) {
 			_map.put(null, Double.MAX_VALUE);
@@ -112,7 +148,7 @@ public class AIAgent {
 			return move;
 		}
 		double value = WORST;
-		Move bestFar = null;
+		Move bestSoFar = null;
 		Board copy;
 		ArrayList<Move> lMoves = start.legalMoves();
 		for (Move move : lMoves) {
@@ -120,18 +156,22 @@ public class AIAgent {
 			Move response = guessBestMove(copy);
 			if (-_map.get(response) > value) {
 				value = -_map.get(response);
-				bestFar = move;
-				_map.put(bestFar, value);
+				bestSoFar = move;
+				_map.put(bestSoFar, value);
 				if (value >= cutoff) {
 					break;
 				}
 			}
 		}
-		return bestFar;
+		return bestSoFar;
 	}
 
-	/** Return best move at depth 0 on BOARD of SIDE. */
-	private Move guessBestMove(Board board) {
+
+	/**
+	 * @param board
+	 * @return guess best move on board for current player.
+	 */
+	public Move guessBestMove(Board board) {
 		Move bestFar = null;
 		double val = WORST;
 		ArrayList<Move> currMoves = board.legalMoves();
@@ -148,10 +188,13 @@ public class AIAgent {
 		return bestFar;
 	}
 
-	/** Return evaluation of BOARD of turn SIDE. */
-	private double eval(Board board) {
+	/** 
+	 * @param board
+	 * @return evaluation value of board for current player. 
+	 */
+	public double eval(Board board) {
 		char curr = board.getCurrPlayer().getOpponent();
-		int[] com = com(board,curr);
+		int[] com = findCOM(board,curr);
 		int colCom = com[1];
 		int rowCom = com[0];
 		int count = com[2];
@@ -160,7 +203,7 @@ public class AIAgent {
 		int central = centralize(board,curr);
 		double evalSide = 1.0 / empSq + 1.0 / central;
 		char opp = board.getCurrPlayer().get_marker();
-		int[] comOp = com(board, opp);
+		int[] comOp = findCOM(board, opp);
 		int colComOp = comOp[1];
 		int rowComOp = comOp[0];
 		int countOp = comOp[2];
@@ -171,8 +214,11 @@ public class AIAgent {
 		return evalSide - evalOp;
 	}
 
-	/** Return the center of mass of SIDE on BOARD. */
-	private int[] com(Board board, char pl) {
+	/** 
+	 * @param board, pl
+	 * @return the center of mass for the pieces of player with marker pl. 
+	 */
+	public int[] findCOM(Board board, char pl) {
 		int[] com = new int[] {0, 0, 0};
 		int count = 0;
 		for (int i = 1; i <= 8; i++) {
@@ -191,10 +237,13 @@ public class AIAgent {
 	}
 
 	/**
-	 * Assigns values to piece on BOARD of SIDE depending on how far it is from
-	 * center. Further pieces get less numbers. Return sum of the pieces
+	 * @param board
+	 * @param pl
+	 * @return centralization values to pieces of player with marker pl on board 
+	 * depending on how far it is from the center of the board. 
+	 * Further pieces get less numbers. Return sum of the value for all the pieces
 	 */
-	private int centralize(Board board, char pl) {
+	public int centralize(Board board, char pl) {
 		int sum = 0;
 		int min = 0;
 		for (int i = 1; i <= 8; i++) {
@@ -211,10 +260,13 @@ public class AIAgent {
 	}
 
 	/**
-	 * Return sum of distance between the center of mass and all SIDE pieces
-	 * from COMX, COMY on BOARD.
+	 * @param board
+	 * @param comX
+	 * @param comY
+	 * @param pl
+	 * @return sum of distances between the center of mass and all pieces from COMX, COMY on board for pl
 	 */
-	private int distFromCOM(Board board, int comX, int comY, char pl) {
+	public int distFromCOM(Board board, int comX, int comY, char pl) {
 		int sum = 0;
 		for (int i = 1; i <= 8; i++) {
 			for (int j = 1; j <= 8; j++) {
@@ -230,8 +282,10 @@ public class AIAgent {
 	}
 
 	/**
-	 * Return the minimum number of squares COUNT number of pieces could be from
-	 * COMX, COMY.
+	 * @param count
+	 * @param comX
+	 * @param comY
+	 * @return the minimum number of distance in terms of squares for all pieces from COMX, COMY
 	 */
 	public int minDist(int count, int comX, int comY) {
 		count -= 1;

@@ -24,8 +24,10 @@ public class Constants {
         { BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER, BUFFER  }
     };
     
-    /** An array that maps direction to unit vectors.
-    The index is the direction d. */
+    /** 
+     * An array that maps direction to unit vectors.
+     * The index is the direction d. 
+     */
 	public static final int[][] UNIT_VECTORS = {{0, 1}, {1, 1}, {1, 0}
     , {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}};
 }
