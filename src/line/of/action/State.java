@@ -1,5 +1,9 @@
 package line.of.action;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+
 public class State 
 {
 	private static final int boardSize=8;
@@ -35,9 +39,10 @@ public class State
 	public void setBoard(char[][] board) {
 		this.board = board;
 	}
-	public void printBoard()
+	public void printBoard() throws Exception
 	{
-		StringBuilder sb= new StringBuilder();
+		return;
+		/*StringBuilder sb= new StringBuilder();
 		sb.append("    0 1 2 3 4 5 6 7");
 		System.out.println(sb.toString());
 
@@ -57,13 +62,13 @@ public class State
 					sb.append(' ');
 			}
 			System.out.println(sb.toString());
-		}
+		}*/
 	}
 	public static void main(String args[])
 	{
 		State a= new State();
 		/*State b= new State(a);
 		a.board[0][0]='p';*/
-		a.printBoard();
+		//a.printBoard();
 	}
 }

@@ -4,19 +4,23 @@ package line.of.action;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Date;
-import java.util.Scanner;
 import java.util.Stack;
 
 
 /*
  * For the whole project in case of any array like move[]
- * <p> The first element move[0] will correspond to row
- * <p> The second element move[1] will correspond to column
+ * <p> The first element move[0] will correspond to row of source
+ * <p> The second element move[1] will correspond to column of source
+ * <p> The second element move[2] will correspond to column of destination
+ * <p> The second element move[3] will correspond to column of destination
  */
 
 public class LoaGame 
 {
+	/*
+	 * some variables used by the 
+	 * 
+	 */
 	public static int depth;
 	public static final char W='X',B='O',EMPTY='_';
 	State gameState;
@@ -24,12 +28,16 @@ public class LoaGame
 	static int defaultDepth=3;
     static int nodesExpanded=0;
 	static int size=8;
-	int directions [][] = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
+	int directions [][] = 
+		{{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
 	int [][] visitedNodes;
 	static boolean debugging=false;
 	static int delay;
 	
-	public LoaGame()
+	/*
+	 * initialize the game variables
+	 */
+	public LoaGame() throws Exception
 	{
 		gameState= new State();
 		depth=defaultDepth;
@@ -37,7 +45,8 @@ public class LoaGame
 		gameState.printBoard();
 		player= new Player(B);
 		player.setOtherPlayerName(W);
-		visitedNodes= new int[size][size]; // for each location on board. 0=not visited,1=in stack,2=visited   
+		// for each location on board. 0=not visited,1=in stack,2=visited   
+		visitedNodes= new int[size][size]; 
 	}
 	/*
 	 * Initialize the board
@@ -52,7 +61,14 @@ public class LoaGame
 			gameState.board[i][7]=W;
 		}
 	}
-	
+	/**
+	 * Checks if left horizontal move is possible
+	 * @param currentState 		state of the board
+	 * @param player 			the player for whom to check
+	 * @param row 				the row of the checker
+	 * @param column			the column of the checker
+	 * @return					if a move is possible, return the move				
+	 */
 	private int[] loaCheckLeftHorizontal(State state, Player player, int row,int column) 
 	{
 
@@ -73,11 +89,12 @@ public class LoaGame
 		
 	}
 	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
+	 * Checks if a right horizontal move is possible
+	 * @param currentState 		state of the board
+	 * @param player 			the player for whom to check
+	 * @param row 				the row of the checker
+	 * @param column			the column of the checker
+	 * @return					if a move is possible, return the move	
 	 */
 	private int[] loaCheckRightHorizontal(State state, Player player, int row,int column) 
 	{
@@ -97,11 +114,12 @@ public class LoaGame
 		return new int[]{row,column+countCoins};
 	}
 	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
+	 * Checks if a vertical up move is possible
+	 * @param currentState 		state of the board
+	 * @param player 			the player for whom to check
+	 * @param row 				the row of the checker
+	 * @param column			the column of the checker
+	 * @return					if a move is possible, return the move	
 	 */
 	private int[] loaCheckUpMove(State state, Player player, int row,int column) 
 	{
@@ -122,11 +140,12 @@ public class LoaGame
 	
 	}
 	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
+	 * Checks if a vertical down move is possible
+	 * @param currentState 		state of the board
+	 * @param player 			the player for whom to check
+	 * @param row 				the row of the checker
+	 * @param column			the column of the checker
+	 * @return					if a move is possible, return the move	
 	 */
 	private int[] loaCheckDownMove(State state, Player player, int row,int column) 
 	{
@@ -147,11 +166,12 @@ public class LoaGame
 	
 	}
 	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
+	 * Checks if a move in north-east direction is possible
+	 * @param currentState 		state of the board
+	 * @param player 			the player for whom to check
+	 * @param row 				the row of the checker
+	 * @param column			the column of the checker
+	 * @return					if a move is possible, return the move	
 	 */
 	private int[] loaCheckNorthEastMove(State state, Player player, int row,int column) 
 	{
@@ -194,11 +214,12 @@ public class LoaGame
 	
 	}
 	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
+	 * Checks if a move in north-west direction is possible
+	 * @param currentState 		state of the board
+	 * @param player 			the player for whom to check
+	 * @param row 				the row of the checker
+	 * @param column			the column of the checker
+	 * @return					if a move is possible, return the move	
 	 */
 	private int[] loaCheckNorthWestMove(State state, Player player, int row,int column) 
 	{
@@ -228,7 +249,6 @@ public class LoaGame
 					
 			}
 		}
-		// TO-DO
 		int startR=row,startC=column;
 		for(int k=startR;k>startR-countCoins;k--,startC--)
 		{
@@ -242,11 +262,12 @@ public class LoaGame
 	
 	}
 	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
+	 * Checks if a move in south-east direction is possible
+	 * @param currentState 		state of the board
+	 * @param player 			the player for whom to check
+	 * @param row 				the row of the checker
+	 * @param column			the column of the checker
+	 * @return					if a move is possible, return the move	
 	 */
 	private int[] loaCheckSouthEastMove(State state, Player player, int row,int column) 
 	{
@@ -276,7 +297,6 @@ public class LoaGame
 					
 			}
 		}
-		// TO-DO
 		int startR=row,startC=column;
 		for(int k=startR;k<startR+countCoins;k++,startC++)
 		{
@@ -290,11 +310,12 @@ public class LoaGame
 	
 	}
 	/**
-	 * @param currentState
-	 * @param player2
-	 * @param i
-	 * @param j
-	 * @return
+	 * Checks if a move in south-west direction is possible
+	 * @param currentState 		state of the board
+	 * @param player 			the player for whom to check
+	 * @param row 				the row of the checker
+	 * @param column			the column of the checker
+	 * @return					if a move is possible, return the move	
 	 */
 	private int[] loaCheckSouthWestMove(State state, Player player, int row,int column) 
 	{
@@ -324,7 +345,6 @@ public class LoaGame
 					
 			}
 		}
-		// TO-DO
 		int startR=row,startC=column;
 		for(int k=startR;k<startR+countCoins;k++,startC--)
 		{
@@ -338,7 +358,11 @@ public class LoaGame
 	
 	}
 	
-	
+	/**
+	 * @param legalMoves 		the list of legal moves
+	 * @param startMove			the starting location of move to add
+	 * @param endMove			the endding location of move to add
+	 */
 	private void loaAddMove(ArrayList<int[]> legalMoves, int[] startMove, int[] endMove) 
 	{
 		if(startMove==null || endMove==null)
@@ -361,6 +385,13 @@ public class LoaGame
 		//System.out.println("Added move {" + nextMove[0]+","+ nextMove[1]+"} to {"+ nextMove[2] +","+ nextMove[3]+"}");
 	}
 	
+	/**
+	 * The main alpha-beta search
+	 * @param currentState		the state of the board
+	 * @param player			the player whose turn 
+	 * @param maxDepth			the maximum depth of tree to analyze
+	 * @return					the move to take by the agent
+	 */
 	public int[] alphaBetaSearch(State currentState, Player player, int maxDepth)
 	{
 		try{
@@ -402,8 +433,8 @@ public class LoaGame
 		return null;
 	}
 	/**
-	 * @param currentState
-	 * @return
+	 * @param currentState 		the current state of the board
+	 * @return					whether the terminal state is reached
 	 */
 	public boolean isGameOver(State currentState) 
 	{
@@ -411,58 +442,63 @@ public class LoaGame
 	}
 	
 	/**
-	 * @param currentState 
-	 * @param w2
-	 * @return
+	 * @param currentState		the current state of the board 
+	 * @param w					the player's whom to check
+	 * @return					whether all the peices of the player is contiguous
 	 */
-	private boolean piecesContiguous(State currentState, char w) 
+	boolean piecesContiguous(State currentState, char w) 
 	{
 		Player pl= new Player(w);
-		ArrayList<int[]> remaining = getCoordinates(currentState,pl);
-        if (remaining.size() <= 1) 
+		ArrayList<int[]> tilesToCheck = getCoordinates(currentState,pl);
+        if (tilesToCheck.size() <= 1) 
         {
             return true;
         }
-        ArrayList<int[]> grouped = new ArrayList<int[]>();
-        grouped.add(remaining.get(0)); remaining.remove(0);
-        boolean connected, allAway;
-        
-        while (remaining.size() != 0) 
+        ArrayList<int[]> alreadyContiguous = new ArrayList<int[]>();
+        alreadyContiguous.add(tilesToCheck.get(0)); tilesToCheck.remove(0);
+        boolean connected, isDisconnected;
+        while (tilesToCheck.size() != 0) 
         {
-            allAway = true;
-            for (int[] piece : remaining) 
+            isDisconnected = true;
+            for (int[] piece : tilesToCheck) 
             {
-                connected = isConnected(grouped, piece);
+                connected = isConnected(alreadyContiguous, piece);
                 if (connected) 
                 {
-                    grouped.add(piece); remaining.remove(piece);
-                    allAway = false;
+                    alreadyContiguous.add(piece); tilesToCheck.remove(piece);
+                    isDisconnected = false;
                     break;
                 }
             }
-            if (allAway) {
+            if (isDisconnected) 
+            {
                 return false;
             }
         }
-		
         return true;
 	}
-	
+	/**
+	 * Check if a checker if connected to already connected group or not
+	 * @param grouped		the connected group of tiles
+	 * @param piece			the location of a single tile
+	 * @return				whether the tile if connected or not 
+	 */
 	private static boolean isConnected(ArrayList<int[]> grouped, int[] piece) 
     {
         for (int[] groupedCoin : grouped) 
         {
-            int xd = Math.abs(piece[0] - groupedCoin[0]), yd = Math.abs(piece[1] - groupedCoin[1]);
-            if (xd <= 1 && yd <= 1) {
+            int distanceX = Math.abs(piece[0] - groupedCoin[0]), distanceY = Math.abs(piece[1] - groupedCoin[1]);
+            if (distanceX <= 1 && distanceY <= 1) 
+            {
                 return true;
             }
         }
         return false;
     }
 	/**
-	 * @param currentState 
-	 * @param pl
-	 * @return
+	 * @param currentState 	the state of the board
+	 * @param pl			the player 
+	 * @return				the list of coordinates of the player's tiles
 	 */
 	private ArrayList<int[]> getCoordinates(State currentState, Player pl) 
 	{
@@ -481,9 +517,9 @@ public class LoaGame
 		return coor;
 	}
 	/**
-	 * @param nextState
-	 * @param player2
-	 * @return
+	 * @param currentState		the	state of the board 
+	 * @param player			the player for which we need to find the possible moves
+	 * @return					the list of moves possible for the player
 	 */
 	int[][] loaMovesPossible(State currentState, Player player) 
 	{
@@ -561,6 +597,17 @@ public class LoaGame
 		}
 		return result;
 	}
+	/**
+	 * 
+	 * @param state 		the state of the board
+	 * @param prevMove		the move of the player 
+	 * @param currPlayer	the player
+	 * @param depth			the current depth for alpha beta search
+	 * @param maxDepth		the maximum depth of the search
+	 * @param alpha			the value of alpha
+	 * @param beta			the value of beta
+	 * @return				the highest value for player
+	 */
 	private int maxValue(State state, int[] prevMove, Player currPlayer, int depth,int maxDepth, Integer alpha, Integer beta) 
 	{
 
@@ -610,6 +657,17 @@ public class LoaGame
 		return nodesBucket.get(0).getValue();
 	}
 	
+	/**
+	 * 
+	 * @param state 		the state of the board
+	 * @param prevMove		the move of the player 
+	 * @param currPlayer	the player
+	 * @param depth			the current depth for alpha beta search
+	 * @param maxDepth		the maximum depth of the search
+	 * @param alpha			the value of alpha
+	 * @param beta			the value of beta
+	 * @return				the minimum value for opponent
+	 */
 	private int minValue(State state, int[] prevMove, Player currPlayer, int depth,int maxDepth, Integer alpha, Integer beta) 
 	{
 		ArrayList<SearchNode> nodesBucket= new ArrayList<SearchNode>();
@@ -653,6 +711,9 @@ public class LoaGame
 		}
 		return nodesBucket.get(0).getValue();
 	}
+	/**
+	 * @param nodesBucket   	sort the nodes in the bucket of nodes for getting the maximum value
+	 */
 	private void sortBucketNodesForMax(ArrayList<SearchNode> nodesBucket) 
 	{
 		Collections.sort(nodesBucket, new Comparator<SearchNode>() 
@@ -667,7 +728,7 @@ public class LoaGame
 				} 
 				else 
 				{
-					// if value is same, pick the smallest row number
+					// if value is same, give more preference if the final position if towards the center of the board
 					int row1 = Math.abs(n1.getMove()[2]- 4 );
 					int col1 = Math.abs(n1.getMove()[3]-4 );
 					
@@ -675,7 +736,6 @@ public class LoaGame
 					int col2 = Math.abs(n2.getMove()[3]- 4);
 					if(row1+col1 != row2+col2)
 					{
-						//return (row2+col2 - row1- col1);
 						return (row1+col1 - row2 - col2);
 					}
 					else if (row1 != row2) 
@@ -691,7 +751,9 @@ public class LoaGame
 				});
 
 	}
-	
+	/**
+	 * @param nodesBucket		sort the nodes in the bucket of nodes for getting the minimum value
+	 */
 	private void sortBucketNodesForMin(ArrayList<SearchNode> nodesBucket) 
 	{
 		Collections.sort(nodesBucket, new Comparator<SearchNode>() 
@@ -705,7 +767,7 @@ public class LoaGame
 				} 
 				else 
 				{
-					// if value is same, pick the smallest row number
+					// if value is same, give more preference if the final position if towards the center of the board
 					int row1 = Math.abs(n1.getMove()[2]- 4 );
 					int col1 = Math.abs(n1.getMove()[3]-4 );
 					
@@ -727,25 +789,14 @@ public class LoaGame
 			}
 		});
 	}
-	
-	/*public static void main(String args[])
-	{
-		LoaGame game= new LoaGame();
-		game.gameState.board[0][2]=EMPTY;
-		game.gameState.board[2][4]=B;
-		game.gameState.printBoard();
-		State newState= game.getLoaNextState(game.gameState, new int[]{2,7}, new int[]{2,4},new Player(W));
-		newState.printBoard();
-		
-		
-	}*/
 	/**
-	 * @param gameState
-	 * @param moveStart
-	 * @param moveStart 
-	 * @param moveStart
-	 * @return 
+	 * @param gameState		the state of the board
+	 * @param moveStart		the starting position of the tile
+	 * @param moveEnd		the ending position of the tile
+	 * @param player		the player whose chance it is
+	 * @return				the modified state of the board after this move is applied
 	 */
+	
 	State getLoaNextState(State gameState, int[] moveStart, int[] moveEnd, Player player) 
 	{
 		if(!isValidMove(gameState,moveStart,moveEnd,player))
@@ -765,11 +816,11 @@ public class LoaGame
 		return nextState;
 	}
 	/**
-	 * @param gameState
-	 * @param moveStart
-	 * @param moveEnd
-	 * @param player2
-	 * @return
+	 * @param gameState		the state of the board
+	 * @param moveStart		the starting position for the move
+	 * @param moveEnd		the ending position for the move
+	 * @param player		the player whose turn it is		
+	 * @return				check if this move is a valid move
 	 */
 	private boolean isValidMove(State gameState, int[] moveStart,int[] moveEnd, Player player) 
 	{
@@ -1029,13 +1080,15 @@ public class LoaGame
 		}
 		return false;
 	}
-	// the heuristic will compute the size of the biggest group of checkers
-	// returns a value beteween 1 and -1:
-	// 1 means I win
-	// -1 means I loose
+	/**
+	 * @param gameState		the state of the game
+	 * @param player		the player whose turn it is
+	 * @return				evaluate the board and returns a value representing the boards's state in favor of player
+	 */
 	public int evaluate(State gameState,Player player)  // evaluates the current board
    {
 	   int plyrCount=0,oppPlCount=0;
+	   int playerClusterCount = 0,opponentClusterCount = 0;           
        for(int i=0; i<size; i++)
        {
            for(int j=0;j<size; j++)
@@ -1051,11 +1104,7 @@ public class LoaGame
         	   }
            }
        }
-       
-       int bstMe = 0;                 // size of the largest group of my color
-       int bstOther = 0;              // size of the largest group of the enemy's color
-       
-       // now we will run several DFS's to get the size of each group of checkers
+       // find the size of largest cluster for the player
        for(int i=0; i<size; i++)
        {
            for(int j=0;j<size; j++)
@@ -1064,48 +1113,45 @@ public class LoaGame
                {
                    if(gameState.board[i][j]==player.name)
                    {
-                       int h = dfs(i,j,gameState,player);
-                       if(h > bstMe)
-                           bstMe = h;
+                       int ct = depthFirstSearch(i,j,gameState,player);
+                       if(ct > playerClusterCount)
+                           playerClusterCount = ct;
                    }
                    else if(gameState.board[i][j]==player.getOpponent().name)
                    {
-                       int h = dfs(i,j,gameState,player.getOpponent());
-                       if(h > bstOther)
-                           bstOther = h;
+                       int ct = depthFirstSearch(i,j,gameState,player.getOpponent());
+                       if(ct > opponentClusterCount)
+                           opponentClusterCount = ct;
                    }
                }
            }
        }
-       //return 0f;
-       
-       // first check if I win or I loose
-      
-       if(bstMe == plyrCount)
-    	   return 1;
-       if(bstOther == oppPlCount) 
-    	   return -1;
-       
-       // compute the relative size of the largest groups
-       float bestMePct = (float)bstMe / (float)plyrCount;
-       float bestOtherPct = (float)bstOther / (float)oppPlCount;
-       
-       // now compute the relative percentage compared with the other player
-       float totPct = bestMePct + bestOtherPct;        
-       Float myPct = (bestMePct / totPct)*2.f-1.f; // range [-1,1]
-       //Float myPct = (bestMePct / totPct)*100;
-       return myPct.intValue();
-       //return player == whoami ? myPct : -myPct;
-       
+       if(playerClusterCount == plyrCount)
+    	   return 1000;
+       if(opponentClusterCount == oppPlCount) 
+    	   return -1000;
+       // find the relative size
+       float playerPct = (float)playerClusterCount / (float)plyrCount;
+       float oppoPct = (float)opponentClusterCount / (float)oppPlCount;
+       // calculate the relative percentage compared to the opponent
+       float totPct = playerPct + oppoPct;        
+       Float myPct = (playerPct / totPct)*1000;
+       Integer result=myPct.intValue();
+       return result;
    }
-	int dfs(int i, int j, State gameState, Player pl)
+	/**
+	 * @param i 			the row to start the search
+	 * @param j				the column to start the search
+	 * @param gameState		the state of the game
+	 * @param pl			the player whose checkers to check
+	 * @return				the size of largest cluster for this player
+	 */
+	int depthFirstSearch(int i, int j, State gameState, Player pl)
     {
         Stack<int[]> s = new Stack<>();
         int r = 0;
-        
         s.push(new int[]{i,j});
         visitedNodes[i][j] = 1;
-        
         while(!s.empty())
         {
             int[] p = s.pop();
@@ -1113,15 +1159,14 @@ public class LoaGame
             j = p[1];
             visitedNodes[i][j] = 2;
             r++;
-            
             for(int d=0;d<8;d++)
             {
                 int row = i + directions[d][0];
                 int col = j + directions[d][1];
                 // check the position is valid
-                if(row<0 || row>=size || col<0 || col>=size) continue;
-                
-                // check another checker of the same player
+                if(row<0 || row>=size || col<0 || col>=size) 
+                	continue;
+                // check if the position if of the same player
                 if(visitedNodes[row][col] == 0 && gameState.board[row][col] == pl.name)
                 {
                 	visitedNodes[row][col] = 1;
@@ -1131,6 +1176,4 @@ public class LoaGame
         }        
         return r;
     }
-	
-	
 }

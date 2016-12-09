@@ -1,0 +1,332 @@
+Depth : 4
+Random moveMove = {7,3} - {5,5}
+0-> _ O O O O O O _
+1-> X _ _ _ _ _ _ X
+2-> X _ _ _ _ _ _ X
+3-> X _ _ _ _ _ _ X
+4-> X _ _ _ _ _ _ X
+5-> X _ _ _ _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ O O _ O O O _
+Now Agent will generate the move
+Agent generated the move. Move = {1,7} - {3,5} 
+Moves generated in 536 ms 
+0-> _ O O O O O O _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ X
+3-> X _ _ _ _ X _ X
+4-> X _ _ _ _ _ _ X
+5-> X _ _ _ _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ O O _ O O O _
+Random moveMove = {0,6} - {2,4}
+0-> _ O O O O O _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ O _ _ X
+3-> X _ _ _ _ X _ X
+4-> X _ _ _ _ _ _ X
+5-> X _ _ _ _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ O O _ O O O _
+Now Agent will generate the move
+Agent generated the move. Move = {3,7} - {3,4} 
+Moves generated in 464 ms 
+0-> _ O O O O O _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ O _ _ X
+3-> X _ _ _ X X _ _
+4-> X _ _ _ _ _ _ X
+5-> X _ _ _ _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ O O _ O O O _
+Random moveMove = {7,1} - {5,3}
+0-> _ O O O O O _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ O _ _ X
+3-> X _ _ _ X X _ _
+4-> X _ _ _ _ _ _ X
+5-> X _ _ O _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ _ O _ O O O _
+Now Agent will generate the move
+Agent generated the move. Move = {3,4} - {3,1} 
+Moves generated in 394 ms 
+0-> _ O O O O O _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ O _ _ X
+3-> X X _ _ _ X _ _
+4-> X _ _ _ _ _ _ X
+5-> X _ _ O _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ _ O _ O O O _
+Random moveMove = {2,4} - {0,6}
+0-> _ O O O O O O _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ X
+3-> X X _ _ _ X _ _
+4-> X _ _ _ _ _ _ X
+5-> X _ _ O _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ _ O _ O O O _
+Now Agent will generate the move
+Agent generated the move. Move = {2,7} - {0,5} 
+Moves generated in 396 ms 
+0-> _ O O O O X O _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ _
+3-> X X _ _ _ X _ _
+4-> X _ _ _ _ _ _ X
+5-> X _ _ O _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ _ O _ O O O _
+Random moveMove = {5,3} - {7,3}
+0-> _ O O O O X O _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ _
+3-> X X _ _ _ X _ _
+4-> X _ _ _ _ _ _ X
+5-> X _ _ _ _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ _ O O O O O _
+Now Agent will generate the move
+Agent generated the move. Move = {3,5} - {3,2} 
+Moves generated in 391 ms 
+0-> _ O O O O X O _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ _
+3-> X X X _ _ _ _ _
+4-> X _ _ _ _ _ _ X
+5-> X _ _ _ _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ _ O O O O O _
+Random moveMove = {7,2} - {5,0}
+0-> _ O O O O X O _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ _
+3-> X X X _ _ _ _ _
+4-> X _ _ _ _ _ _ X
+5-> O _ _ _ _ O _ X
+6-> X _ _ _ _ _ _ X
+7-> _ _ _ O O O O _
+Now Agent will generate the move
+Agent generated the move. Move = {6,0} - {4,2} 
+Moves generated in 255 ms 
+0-> _ O O O O X O _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ _
+3-> X X X _ _ _ _ _
+4-> X _ X _ _ _ _ X
+5-> O _ _ _ _ O _ X
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O O O _
+Random moveMove = {0,6} - {2,4}
+0-> _ O O O O X _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ O _ _ _
+3-> X X X _ _ _ _ _
+4-> X _ X _ _ _ _ X
+5-> O _ _ _ _ O _ X
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O O O _
+Now Agent will generate the move
+Agent generated the move. Move = {4,0} - {4,3} 
+Moves generated in 332 ms 
+0-> _ O O O O X _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ O _ _ _
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ _ _ X
+5-> O _ _ _ _ O _ X
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O O O _
+Random moveMove = {0,3} - {2,5}
+0-> _ O O _ O X _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ O O _ _
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ _ _ X
+5-> O _ _ _ _ O _ X
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O O O _
+Now Agent will generate the move
+Agent generated the move. Move = {5,7} - {7,5} 
+Moves generated in 322 ms 
+0-> _ O O _ O X _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ O O _ _
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ _ _ X
+5-> O _ _ _ _ O _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Random moveMove = {2,4} - {2,7}
+0-> _ O O _ O X _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ O _ O
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ _ _ X
+5-> O _ _ _ _ O _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Now Agent will generate the move
+Agent generated the move. Move = {4,7} - {2,5} 
+Moves generated in 384 ms 
+0-> _ O O _ O X _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ X _ O
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ _ _ _
+5-> O _ _ _ _ O _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Random moveMove = {0,4} - {1,5}
+0-> _ O O _ _ X _ _
+1-> X _ _ _ _ O _ _
+2-> X _ _ _ _ X _ O
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ _ _ _
+5-> O _ _ _ _ O _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Now Agent will generate the move
+Agent generated the move. Move = {2,5} - {3,6} 
+Moves generated in 372 ms 
+0-> _ O O _ _ X _ _
+1-> X _ _ _ _ O _ _
+2-> X _ _ _ _ _ _ O
+3-> X X X _ _ _ X _
+4-> _ _ X X _ _ _ _
+5-> O _ _ _ _ O _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Random moveMove = {5,5} - {5,3}
+0-> _ O O _ _ X _ _
+1-> X _ _ _ _ O _ _
+2-> X _ _ _ _ _ _ O
+3-> X X X _ _ _ X _
+4-> _ _ X X _ _ _ _
+5-> O _ _ O _ _ _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Now Agent will generate the move
+Agent generated the move. Move = {3,6} - {5,4} 
+Moves generated in 263 ms 
+0-> _ O O _ _ X _ _
+1-> X _ _ _ _ O _ _
+2-> X _ _ _ _ _ _ O
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ _ _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Random moveMove = {1,5} - {4,5}
+0-> _ O O _ _ X _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ O
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Now Agent will generate the move
+Agent generated the move. Move = {0,5} - {2,7} 
+Moves generated in 166 ms 
+0-> _ O O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ X
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ _ _ _ X
+7-> _ _ _ O O X O _
+Random moveMove = {7,3} - {6,4}
+0-> _ O O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ X
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ O _ _ X
+7-> _ _ _ _ O X O _
+Now Agent will generate the move
+Agent generated the move. Move = {6,7} - {6,5} 
+Moves generated in 167 ms 
+0-> _ O O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ X
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ O X _ _
+7-> _ _ _ _ O X O _
+Random moveMove = {7,4} - {7,1}
+0-> _ O O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ _ _ X
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ O X _ _
+7-> _ O _ _ _ X O _
+Now Agent will generate the move
+Agent generated the move. Move = {2,7} - {2,5} 
+Moves generated in 128 ms 
+0-> _ O O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ _ _ X _ _
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ O X _ _
+7-> _ O _ _ _ X O _
+Random moveMove = {0,1} - {2,3}
+0-> _ _ O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ O _ X _ _
+3-> X X X _ _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ O X _ _
+7-> _ O _ _ _ X O _
+Now Agent will generate the move
+Agent generated the move. Move = {3,0} - {3,3} 
+Moves generated in 105 ms 
+0-> _ _ O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ O _ X _ _
+3-> _ X X X _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X _ _ _
+6-> _ _ _ _ O X _ _
+7-> _ O _ _ _ X O _
+Random moveMove = {6,4} - {5,5}
+0-> _ _ O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ O _ X _ _
+3-> _ X X X _ _ _ _
+4-> _ _ X X _ O _ _
+5-> O _ _ O X O _ _
+6-> _ _ _ _ _ X _ _
+7-> _ O _ _ _ X O _
+Now Agent will generate the move
+Agent generated the move. Move = {4,2} - {2,4} 
+Moves generated in 133 ms 
+0-> _ _ O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ O X X _ _
+3-> _ X X X _ _ _ _
+4-> _ _ _ X _ O _ _
+5-> O _ _ O X O _ _
+6-> _ _ _ _ _ X _ _
+7-> _ O _ _ _ X O _
+Agent has won !!! 
+Total number of moves : 15
+Average time per move by agent : 320
+0-> _ _ O _ _ _ _ _
+1-> X _ _ _ _ _ _ _
+2-> X _ _ O X X _ _
+3-> _ X X X _ _ _ _
+4-> _ _ _ X _ O _ _
+5-> O _ _ O X O _ _
+6-> _ _ _ _ _ X _ _
+7-> _ O _ _ _ X O _

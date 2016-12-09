@@ -34,7 +34,6 @@ public class SearchNode {
 
 	@Override
 	public String toString() {
-		return "SearchNode [move=" + Arrays.toString(move) + ", value=" + value
-				+ "]";
+		return "SearchNode [move=" + Arrays.toString(move) +"]";
 	}
 }
